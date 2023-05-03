@@ -1,0 +1,35 @@
+.masthead-container,
+.about-container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    // padding-left: 20px;
+}
+
+@media (min-width: 768px) {
+    .masthead-container,
+    .about-container {
+        padding-left: 128px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .masthead-container,
+    .about-container {
+        padding-left: 256px;
+    }
+}
+
+@media (min-width: 1440px) {
+    .masthead-container,
+    .about-container {
+        padding-left: 328px;
+    }
+}
+
+@media (min-width: 1920px) {
+    .masthead-container,
+    .about-container {
+        padding-left: 428px;
+    }
+}

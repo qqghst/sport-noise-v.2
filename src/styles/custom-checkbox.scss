@@ -1,0 +1,42 @@
+.customCheckbox label input[type='checkbox'] {
+    display: none;
+}
+
+.customCheckbox label span {
+    // position: relative;
+    // display: inline-block;
+    border: 1px solid #a9b2d9;
+    padding: 7px 15px;
+    color: #324590;
+    border-radius: 30px;
+    font-size: 13px;
+    letter-spacing: 4%;
+    line-height: 17px;
+    font-weight: 500;
+    transition: 0.5s ease-in-out;
+    user-select: none;
+    // overflow: hidden;
+}
+
+@media (min-width: 1024px) {
+    .customCheckbox label span {
+        // position: relative;
+        // display: inline-block;
+        border: 1px solid #a9b2d9;
+        padding: 8px 15px;
+        color: #324590;
+        border-radius: 30px;
+        font-size: 13px;
+        letter-spacing: 4%;
+        line-height: 17px;
+        font-weight: 500;
+        transition: 0.5s ease-in-out;
+        user-select: none;
+        // overflow: hidden;
+    }
+}
+
+.customCheckbox label input[type='checkbox']:checked ~ span {
+    background: #324590;
+    color: white;
+}

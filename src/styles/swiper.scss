@@ -1,0 +1,34 @@
+.swiper-slide img {
+    // width: 100%;
+    height: 303px;
+    object-fit: cover;
+}
+
+@media (min-width: 1800px) {
+    .swiper-slide img {
+        // min-width: 500px;
+        height: 403px;
+        object-fit: cover;
+    }
+}
+
+@media (max-width: 1280px) {
+    .swiper-slide img {
+        // width: 100%;
+        height: 403px;
+        object-fit: cover;
+    }
+}
+
+@media (max-width: 768px) {
+    .swiper-slide img {
+        // width: 100%;
+        height: 203px;
+        object-fit: cover;
+    }
+}
+
+.swiper {
+    width: 100%;
+    height: 100%;
+}

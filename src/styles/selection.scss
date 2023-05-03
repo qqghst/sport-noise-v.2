@@ -1,0 +1,9 @@
+::selection {
+    background: theme('colors.hover');
+    color: #ffffff
+    
+}
+::-moz-selection {
+    background: theme('colors.hover');
+    color: #ffffff
+}

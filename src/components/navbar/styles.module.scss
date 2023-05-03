@@ -1,0 +1,11 @@
+.lineParent {
+    overflow: hidden;
+}
+
+.menuMobileRef {
+    transform: translateY(calc(-100% - 32px))
+}
+
+.li {
+    border-bottom: 1px solid black;
+}

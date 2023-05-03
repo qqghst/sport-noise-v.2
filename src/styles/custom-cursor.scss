@@ -1,0 +1,63 @@
+.secondaryCursor {
+    z-index: 1000;
+    border-radius: 100%;
+    pointer-events: none;
+    overflow: hidden;
+    transform: translate3d(0, 0, 0);
+    position: fixed;
+    background-color: theme('colors.blue');
+    transition: width 0.4s cubic-bezier(0.19, 1, 0.22, 1),
+        height 0.4s cubic-bezier(0.19, 1, 0.22, 1);
+    transform-origin: center;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &.regular {
+        width: 10px;
+        height: 10px;
+    }
+    &.projects {
+        width: 64px;
+        height: 64px;
+        cursor: none !important;
+        background-color: white;
+    }
+    &.big {
+        width: 128px;
+        height: 128px;
+        cursor: none !important;
+        background-color: white;
+    }
+}
+
+@media (max-width: 768px) {
+    .secondaryCursor {
+        display: none;
+    }
+}
+
+
+
+.modal-overlay {
+    z-index: 9999;
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    background: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .modal-box {
+    display: block;
+    background: white;
+    width: 70%;
+    height: 70%;
+    padding: 1rem;
+    border-radius: 1rem;
+  }
+  

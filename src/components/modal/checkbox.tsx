@@ -1,0 +1,25 @@
+interface ICheckboxProps {
+    text: string;
+    register: any;
+    name: string;
+}
+
+const Checkbox: React.FC<ICheckboxProps> = ({text, register, name}) => {
+    return (
+        <div className='customCheckbox'>
+            <label>
+                <input
+                    className='hidden'
+                    type='checkbox'
+                    name={name}
+                    {...register(name, { required: false })}
+                />
+                <span className='text-[13px] tracking-[4%] leading-[17px] text-blue'>
+                    {text}
+                </span>
+            </label>
+        </div>
+    );
+};
+
+export default Checkbox;
