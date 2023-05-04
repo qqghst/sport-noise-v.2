@@ -31,7 +31,6 @@ const Projects: React.FC = () => {
                                     trigger: elem,
                                     start: 'top bottom',
                                     end: 'bottom',
-                                    markers: true,
                                 },
                             }
                         );
