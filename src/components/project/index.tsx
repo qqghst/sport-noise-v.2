@@ -1,5 +1,5 @@
-import React, {useEffect, useRef} from 'react';
-import styles from './styles.module.scss'
+import React, { useEffect, useRef } from 'react';
+import styles from './styles.module.scss';
 import ProjectItem from './projectItem';
 import { projects } from '@/data';
 import gsap from 'gsap';
@@ -10,30 +10,33 @@ const Projects: React.FC = () => {
 
     useEffect(() => {
         if (projectsRef.current) {
+            let mm = gsap.matchMedia();
             gsap.registerPlugin(ScrollTrigger);
 
-            gsap.utils
-                .toArray<HTMLElement>(projectsRef.current.children)
-                .forEach((elem: any) => {
-                    gsap.fromTo(
-                        elem,
-                        {
-                            y: '5%',
-                            opacity: 0,
-                        },
-                        {
-                            duration: 0.6,
-                            y: '0%',
-                            opacity: 1,
-                            ease: 'power3.out',
-                            scrollTrigger: {
-                                trigger: elem,
-                                start: 'top bottom',
-                                end: 'bottom',
+            mm.add('(min-width:768px)', () => {
+                gsap.utils
+                    .toArray<HTMLElement>(projectsRef.current!.children)
+                    .forEach((elem: any) => {
+                        gsap.fromTo(
+                            elem,
+                            {
+                                y: '5%',
+                                opacity: 0,
                             },
-                        }
-                    );
-                });
+                            {
+                                duration: 0.6,
+                                y: '0%',
+                                opacity: 1,
+                                ease: 'power3.out',
+                                scrollTrigger: {
+                                    trigger: elem,
+                                    start: 'top bottom',
+                                    end: 'bottom',
+                                },
+                            }
+                        );
+                    });
+            });
         }
     }, []);
     return (
