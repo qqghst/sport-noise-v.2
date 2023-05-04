@@ -8,35 +8,34 @@ import ScrollTrigger from 'gsap/dist/ScrollTrigger';
 const Projects: React.FC = () => {
     const projectsRef = useRef<HTMLDivElement>(null);
 
-    // useEffect(() => {
-    //     if (projectsRef.current) {
-    //         gsap.registerPlugin(ScrollTrigger);
+    useEffect(() => {
+        if (projectsRef.current) {
+            gsap.registerPlugin(ScrollTrigger);
 
-    //         gsap.utils
-    //             .toArray<HTMLElement>(projectsRef.current.children)
-    //             .forEach((elem: any) => {
-    //                 gsap.fromTo(
-    //                     elem,
-    //                     {
-    //                         y: '5%',
-    //                         opacity: 0,
-    //                     },
-    //                     {
-    //                         duration: 0.6,
-    //                         y: '0%',
-    //                         opacity: 1,
-    //                         ease: 'power3.out',
-    //                         scrollTrigger: {
-    //                             trigger: elem,
-    //                             start: 'top bottom',
-    //                             end: 'bottom',
-    //                             markers: true
-    //                         },
-    //                     }
-    //                 );
-    //             });
-    //     }
-    // }, []);
+            gsap.utils
+                .toArray<HTMLElement>(projectsRef.current.children)
+                .forEach((elem: any) => {
+                    gsap.fromTo(
+                        elem,
+                        {
+                            y: '5%',
+                            opacity: 0,
+                        },
+                        {
+                            duration: 0.6,
+                            y: '0%',
+                            opacity: 1,
+                            ease: 'power3.out',
+                            scrollTrigger: {
+                                trigger: elem,
+                                start: 'top bottom',
+                                end: 'bottom',
+                            },
+                        }
+                    );
+                });
+        }
+    }, []);
     return (
         <section
             className='mt-[91px] lg:mt-[198px] mb-[40px] md:mb-[96px]  md:px-[64px] lg:px-[128px]'

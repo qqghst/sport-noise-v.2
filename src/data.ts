@@ -94,7 +94,7 @@ export const projects = [
 export const moreprojects = [
     {
         id: 1,
-        title: 'Национльная программа подготовки хоккеистов, 2017',
+        title: 'Национальная программа подготовки хоккеистов, 2017',
         imageSrc: '/projects/images/desktop/1.webp',
     },
     {

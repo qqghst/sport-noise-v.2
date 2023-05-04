@@ -35,19 +35,19 @@ const ProjectItem: React.FC<IProjectItemProps> = ({
         setSize('regular');
     };
 
-    const [screenWidth, setScreenWidth] = useState<number>(0);
+    const [screenWidth, setScreenWidth] = useState<number>(641);
 
-    const updateScreenWidth = () => {
-        setScreenWidth(window.innerWidth);
-    };
+    // const updateScreenWidth = () => {
+    //     setScreenWidth(window.innerWidth);
+    // };
 
-    useEffect(() => {
-        updateScreenWidth();
-        window.addEventListener('resize', updateScreenWidth);
-        return () => {
-            window.removeEventListener('resize', updateScreenWidth);
-        };
-    }, []);
+    // useEffect(() => {
+    //     updateScreenWidth();
+    //     window.addEventListener('resize', updateScreenWidth);
+    //     return () => {
+    //         window.removeEventListener('resize', updateScreenWidth);
+    //     };
+    // }, []);
     return (
         <>
             <div className='flex flex-col justify-center items-start gap-3 lg:gap-7'>
