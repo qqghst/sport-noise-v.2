@@ -136,7 +136,7 @@ const Footer = () => {
                             </span>
                         </button>
                         <div className='hidden md:block text-blue '>
-                            <Link href='#masthead'>
+                            <Link href='#navbar'>
                                 <Image
                                     src={arrow}
                                     alt='SportNoise'
