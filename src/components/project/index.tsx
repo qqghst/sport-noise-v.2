@@ -1,5 +1,4 @@
 import React, { useEffect, useRef } from 'react';
-import styles from './styles.module.scss';
 import ProjectItem from './projectItem';
 import { projects } from '@/data';
 import gsap from 'gsap';
@@ -32,6 +31,7 @@ const Projects: React.FC = () => {
                                     trigger: elem,
                                     start: 'top bottom',
                                     end: 'bottom',
+                                    markers: true,
                                 },
                             }
                         );
