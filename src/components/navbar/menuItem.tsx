@@ -96,12 +96,13 @@ const MenuItem: React.FC<{ exitRef: React.RefObject<HTMLDivElement> }> = ({
                         </li>
                     </ul>
 
-                    <div className='navAnimation '>
+                    <div
+                        className='navAnimation'
+                        onClick={() => {
+                            toggle();
+                            blockScroll();
+                        }}>
                         <button
-                            onClick={() => {
-                                toggle();
-                                blockScroll();
-                            }}
                             type='button'
                             className='rounded-full px-[72px] lg:px-[58] py-[12px] lg:py-[18px] bg-blue hover:bg-hover transition ease-in-out duration-400'>
                             <span className='text-[18px] lg:text-[19px] tracking-wide leading-[24px] font-medium text-white '>
