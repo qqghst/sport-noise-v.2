@@ -31,17 +31,34 @@ export default function Home() {
                 direction='right'
                 text='Новая культура в спорте для больших побед в бизнесе&nbsp;'
             /> */}
-            <MarqueeTest />
+            <MarqueeTest
+                text='Новая культура в спорте для больших побед в бизнесе&nbsp;'
+                textBorder='Новая культура в спорте для больших побед в бизнесе&nbsp;'
+                direction='left'
+                directionBorder='right'
+            />
             <Services />
-            <MarqueeText
+            {/* <MarqueeText
                 direction='left'
                 text='Играй ярко и побеждай красиво&nbsp;'
+            /> */}
+            <MarqueeTest
+                text='Играй ярко и побеждай красиво&nbsp;'
+                textBorder='Играй ярко и побеждай красиво&nbsp;'
+                direction='right'
+                directionBorder='left'
             />
 
             <AboutSecond />
-            <MarqueeText
+            {/* <MarqueeText
                 direction='right'
                 text='Начнём новую историю ваших побед&nbsp;'
+            /> */}
+            <MarqueeTest
+                text='Начнём новую историю ваших побед&nbsp;'
+                textBorder='Начнём новую историю ваших побед&nbsp;'
+                direction='left'
+                directionBorder='right'
             />
             <Footer />
         </>

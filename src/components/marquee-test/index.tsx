@@ -2,27 +2,34 @@ import React from 'react';
 import styles from './styles.module.scss';
 import Marquee from 'react-fast-marquee';
 
-const MarqueeTest: React.FC = () => {
+interface IMarqueeTestProps {
+    text: string,
+    textBorder: string,
+    direction: 'left' | 'right' | 'up' | 'down' | undefined,
+    directionBorder: 'left' | 'right' | 'up' | 'down' | undefined,
+}
+
+const MarqueeTest: React.FC<IMarqueeTestProps> = ({text, textBorder, direction, directionBorder}) => {
     return (
         <>
-            <div className='relative flex justify-center items-center overflow-hidden text-[100px] lg:text-[246.51px] uppercase mt-[100px] py-[80px]'>
+            <div className='relative flex justify-center items-center overflow-hidden text-[100px] lg:text-[118.88px] uppercase mt-[100px] py-[120px]'>
                 <div className=''>
                     <Marquee
-                        speed={180}
+                        speed={140}
                         gradient={false}
-                        direction='left'>
+                        direction={direction}>
                         <h2 className='first'>
-                            Новая культура в спорте для больших побед в бизнесе
+                            {text}
                         </h2>
                     </Marquee>
                 </div>
                 <div className='absolute -rotate-[10deg]'>
                     <Marquee
-                        speed={100}
+                        speed={80}
                         gradient={false}
-                        direction='right'>
+                        direction={directionBorder}>
                         <h2 className={`${styles.second}`}>
-                            Новая культура в спорте для больших побед в бизнесе
+                            {textBorder}
                         </h2>
                     </Marquee>
                 </div>
