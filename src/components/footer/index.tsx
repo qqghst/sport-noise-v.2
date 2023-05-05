@@ -42,16 +42,16 @@ const Footer = () => {
                         </div>
                     </div>
                     <div className='flex flex-col'>
-                        <h1 className='text-[36px] lg:text-[40px] xl:text-[64px] tracking-[-2%] lg:tracking-[-1%] leading-[29px] lg:leading-[68px] font-medium text-blue   lg:pb-[17px] pb-[24px] textFooter'>
+                        <h1 className='text-[36px] lg:text-[40px] xl:text-[64px] tracking-[-0.75px] lg:tracking-[-0.6px] leading-[29px] lg:leading-[68px] font-medium text-blue   lg:pb-[17px] pb-[24px] textFooter'>
                             hello@sportnoise.ru
                         </h1>
-                        <ul className='flex xl:flex-row md:flex-col  justify-between gap-4 text-[17px] tracking-[2%] leading-[28px] font-medium text-blue pb-[22px]'>
+                        <ul className='flex xl:flex-row md:flex-col  justify-between gap-4 text-[17px] tracking-0 lg:tracking-[0.3px] leading-[28px] font-medium text-blue pb-[22px]'>
                             <li className='text-blue '>+7 (495) 755-85-38</li>
                             <li className='hidden md:block text-blue '>
                                 Москва, ул. Полковая д. 3, стр. 6
                             </li>
 
-                            <li className='text-blue hover:text-hover transition ease-in-out duration-400'>
+                            <li className='text-blue hover:text-hover transition ease-in-out duration-400 '>
                                 <Link
                                     href='https://t.me/sportnoise'
                                     target='_blank'
@@ -60,24 +60,24 @@ const Footer = () => {
                                 </Link>
                             </li>
                         </ul>
-                        <ul className='hidden md:flex  flex-col xl:flex-row  gap-4 xl:gap-8 text-[13px] tracking-[4%] leading-[17px] font-medium  pb-[64px]'>
+                        <ul className='hidden md:flex  flex-col xl:flex-row  gap-4 xl:gap-8 text-[13px]  leading-[17px] font-medium  pb-[64px]'>
                             <li>
                                 <button
-                                    className='text-blue hover:text-hover transition ease-in-out duration-400'
+                                    className='text-blue hover:text-hover transition ease-in-out duration-400 tracking-[0.5px]'
                                     rel='noopener noreferrer'>
                                     &#x25CF; Скачать презентацию
                                 </button>
                             </li>
                             <li>
                                 <button
-                                    className='text-blue hover:text-hover transition ease-in-out duration-400'
+                                    className='text-blue hover:text-hover transition ease-in-out duration-400 tracking-[0.5px]'
                                     rel='noopener noreferrer'>
                                     &#x25CF; Заполнить бриф
                                 </button>
                             </li>
                             <li>
                                 <button
-                                    className='text-blue hover:text-hover transition ease-in-out duration-400'
+                                    className='text-blue hover:text-hover transition ease-in-out duration-400 tracking-[0.5px]'
                                     rel='noopener noreferrer'
                                     onClick={() => {
                                         toggle();
@@ -88,7 +88,7 @@ const Footer = () => {
                             </li>
                             <li>
                                 <button
-                                    className='text-blue hover:text-hover transition ease-in-out duration-400'
+                                    className='text-blue hover:text-hover transition ease-in-out duration-400 tracking-[0.5px]'
                                     rel='noopener noreferrer'>
                                     &#x25CF; Пригласить в аудит
                                 </button>

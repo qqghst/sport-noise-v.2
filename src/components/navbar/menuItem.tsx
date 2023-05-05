@@ -96,7 +96,7 @@ const MenuItem: React.FC<{ exitRef: React.RefObject<HTMLDivElement> }> = ({
                         </li>
                     </ul>
 
-                    <div className='navAnimation'>
+                    <div className='navAnimation '>
                         <button
                             onClick={() => {
                                 toggle();
