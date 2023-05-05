@@ -58,7 +58,7 @@ const MenuItem: React.FC<{ exitRef: React.RefObject<HTMLDivElement> }> = ({
                         </li>
                         <div className='block lg:hidden h-[1px] bg-line w-full' />
                     </ul>
-                    <ul className='navAnimationSecond text-blue font-medium text-left text-[15px] lg:text-[17px] leading-[26px] lg:leading-[30px] tracking-[0.5px] flex flex-col gap-2 py-7'>
+                    <ul className='navAnimation text-blue font-medium text-left text-[15px] lg:text-[17px] leading-[26px] lg:leading-[30px] tracking-[0.5px] flex flex-col gap-2 py-7'>
                         <li>
                             <Link
                                 href='/'
@@ -96,7 +96,7 @@ const MenuItem: React.FC<{ exitRef: React.RefObject<HTMLDivElement> }> = ({
                         </li>
                     </ul>
 
-                    <div className='navAnimationSecond'>
+                    <div className='navAnimation'>
                         <button
                             onClick={() => {
                                 toggle();
@@ -110,7 +110,7 @@ const MenuItem: React.FC<{ exitRef: React.RefObject<HTMLDivElement> }> = ({
                         </button>
                     </div>
 
-                    <ul className='navAnimationSecond flex flex-col gap-[10px] text-[13px] tracking-[4%] leading-[17px] font-medium text-blue  py-[24px]'>
+                    <ul className='navAnimation flex flex-col gap-[10px] text-[13px] tracking-[4%] leading-[17px] font-medium text-blue  py-[24px]'>
                         <li className='text-[28px] tracking-[1%] leading-[32px] pb-[12px]'>
                             hello@sportnoise.ru
                         </li>

@@ -43,11 +43,6 @@ const Navbar: React.FC = () => {
                 ease: 'power2',
             }
         );
-        tl.fromTo(
-            '.navAnimationSecond',
-            { opacity: 0 },
-            { opacity: 1, duration: 0.8, stagger: 0.01 }
-        );
 
         const handleClickOutside = (event: MouseEvent) => {
             if (
