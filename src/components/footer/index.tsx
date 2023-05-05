@@ -95,7 +95,7 @@ const Footer = () => {
                             </li>
                         </ul>
                         <div className='flex flex-row justify-between items-end'>
-                            <p className='w-[300px] lg:w-[420px] pt-[16px] text-[13px] tracking-[4%] leading-[17px] font-medium text-grey text-newGrey'>
+                            {/* <p className='w-[300px] lg:w-[420px] pt-[16px] text-[13px] tracking-[4%] leading-[17px] font-medium text-grey text-newGrey'>
                                 ООО Спортнойз. Digital-решения для развития
                                 спортивных и клубных брендов.{' '}
                                 <span>
@@ -107,6 +107,18 @@ const Footer = () => {
                                         Политика.
                                     </Link>
                                 </span>{' '}
+                                © 2016 — 2023. Digital-студия SportNoise. ООО
+                                Спортнойз.
+                            </p> */}
+                            <p className='w-[300px] lg:w-[500px] pt-[16px] text-[13px] tracking-[0.5px] leading-[21px] font-medium text-grey'>
+                                Digital-решения для развития спортивных и
+                                клубных брендов.{' '}
+                                <Link
+                                    href='https://disk.yandex.ru/d/CFt-0eN46Vt4jQ'
+                                    target='_blank'
+                                    rel='noopener noreferrer'>
+                                    Политика.
+                                </Link>{' '}
                                 © 2016 — 2023. Digital-студия SportNoise. ООО
                                 Спортнойз.
                             </p>
@@ -135,7 +147,7 @@ const Footer = () => {
                                 Обсудить проект
                             </span>
                         </button>
-                        <div className='hidden md:block text-blue '>
+                        <div className='hidden md:block translate-y-[275px] xl:translate-y-[80px]'>
                             <Link href='#navbar'>
                                 <Image
                                     src={arrow}
