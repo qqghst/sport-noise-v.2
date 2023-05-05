@@ -1,8 +1,8 @@
-//this button is using on modal, navbar
+//this button is using on video
 
 import React from 'react';
 import Image from 'next/image';
-import close from '../../../../public/close.svg';
+import close from '../../../../public/logofolio-and-showreel/close-video.svg'
 
 interface IButtonProps {
     onClick?: (event: React.MouseEvent) => void;
@@ -12,7 +12,7 @@ const Button: React.FC<IButtonProps> = ({ onClick }) => {
     return (
         <button
             type='button'
-            className='rounded-full px-7 py-2 border-1 border-solid border-black hover:border-hover transition ease-in-out duration-400'
+            className='rounded-full px-7 py-2 border-1 border-solid border-[#404040]'
             onClick={onClick}>
             <Image
                 src={close}

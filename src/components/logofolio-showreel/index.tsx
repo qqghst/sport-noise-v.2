@@ -4,7 +4,7 @@ import styles from './styles.module.scss';
 import close from '../../../public/close.svg';
 import arrow from '../../../public/logofolio-and-showreel/arrow.svg';
 import { useScrollBlock } from '@/hooks/useScrollBlock';
-import Button from '@/ui/buttons/button-border';
+import Button from '@/ui/buttons/button-video';
 import { CursorContext } from '@/ui/custom-cursor/cursor-manager';
 import { useContext } from 'react';
 
@@ -87,7 +87,6 @@ const LogofolioAndShowreel: React.FC<ILogofolioProps> = ({
                         </div>
                         <video
                             id='video'
-                            controls
                             loop
                             playsInline
                             autoPlay
