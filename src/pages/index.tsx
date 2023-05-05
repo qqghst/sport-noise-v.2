@@ -8,6 +8,7 @@ import Services from '@/components/services';
 import MarqueeText from '@/components/marquee-text';
 import AboutSecond from '@/components/about-second';
 import Footer from '@/components/footer';
+import MarqueeTest from '@/components/marquee-test';
 
 export default function Home() {
     return (
@@ -25,11 +26,12 @@ export default function Home() {
                 name='/logofolio-and-showreel/logofolio/logofolio.svg'
                 videoSrc='logofolio'
             />
-            <MarqueeText
+            {/* <MarqueeText
                 className='mt-[78px] lg:mt-[231px]'
                 direction='right'
                 text='Новая культура в спорте для больших побед в бизнесе&nbsp;'
-            />
+            /> */}
+            <MarqueeTest />
             <Services />
             <MarqueeText
                 direction='left'
