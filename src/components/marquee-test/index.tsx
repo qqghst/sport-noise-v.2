@@ -5,7 +5,7 @@ import Marquee from 'react-fast-marquee';
 const MarqueeTest: React.FC = () => {
     return (
         <>
-            <div className='relative flex justify-center items-center overflow-hidden text-[500px] uppercase mt-[100px]'>
+            <div className='relative flex justify-center items-center overflow-hidden text-[100px] lg:text-[246.51px] uppercase mt-[100px] py-[80px]'>
                 <div className=''>
                     <Marquee
                         speed={180}
@@ -16,7 +16,7 @@ const MarqueeTest: React.FC = () => {
                         </h2>
                     </Marquee>
                 </div>
-                <div className='absolute -rotate-12'>
+                <div className='absolute -rotate-[10deg]'>
                     <Marquee
                         speed={100}
                         gradient={false}
