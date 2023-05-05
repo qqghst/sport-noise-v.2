@@ -58,6 +58,16 @@ const Navbar: React.FC = () => {
 
         document.addEventListener('click', handleClickOutside);
 
+        const handleKeyDown = (event: KeyboardEvent) => {
+            if (event.key === 'Escape') {
+                tl.timeScale(3);
+                tl.reverse();
+                allowScroll();
+            }
+        };
+
+        document.addEventListener('keydown', handleKeyDown);
+
         if (menuRefCurrent && exitRefCurrent && menuMobileRefCurrent) {
             menuRefCurrent.addEventListener('click', () => {
                 tl.play().timeScale(1.1);
@@ -96,6 +106,7 @@ const Navbar: React.FC = () => {
                 });
             }
             document.removeEventListener('click', handleClickOutside);
+            document.removeEventListener('keydown', handleKeyDown);
             tl.kill();
         };
     }, []);

@@ -1,4 +1,4 @@
-//this button is using on modal, navbar
+//this button is using on modal, navbar, video
 
 import React from 'react';
 import Image from 'next/image';
@@ -12,7 +12,7 @@ const Button: React.FC<IButtonProps> = ({ onClick }) => {
     return (
         <button
             type='button'
-            className='rounded-full px-7 py-2 border-1 border-solid border-black hover:border-hover transition ease-in-out duration-400'
+            className='rounded-full px-7 py-2 border-1 border-solid border-line hover:border-hover transition ease-in-out duration-400'
             onClick={onClick}>
             <Image
                 src={close}
