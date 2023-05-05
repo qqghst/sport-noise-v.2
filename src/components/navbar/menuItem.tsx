@@ -35,7 +35,7 @@ const MenuItem: React.FC<{ exitRef: React.RefObject<HTMLDivElement> }> = ({
                         <li className=''>
                             <a
                                 href='#projects'
-                                className='text-blue hover:text-hover transition ease-in-out duration-400'>
+                                className='text-blue hover:text-hover transition ease-in-out duration-400 pr-[72px] lg:pr-[120px]'>
                                 ПРОЕКТЫ
                             </a>
                         </li>
@@ -44,7 +44,7 @@ const MenuItem: React.FC<{ exitRef: React.RefObject<HTMLDivElement> }> = ({
                         <li>
                             <a
                                 href='#services'
-                                className='text-blue hover:text-hover transition ease-in-out duration-400'>
+                                className='text-blue hover:text-hover transition ease-in-out duration-400 pr-[72px] lg:pr-[150px]'>
                                 УСЛУГИ
                             </a>
                         </li>
@@ -52,7 +52,7 @@ const MenuItem: React.FC<{ exitRef: React.RefObject<HTMLDivElement> }> = ({
                         <li>
                             <a
                                 href='#about-second'
-                                className='text-blue hover:text-hover transition ease-in-out duration-400'>
+                                className='text-blue hover:text-hover transition ease-in-out duration-400 pr-[72px] lg:pr-[160px]'>
                                 О НАС
                             </a>
                         </li>
@@ -62,14 +62,14 @@ const MenuItem: React.FC<{ exitRef: React.RefObject<HTMLDivElement> }> = ({
                         <li>
                             <Link
                                 href='/'
-                                className='text-blue hover:text-hover transition ease-in-out duration-400'
+                                className='text-blue hover:text-hover transition ease-in-out duration-400 pr-[72px] lg:pr-[100px]'
                                 rel='noopener noreferrer'>
                                 &#x25CF; Скачать презентацию
                             </Link>
                         </li>
                         <li>
                             <Link
-                                className='text-blue hover:text-hover transition ease-in-out duration-400'
+                                className='text-blue hover:text-hover transition ease-in-out duration-400 pr-[72px] lg:pr-[150px]'
                                 href='/'
                                 rel='noopener noreferrer'>
                                 &#x25CF; Заполнить бриф
@@ -77,7 +77,7 @@ const MenuItem: React.FC<{ exitRef: React.RefObject<HTMLDivElement> }> = ({
                         </li>
                         <li>
                             <button
-                                className='text-blue hover:text-hover transition ease-in-out duration-400'
+                                className='text-blue hover:text-hover transition ease-in-out duration-400 pr-[72px] lg:pr-[150px]'
                                 onClick={() => {
                                     toggle();
                                     blockScroll();
@@ -88,7 +88,7 @@ const MenuItem: React.FC<{ exitRef: React.RefObject<HTMLDivElement> }> = ({
                         </li>
                         <li>
                             <Link
-                                className='text-blue hover:text-hover transition ease-in-out duration-400'
+                                className='text-blue hover:text-hover transition ease-in-out duration-400 pr-[72px] lg:pr-[100px]'
                                 href='/'
                                 rel='noopener noreferrer'>
                                 &#x25CF; Пригласить в тендер
@@ -123,7 +123,8 @@ const MenuItem: React.FC<{ exitRef: React.RefObject<HTMLDivElement> }> = ({
                             <Link
                                 href='https://t.me/sportnoise'
                                 target='_blank'
-                                rel='noopener noreferrer'>
+                                rel='noopener noreferrer'
+                                className='pr-[72px] lg:pr-[260px]'>
                                 Telegram-чат
                             </Link>
                         </li>
