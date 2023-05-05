@@ -27,18 +27,18 @@ export default function Home() {
             />
             <MarqueeText
                 className='mt-[78px] lg:mt-[231px]'
-                direction='left'
+                direction='right'
                 text='Новая культура в спорте для больших побед в бизнесе&nbsp;'
             />
             <Services />
             <MarqueeText
-                direction='right'
+                direction='left'
                 text='Играй ярко и побеждай красиво&nbsp;'
             />
 
             <AboutSecond />
             <MarqueeText
-                direction='left'
+                direction='right'
                 text='Начнём новую историю ваших побед&nbsp;'
             />
             <Footer />
