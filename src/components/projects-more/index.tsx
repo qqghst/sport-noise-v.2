@@ -1,4 +1,5 @@
 import React from 'react';
+import Link from 'next/link';
 import { moreprojects } from '@/data';
 import ProjectMoreItems from './projectsMoreItem';
 
@@ -13,11 +14,16 @@ const ProjectsMore = () => {
                 </h2>
                 <div>
                     {moreprojects.map((item, index) => (
-                        <ProjectMoreItems
+                        <a
                             key={item.id}
-                            title={item.title}
-                            imageSrc={item.imageSrc}
-                        />
+                            rel='noopener noreferrer'
+                            href={item.link}>
+                            <ProjectMoreItems
+                                key={item.id}
+                                title={item.title}
+                                imageSrc={item.imageSrc}
+                            />
+                        </a>
                     ))}
                     <div className='h-[1px] bg-line w-full' />
                 </div>

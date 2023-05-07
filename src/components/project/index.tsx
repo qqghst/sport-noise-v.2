@@ -3,6 +3,7 @@ import ProjectItem from './projectItem';
 import { projects } from '@/data';
 import gsap from 'gsap';
 import ScrollTrigger from 'gsap/dist/ScrollTrigger';
+import Link from 'next/link';
 
 const Projects: React.FC = () => {
     const projectsRef = useRef<HTMLDivElement>(null);

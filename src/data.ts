@@ -1,7 +1,7 @@
 export const projects = [
     {
         id: 1,
-        link: '/routes/one',
+        link: '/routes/projects/RHR',
         image: '/projects/images/desktop/1.webp',
         imageMobile: '/projects/images/mobile/1.webp',
         videoSrc: '/projects/videos/1.mp4',
@@ -14,7 +14,7 @@ export const projects = [
     },
     {
         id: 2,
-        link: '/routing-projects/two',
+        link: '/routes/projects/FHR',
         image: '/projects/images/desktop/2.webp',
         imageMobile: '/projects/images/mobile/2.webp',
         title: 'Федерация Хоккея России (FHR)',
@@ -23,7 +23,7 @@ export const projects = [
     },
     {
         id: 3,
-        link: '/routing-projects/three',
+        link: '/routes/projects/SBC',
         image: '/projects/images/desktop/3.webp',
         imageMobile: '/projects/images/mobile/3.webp',
         title: 'Спорт Бизнес Консалтинг (SBC)',
@@ -32,7 +32,7 @@ export const projects = [
     },
     {
         id: 4,
-        link: '/routing-projects/four',
+        link: '/routes/projects/NHLiga-Festival',
         image: '/projects/images/desktop/4.webp',
         imageMobile: '/projects/images/mobile/4.webp',
         videoSrc: '/projects/videos/4.mp4',
@@ -45,7 +45,7 @@ export const projects = [
     },
     {
         id: 5,
-        link: '/routing-projects/five',
+        link: '/routes/projects/NewishSport',
         image: '/projects/images/desktop/5.webp',
         imageMobile: '/projects/images/mobile/5.webp',
         title: 'СNewish Sport',
@@ -54,7 +54,7 @@ export const projects = [
     },
     {
         id: 6,
-        link: '/routing-projects/six',
+        link: '/routes/projects/SamboCup',
         image: '/projects/images/desktop/6.webp',
         imageMobile: '/projects/images/mobile/6.webp',
         title: 'Международная Федерация Самбо (FIAS)',
@@ -64,7 +64,7 @@ export const projects = [
     },
     {
         id: 7,
-        link: '/routing-projects/seven',
+        link: '/routes/projects/NHLiga',
         image: '/projects/images/desktop/7.webp',
         imageMobile: '/projects/images/mobile/7.webp',
         title: 'Ночная Лига (NHLiga)',
@@ -73,7 +73,7 @@ export const projects = [
     },
     {
         id: 8,
-        link: '/routing-projects/eight',
+        link: '/routes/projects/LoxinoIslanders',
         image: '/projects/images/desktop/8.webp',
         imageMobile: '/projects/images/mobile/8.webp',
         title: 'Loxino Islanders',
@@ -82,7 +82,7 @@ export const projects = [
     },
     {
         id: 9,
-        link: '/routing-projects/nine',
+        link: '/routes/projects/SportExpress',
         image: '/projects/images/desktop/9.webp',
         imageMobile: '/projects/images/mobile/9.webp',
         title: 'Спорт-Экспресс',
@@ -94,28 +94,33 @@ export const projects = [
 export const moreprojects = [
     {
         id: 1,
+        link: '/routes/projects-more/FHR',
         title: 'Национальная программа подготовки хоккеистов, 2017',
-        imageSrc: '/projects/images/desktop/1.webp',
+        imageSrc: '/projects/more-projects/1.webp',
     },
     {
         id: 2,
+        link: '/routes/projects-more/VHL',
         title: 'Русская классика ВХЛ, Москва, 2017г',
-        imageSrc: '/projects/images/desktop/2.webp',
+        imageSrc: '/projects/more-projects/2.webp',
     },
     {
         id: 3,
+        link: '/routes/projects-more/IIHF',
         title: 'Кубок мира среди молодёжных клубных команд, Татарстан, 2016 ',
-        imageSrc: '/projects/images/desktop/3.webp',
+        imageSrc: '/projects/more-projects/3.webp',
     },
     {
         id: 4,
+        link: '/routes/projects-more/NHLiga',
         title: 'Кубок Чемпионов» — серия логотипов',
-        imageSrc: '/projects/images/desktop/4.webp',
+        imageSrc: '/projects/more-projects/4.webp',
     },
     {
         id: 5,
+        link: '/routes/projects-more/CrazyOwl',
         title: 'Ультрамарафон Crazy Owl 50',
-        imageSrc: '/projects/images/desktop/5.webp',
+        imageSrc: '/projects/more-projects/5.webp',
     },
 ]
 

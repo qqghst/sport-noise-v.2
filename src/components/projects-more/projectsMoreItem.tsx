@@ -61,7 +61,7 @@ const ProjectMoreItems: React.FC<IProjectsMoreItemsProps> = ({title, imageSrc}) 
                         className={`${styles.image}`}
                         src={imageSrc}
                         alt='SportNoise'
-                        width={1200 / 2}
+                        width={900 / 2}
                         height={550 / 2}
                     />
                 </div>
