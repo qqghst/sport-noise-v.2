@@ -11,7 +11,6 @@ import {
     img6,
     img7,
     img8,
-    img9,
     imgMobile1,
     imgMobile2,
     imgMobile3,
@@ -29,7 +28,6 @@ const SBC: React.FC = () => {
         { src: img6.src },
         { src: img7.src },
         { src: img8.src },
-        { src: img9.src },
     ];
     return (
         <section>
@@ -43,7 +41,7 @@ const SBC: React.FC = () => {
                             media='(max-width: 1024px)'
                         />
                     )}
-                    {index >= images.length - 5 ? (
+                    {index >= images.length - 3 ? (
                         <img
                             className='min-h-screen w-screen  hidden md:block image-routing'
                             alt={`image-${index}`}
@@ -53,7 +51,7 @@ const SBC: React.FC = () => {
                         />
                     ) : (
                         <img
-                            className='min-h-screen w-screen image-routing'
+                            className=' image-routing'
                             alt={`image-${index}`}
                             width={2500 / 2}
                             height={2500 / 2}

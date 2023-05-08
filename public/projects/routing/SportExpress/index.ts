@@ -20,9 +20,7 @@ import imgMobile7 from './mobile/7.jpg';
 import imgMobile8 from './mobile/8.jpg';
 import imgMobile9 from './mobile/9.jpg';
 import imgMobile10 from './mobile/10.jpg';
-import imgMobile11 from './mobile/10.jpg';
-import imgMobile12 from './mobile/10.jpg';
-import imgMobile13 from './mobile/10.jpg';
+import imgMobile11 from './mobile/11.jpg';
 
 export {
     img1,
@@ -47,6 +45,4 @@ export {
     imgMobile9,
     imgMobile10,
     imgMobile11,
-    imgMobile12,
-    imgMobile13,
 };

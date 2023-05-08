@@ -9,10 +9,10 @@ import img8 from './desktop/8.jpg';
 import img9 from './desktop/9.jpg';
 import img10 from './desktop/10.jpg';
 import img11 from './desktop/11.jpg';
-import img12 from './desktop/11.jpg';
-import img13 from './desktop/11.jpg';
-import img14 from './desktop/11.jpg';
-import img15 from './desktop/11.jpg';
+import img12 from './desktop/12.jpg';
+import img13 from './desktop/13.jpg';
+import img14 from './desktop/14.jpg';
+import img15 from './desktop/15.jpg';
 
 
 import imgMobile1 from './mobile/1.jpg';

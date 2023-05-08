@@ -21,7 +21,6 @@ import {
     imgMobile5,
     imgMobile6,
     imgMobile7,
-    imgMobile8,
 } from '../../../../public/projects/routing/projects-more/IIHF/index';
 
 const IIHF: React.FC = () => {
@@ -33,7 +32,7 @@ const IIHF: React.FC = () => {
         { src: img5.src, mobileSrc: imgMobile5.src },
         { src: img6.src, mobileSrc: imgMobile6.src },
         { src: img7.src, mobileSrc: imgMobile7.src },
-        { src: img8.src, mobileSrc: imgMobile8.src },
+        { src: img8.src },
         { src: img9.src },
         { src: img10.src },
         { src: img11.src },
@@ -50,7 +49,7 @@ const IIHF: React.FC = () => {
                             media='(max-width: 1024px)'
                         />
                     )}
-                    {index >= images.length - 5 ? (
+                    {index >= images.length - 4 ? (
                         <img
                             className='min-h-screen w-screen  hidden md:block image-routing'
                             alt={`image-${index}`}

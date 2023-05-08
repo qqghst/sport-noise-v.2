@@ -14,6 +14,10 @@ import {
     img9,
     img10,
     img11,
+    img12,
+    img13,
+    img14,
+    img15,
     imgMobile1,
     imgMobile2,
     imgMobile3,
@@ -24,7 +28,6 @@ import {
     imgMobile8,
     imgMobile9,
     imgMobile10,
-    imgMobile11,
 } from '../../../../public/projects/routing/projects-more/CrazyOwl/index';
 
 const CrazyOwl: React.FC = () => {
@@ -39,7 +42,11 @@ const CrazyOwl: React.FC = () => {
         { src: img8.src, mobileSrc: imgMobile8.src },
         { src: img9.src, mobileSrc: imgMobile9.src },
         { src: img10.src, mobileSrc: imgMobile10.src },
-        { src: img11.src, mobileSrc: imgMobile11.src },
+        { src: img11.src },
+        { src: img12.src },
+        { src: img13.src },
+        { src: img14.src },
+        { src: img15.src },
     ];
     return (
         <section>

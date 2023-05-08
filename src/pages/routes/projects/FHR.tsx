@@ -44,7 +44,7 @@ const FHR: React.FC = () => {
                             media='(max-width: 1024px)'
                         />
                     )}
-                    {index >= images.length - 5 ? (
+                    {index >= images.length - 3 ? (
                         <img
                             className='min-h-screen w-screen  hidden md:block image-routing'
                             alt={`image-${index}`}

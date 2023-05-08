@@ -25,11 +25,9 @@ import {
     imgMobile9,
     imgMobile10,
     imgMobile11,
-    imgMobile12,
-    imgMobile13,
 } from '../../../../public/projects/routing/SportExpress/index';
 
-const newishSport: React.FC = () => {
+const SportExpress: React.FC = () => {
     const images = [
         { src: img1.src, mobileSrc: imgMobile1.src },
         { src: img2.src, mobileSrc: imgMobile2.src },
@@ -42,9 +40,8 @@ const newishSport: React.FC = () => {
         { src: img9.src, mobileSrc: imgMobile9.src },
         { src: img10.src, mobileSrc: imgMobile10.src },
         { src: img11.src, mobileSrc: imgMobile11.src },
-        { mobileSrc: imgMobile12.src },
-        { mobileSrc: imgMobile13.src },
     ];
+
     return (
         <section>
             <Navbar />
@@ -57,7 +54,7 @@ const newishSport: React.FC = () => {
                             media='(max-width: 1024px)'
                         />
                     )}
-                    {index >= images.length - 5 ? (
+                    {index >= images.length - 0 ? (
                         <img
                             className='min-h-screen w-screen  hidden md:block image-routing'
                             alt={`image-${index}`}
@@ -67,7 +64,7 @@ const newishSport: React.FC = () => {
                         />
                     ) : (
                         <img
-                            className='min-h-screen w-screen image-routing'
+                            className='image-routing '
                             alt={`image-${index}`}
                             width={2500 / 2}
                             height={2500 / 2}
@@ -82,4 +79,4 @@ const newishSport: React.FC = () => {
     );
 };
 
-export default newishSport;
+export default SportExpress;

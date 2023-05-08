@@ -9,10 +9,10 @@ import img8 from './desktop/8.jpg';
 import img9 from './desktop/9.jpg';
 import img10 from './desktop/10.jpg';
 import img11 from './desktop/11.jpg';
-import img12 from './desktop/11.jpg';
-import img13 from './desktop/11.jpg';
-import img14 from './desktop/11.jpg';
-import img15 from './desktop/11.jpg';
+import img12 from './desktop/12.jpg';
+import img13 from './desktop/13.jpg';
+import img14 from './desktop/14.jpg';
+import img15 from './desktop/15.jpg';
 
 
 import imgMobile1 from './mobile/1.jpg';
@@ -25,7 +25,6 @@ import imgMobile7 from './mobile/7.jpg';
 import imgMobile8 from './mobile/8.jpg';
 import imgMobile9 from './mobile/9.jpg';
 import imgMobile10 from './mobile/10.jpg';
-import imgMobile11 from './mobile/11.jpg';
 
 export {
     img1,
@@ -53,5 +52,4 @@ export {
     imgMobile8,
     imgMobile9,
     imgMobile10,
-    imgMobile11,
 };

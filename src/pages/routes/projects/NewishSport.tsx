@@ -60,7 +60,7 @@ const NewishSport: React.FC = () => {
                             media='(max-width: 1024px)'
                         />
                     )}
-                    {index >= images.length - 5 ? (
+                    {index >= images.length - 8 ? (
                         <img
                             className='min-h-screen w-screen  hidden md:block image-routing'
                             alt={`image-${index}`}
@@ -70,7 +70,7 @@ const NewishSport: React.FC = () => {
                         />
                     ) : (
                         <img
-                            className='min-h-screen w-screen image-routing'
+                            className='image-routing'
                             alt={`image-${index}`}
                             width={2500 / 2}
                             height={2500 / 2}
