@@ -8,7 +8,7 @@ SwiperCore.use([Mousewheel]);
 
 const ProjectSlider: React.FC = () => {
     return (
-        <section className='pt-[32px] lg:pt-[156px] px-5 md:px-[64px] lg:px-[128px]'>
+        <section className='pt-[32px] lg:pt-[156px] px-0 md:px-[64px] lg:px-[128px]'>
             <div className='flex flex-col'>
                 <h2 className='text-[23px] lg:text-[28px] tracking-[1%] leading-[32px] font-medium text-black pb-[16px]'>
                     Больше проектов
@@ -17,12 +17,12 @@ const ProjectSlider: React.FC = () => {
                     <Swiper
                         className=''
                         slidesPerView={2}
-                        spaceBetween={24}
+                        spaceBetween={32}
                         loop={true}
                         mousewheel={true}
                         breakpoints={{
                             320: {
-                                slidesPerView: 1,
+                                slidesPerView: 1.1,
                                 spaceBetween: 20,
                             },
                             768: {
