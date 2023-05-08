@@ -31,13 +31,32 @@ const Footer = () => {
                         </button>
                         <div className='hidden lg:block  text-blue'>
                             <Link href='#masthead'>
-                                <Image
+                                {/* <Image
                                     src={arrow}
                                     alt='SportNoise'
                                     width={80 / 2}
                                     height={80 / 2}
                                     className='-rotate-90'
-                                />
+                                /> */}
+                                <svg
+                                    className='text-blue hover:text-hover -rotate-90'
+                                    xmlns='http://www.w3.org/2000/svg'
+                                    width='40'
+                                    height='35'
+                                    fill='none'>
+                                    <path
+                                        fill='currentColor'
+                                        fill-rule='evenodd'
+                                        d='M.46 19.464h34.014v-4.361H.46v4.36Z'
+                                        clip-rule='evenodd'
+                                    />
+                                    <path
+                                        fill='currentColor'
+                                        fill-rule='evenodd'
+                                        d='M33.739 17.29 19.918 3.47 23 .385 39.907 17.29 23 34.195l-3.084-3.084 13.822-13.82Z'
+                                        clip-rule='evenodd'
+                                    />
+                                </svg>
                             </Link>
                         </div>
                     </div>
@@ -124,13 +143,32 @@ const Footer = () => {
                             </p>
                             <div className='block md:hidden text-blue'>
                                 <a href='#masthead'>
-                                    <Image
+                                    {/* <Image
                                         src={arrow}
                                         alt='SportNoise'
                                         width={80 / 2}
                                         height={80 / 2}
                                         className='-rotate-90'
-                                    />
+                                    /> */}
+                                    <svg
+                                        className='text-blue hover:text-hover -rotate-90'
+                                        xmlns='http://www.w3.org/2000/svg'
+                                        width='40'
+                                        height='35'
+                                        fill='none'>
+                                        <path
+                                            fill='currentColor'
+                                            fill-rule='evenodd'
+                                            d='M.46 19.464h34.014v-4.361H.46v4.36Z'
+                                            clip-rule='evenodd'
+                                        />
+                                        <path
+                                            fill='currentColor'
+                                            fill-rule='evenodd'
+                                            d='M33.739 17.29 19.918 3.47 23 .385 39.907 17.29 23 34.195l-3.084-3.084 13.822-13.82Z'
+                                            clip-rule='evenodd'
+                                        />
+                                    </svg>
                                 </a>
                             </div>
                         </div>
@@ -149,13 +187,32 @@ const Footer = () => {
                         </button>
                         <div className='hidden md:block translate-y-[275px] xl:translate-y-[80px]'>
                             <Link href='#navbar'>
-                                <Image
+                                {/* <Image
                                     src={arrow}
                                     alt='SportNoise'
                                     width={80 / 2}
                                     height={80 / 2}
                                     className='-rotate-90'
-                                />
+                                /> */}
+                                <svg
+                                    className='text-blue hover:text-hover -rotate-90'
+                                    xmlns='http://www.w3.org/2000/svg'
+                                    width='40'
+                                    height='35'
+                                    fill='none'>
+                                    <path
+                                        fill='currentColor'
+                                        fill-rule='evenodd'
+                                        d='M.46 19.464h34.014v-4.361H.46v4.36Z'
+                                        clip-rule='evenodd'
+                                    />
+                                    <path
+                                        fill='currentColor'
+                                        fill-rule='evenodd'
+                                        d='M33.739 17.29 19.918 3.47 23 .385 39.907 17.29 23 34.195l-3.084-3.084 13.822-13.82Z'
+                                        clip-rule='evenodd'
+                                    />
+                                </svg>
                             </Link>
                         </div>
                     </div>

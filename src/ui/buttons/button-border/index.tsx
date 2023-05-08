@@ -1,4 +1,4 @@
-//this button is using on modal, navbar, video
+//this button is using on modal, navbar
 
 import React from 'react';
 import Image from 'next/image';
@@ -12,14 +12,26 @@ const Button: React.FC<IButtonProps> = ({ onClick }) => {
     return (
         <button
             type='button'
-            className='rounded-full px-7 py-2 border-1 border-solid border-line hover:border-hover transition ease-in-out duration-400'
+            className='rounded-full px-7 py-2 border-1 border-solid border-line hover:border-hover transition ease-in-out duration-400 text-blue hover:text-hover'
             onClick={onClick}>
-            <Image
+            {/* <Image
                 src={close}
                 alt='SportNoise'
                 width={44 / 2}
                 height={44 / 2}
-            />
+            /> */}
+            <svg
+                xmlns='http://www.w3.org/2000/svg'
+                width='19'
+                height='18'
+                fill='none'>
+                <path
+                    fill='currentColor'
+                    fill-rule='evenodd'
+                    d='m16.791 17.86 1.768-1.767-7.071-7.072 7.071-7.07L16.791.182l-7.07 7.07L2.648.184.881 1.95l7.071 7.071-7.07 7.072 1.767 1.767 7.071-7.07 7.071 7.07Z'
+                    clip-rule='evenodd'
+                />
+            </svg>
         </button>
     );
 };
