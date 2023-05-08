@@ -49,14 +49,14 @@ const SportExpress: React.FC = () => {
                 <picture key={index}>
                     {image.mobileSrc && (
                         <source
-                            className='min-h-screen w-full image-routing'
+                            className='image-routing'
                             srcSet={image.mobileSrc}
                             media='(max-width: 1024px)'
                         />
                     )}
                     {index >= images.length - 0 ? (
                         <img
-                            className='min-h-screen w-screen  hidden md:block image-routing'
+                            className='image-routing hidden lg:block'
                             alt={`image-${index}`}
                             width={2500 / 2}
                             height={2500 / 2}
