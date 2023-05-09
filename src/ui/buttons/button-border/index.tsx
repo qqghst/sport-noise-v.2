@@ -12,7 +12,7 @@ const Button: React.FC<IButtonProps> = ({ onClick }) => {
     return (
         <button
             type='button'
-            className='rounded-full px-7 py-2 border-1 border-solid border-line hover:border-hover transition ease-in-out duration-400 text-blue hover:text-hover'
+            className='rounded-full px-7 py-2 border-1 border-solid border-line xl:hover:border-hover transition ease-in-out duration-400 text-blue xl:hover:text-hover'
             onClick={onClick}>
             {/* <Image
                 src={close}
