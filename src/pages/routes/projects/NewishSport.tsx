@@ -51,6 +51,25 @@ const NewishSport: React.FC = () => {
     return (
         <section>
             <Navbar />
+            <div className='absolute xl:left-1/2 xl:-translate-x-1/2 translate-y-[1050px] text-white px-6 xl:px-0 text-text-routing'>
+                <h1 className='text-[24px] 2xl:text-[32.67px] -tracking-[0.6px] lg:tracking-[0.6px] leading-[36px] lg:leading-[48.3px] pb-[20px]'>
+                    Дизайн бренда для Newish Sport, 2022
+                </h1>
+                <p className='text-[14px] 2xl:text-[18.33px] tracking-[0.5px] leading-[28px] lg:leading-[34px] pb-[54px] lg:pb-[23px]'>
+                    Производитель профессиональной экипировки с локальной
+                    швейной фабрикой и модельерным бюро. Бренд специализируется
+                    на изготовлении спортивной формы для триатлонистов,
+                    конькобежцев, лыжников, ультрамарофонцев и велоспортсменов.
+                    Перед нами стояла задача уйти от триколорной преемственности
+                    (белый, синий, красный) и создать динамичный образ бренда,
+                    отражающий специфику компании, интересы и характер ее ЦА.
+                    Провели аналитику, разработали главный паттерн и общую
+                    концепцию нового бренд-позиционирования Newish Sport.
+                </p>
+                <p className='text-[13px] 2xl:text-[16.67px] tracking-[1px] leading-[22px] lg:leading-[28.3px]'>
+                    Логотип бренда, корпоративная айдентика 
+                </p>
+            </div>
             {images.map((image, index) => (
                 <picture key={index}>
                     {image.mobileSrc && (

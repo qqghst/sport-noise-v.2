@@ -41,6 +41,26 @@ const newishSport: React.FC = () => {
     ];
     return (
         <section>
+            <div className='absolute xl:left-1/2 xl:-translate-x-1/2 translate-y-[1050px] text-white px-6 xl:px-0 text-text-routing'>
+                <h1 className='text-[24px] 2xl:text-[32.67px] -tracking-[0.6px] lg:tracking-[0.6px] leading-[36px] lg:leading-[48.3px] pb-[20px]'>
+                    «Фестиваль хоккея 2021» для Ночной Лиги (NHLiga), 2021
+                </h1>
+                <p className='text-[14px] 2xl:text-[18.33px] tracking-[0.5px] leading-[28px] lg:leading-[34px] pb-[54px] lg:pb-[23px]'>
+                    Самый масштабный проект любительского хоккея в России. Финал
+                    сезона ежегодно проходит в мае на берегу Черного моря — в
+                    Олимпийской деревне Сочи. Знаковое событие объединяет тысячи
+                    зрителей и лучших из лучших среди 1 207 команд и 23 272
+                    участников. Разработали идейно-художественную базу, создали
+                    концептуальный нарратив и изготовление фирменный мерч
+                    фестиваля. Для финального этапа 2020/21 отрисовали
+                    стилизованную иллюстрацию с выдающимися игроками прошлых
+                    сезонов, которая стала ключевым визуальным образом
+                    фестиваля.
+                </p>
+                <p className='text-[13px] 2xl:text-[16.67px] tracking-[1px] leading-[22px] lg:leading-[28.3px]'>
+                    Продюсирование события, разработка ключевых нарративов, мерч
+                </p>
+            </div>
             <Navbar />
             {images.map((image, index) => (
                 <picture key={index}>

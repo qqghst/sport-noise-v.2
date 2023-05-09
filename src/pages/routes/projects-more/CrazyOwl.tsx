@@ -51,6 +51,27 @@ const CrazyOwl: React.FC = () => {
     return (
         <section>
             <Navbar />
+            <div className='absolute xl:left-1/2 xl:-translate-x-1/2 translate-y-[1050px] text-[#E2E2E2] px-6 xl:px-0 text-text-routing'>
+                <h1 className='text-[24px] 2xl:text-[32.67px] -tracking-[0.6px] lg:tracking-[0.6px] leading-[36px] lg:leading-[48.3px] pb-[20px]'>
+                    Ультрамарафон Crazy Owl 50 для Running Heroes Russia (RHR),
+                    2022
+                </h1>
+                <p className='text-[14px] 2xl:text-[18.33px] tracking-[0.5px] leading-[28px] lg:leading-[34px] pb-[54px] lg:pb-[23px]'>
+                    Ежегодная ночная титульная гонка «Шальная сова» (Crazy Owl)
+                    от RHR. Каждый финишер забирает с собой незабываемые
+                    приключения и статут от международной ассоциации Trail
+                    Running (ITRA). Обязательные атрибуты экстремального
+                    50-километрового ультрамарафона: кромешная ночь, дымовые
+                    шашки, лазеры и полный рок-н-ролл. Разработали особенный
+                    фирменный стиль для особенного марафона: отрисовали символ
+                    гонки — сову, обыграли природные локации в растительных
+                    орнаментах, добавили динамичные элементы и создали шрифты с
+                    дерзким характером события. 
+                </p>
+                <p className='text-[13px] 2xl:text-[16.67px] tracking-[1px] leading-[22px] lg:leading-[28.3px]'>
+                    Разработка фирменного стиля, брендинг
+                </p>
+            </div>
             {images.map((image, index) => (
                 <picture key={index}>
                     {image.mobileSrc && (

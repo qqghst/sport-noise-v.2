@@ -29,6 +29,25 @@ const FHR: React.FC = () => {
     return (
         <section>
             <Navbar />
+            <div className='absolute xl:left-1/2 xl:-translate-x-1/2 translate-y-[1050px] text-white px-6 xl:px-0 text-text-routing'>
+                <h1 className='text-[24px] 2xl:text-[32.67px] -tracking-[0.6px] lg:tracking-[0.6px] leading-[36px] lg:leading-[48.3px] pb-[20px]'>
+                    Образовательный проект для Федерации Хоккея России (FHR),
+                    2017
+                </h1>
+                <p className='text-[14px] 2xl:text-[18.33px] tracking-[0.5px] leading-[28px] lg:leading-[34px] pb-[54px] lg:pb-[23px]'>
+                    Важный проект для национального спорта России. Разработали
+                    большой кейс из трех книг и пособия с упражнениями для
+                    молодых хоккеистов, которые хотят стать чемпионами. Единая
+                    визуальная система и фирменный стиль созданы с учетом
+                    философии и ключевых паттернов спортивной культуры ФХР.
+                    Издание стало новым стандартом для обучения будущих
+                    профессиональных хоккеистов по всей стране. Разработано
+                    совместно с ИД «Просвещение». 
+                </p>
+                <p className='text-[13px] 2xl:text-[16.67px] tracking-[1px] leading-[22px] lg:leading-[28.3px]'>
+                    Дизайн, верстка, издательская деятельность
+                </p>
+            </div>
             {images.map((image, index) => (
                 <picture key={index}>
                     {image.mobileSrc && (
