@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import ProjectItem from './projectItem';
 import { projects } from '@/data';
 import { Swiper, SwiperSlide } from 'swiper/react';
@@ -6,7 +6,30 @@ import 'swiper/css';
 import SwiperCore, { Mousewheel } from 'swiper';
 SwiperCore.use([Mousewheel]);
 
+type Project = {
+    id: number;
+    link: string;
+    image: string;
+    imageMobile: string;
+    title: string;
+    description: string;
+    smallDescription: string;
+};
+
 const ProjectSlider: React.FC = () => {
+    const [shuffledProjects, setShuffledProjects] = useState<Project[]>([]);
+
+    useEffect(() => {
+        const shuffledArray = [...projects];
+        for (let i = shuffledArray.length - 1; i > 0; i--) {
+            const j = Math.floor(Math.random() * (i + 1));
+            [shuffledArray[i], shuffledArray[j]] = [
+                shuffledArray[j],
+                shuffledArray[i],
+            ];
+        }
+        setShuffledProjects(shuffledArray);
+    }, []);
     return (
         <section className='pt-[32px] lg:pt-[156px] px-0 md:px-[64px] lg:px-[128px]'>
             <div className='flex flex-col'>
@@ -34,7 +57,7 @@ const ProjectSlider: React.FC = () => {
                                 spaceBetween: 20,
                             },
                         }}>
-                        {projects.map((project) => (
+                        {shuffledProjects.map((project) => (
                             <SwiperSlide key={project.id}>
                                 <ProjectItem
                                     link={project.link}
