@@ -33,7 +33,7 @@ const ProjectSlider: React.FC = () => {
     return (
         <section className='pt-[32px] lg:pt-[156px] px-0 md:px-[64px] lg:px-[128px]'>
             <div className='flex flex-col'>
-                <h2 className='text-[23px] lg:text-[28px] tracking-[1%] leading-[32px] font-medium text-black pb-[16px]'>
+                <h2 className='px-5 text-[23px] lg:text-[28px] tracking-[1%] leading-[32px] font-medium text-black pb-[16px]'>
                     Больше проектов
                 </h2>
                 <div className='relative'>
