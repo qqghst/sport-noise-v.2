@@ -20,8 +20,8 @@ const Input: React.FC<IInputProps> = ({
     return (
         <>
             <input
-                className={`${styles.inputPlaceholder} text-[15px] lg:text-[17px] tracking-[2%]  leading-[26px] lg:leading-[28px] font-medium py-[10px] pl-[21px]  rounded-full ${
-                    errors[name] ? 'bg-[#FDEDF0] border-1 border-solid border-[#F9D1D9] text-[#E2183F] placeholder-[#E2183F]' : 'bg-white border-1 border-solid border-line text-blue'
+                className={`${styles.inputPlaceholder} text-[15px] lg:text-[17px] tracking-[0.5px] leading-[26px] lg:leading-[28px] font-medium py-[10px] pl-[21px]  rounded-full ${
+                    errors[name] ? 'bg-[#FDEDF0] border-3 border-solid border-[#F9D1D9] text-[#E2183F] placeholder-[#E2183F]' : 'bg-white border-[1px] border-solid border-line text-blue'
                 }`}
                 {...register(name, { required: true, pattern })}
                 name={name}
