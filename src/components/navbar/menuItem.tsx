@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import close from '../../../public/close.svg';
@@ -33,17 +33,17 @@ const MenuItem: React.FC<{ exitRef: React.RefObject<HTMLDivElement> }> = ({
                         <div className=' block lg:hidden h-[1px] bg-line w-full left-0 right-0' />
 
                         <li className=''>
-                            <a
-                                href='#projects'
+                            <Link
+                                href='http://localhost:3000/#projects'
                                 className='text-blue hover:text-hover transition ease-in-out duration-400 pr-[72px] lg:pr-[120px]'>
                                 ПРОЕКТЫ
-                            </a>
+                            </Link>
                         </li>
 
                         <div className='block lg:hidden h-[1px] bg-line w-full' />
                         <li>
                             <a
-                                href='#services'
+                                href='http://localhost:3000/#services'
                                 className='text-blue hover:text-hover transition ease-in-out duration-400 pr-[72px] lg:pr-[150px]'>
                                 УСЛУГИ
                             </a>
@@ -51,7 +51,7 @@ const MenuItem: React.FC<{ exitRef: React.RefObject<HTMLDivElement> }> = ({
                         <div className='block lg:hidden h-[1px] bg-line w-full' />
                         <li>
                             <a
-                                href='#about-second'
+                                href='http://localhost:3000/#aboutSecond'
                                 className='text-blue hover:text-hover transition ease-in-out duration-400 pr-[72px] lg:pr-[160px]'>
                                 О НАС
                             </a>

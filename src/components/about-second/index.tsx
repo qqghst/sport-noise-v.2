@@ -40,7 +40,7 @@ const AboutSecond: React.FC = () => {
     return (
         <section
             className='bg-white mt-[77px] md:mt-[136px] mb-[77px] md:mb-[268px] px-5 md:px-[64px] lg:px-[128px] '
-            id='about-second'>
+            id='aboutSecond'>
             <div className='mx-auto flex flex-col'>
                 <h4 className='xl: text-[37px] tracking-[-1%] leading-[52px] font-medium text-blue pb-[32px]'>
                     О нас
