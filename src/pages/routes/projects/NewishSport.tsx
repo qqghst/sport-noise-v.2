@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import Navbar from '@/components/navbar';
 import Footer from '@/components/footer';
 import ProjectSlider from '@/components/projects-slider';
@@ -48,6 +48,13 @@ const NewishSport: React.FC = () => {
         { src: img15.src },
         { src: img16.src },
     ];
+
+
+    const [currentProjectIndex, setCurrentProjectIndex] = useState(4);
+
+    const handleSlideChange = (swiper: any) => {
+        setCurrentProjectIndex(swiper.activeIndex);
+    };
     return (
         <section>
             <Navbar />
@@ -98,7 +105,7 @@ const NewishSport: React.FC = () => {
                     )}
                 </picture>
             ))}
-            <ProjectSlider />
+            <ProjectSlider currentProjectIndex={currentProjectIndex} />
             <Footer />
         </section>
     );

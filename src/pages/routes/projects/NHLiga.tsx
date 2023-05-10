@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import Navbar from '@/components/navbar';
 import Footer from '@/components/footer';
 import ProjectSlider from '@/components/projects-slider';
@@ -24,7 +24,7 @@ import {
     imgMobile7,
 } from '../../../../public/projects/routing/NHLiga/index';
 
-const newishSport: React.FC = () => {
+const NHLiga: React.FC = () => {
     const images = [
         { src: img1.src, mobileSrc: imgMobile1.src },
         { src: img2.src, mobileSrc: imgMobile2.src },
@@ -39,6 +39,12 @@ const newishSport: React.FC = () => {
         { src: img11.src },
         { src: img12.src },
     ];
+
+    const [currentProjectIndex, setCurrentProjectIndex] = useState(6);
+
+    const handleSlideChange = (swiper: any) => {
+        setCurrentProjectIndex(swiper.activeIndex);
+    };
     return (
         <section>
             <div className='absolute xl:left-1/2 xl:-translate-x-1/2 translate-y-[1050px] text-[#171F2A] px-6 xl:px-0 text-text-routing'>
@@ -91,10 +97,10 @@ const newishSport: React.FC = () => {
                     )}
                 </picture>
             ))}
-            <ProjectSlider />
+            <ProjectSlider currentProjectIndex={currentProjectIndex}/>
             <Footer />
         </section>
     );
 };
 
-export default newishSport;
+export default NHLiga;

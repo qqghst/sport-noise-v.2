@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import Navbar from '@/components/navbar';
 import Footer from '@/components/footer';
 import ProjectSlider from '@/components/projects-slider';
@@ -31,6 +31,12 @@ const LoxinoIslanders: React.FC = () => {
         { src: img7.src, mobileSrc: imgMobile7.src },
         { src: img8.src },
     ];
+
+    const [currentProjectIndex, setCurrentProjectIndex] = useState(7);
+
+    const handleSlideChange = (swiper: any) => {
+        setCurrentProjectIndex(swiper.activeIndex);
+    };
     return (
         <section>
             <Navbar />
@@ -83,7 +89,7 @@ const LoxinoIslanders: React.FC = () => {
                     )}
                 </picture>
             ))}
-            <ProjectSlider />
+            <ProjectSlider currentProjectIndex={currentProjectIndex}/>
             <Footer />
         </section>
     );

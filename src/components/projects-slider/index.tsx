@@ -16,7 +16,13 @@ type Project = {
     smallDescription: string;
 };
 
-const ProjectSlider: React.FC = () => {
+type ProjectSliderProps = {
+    currentProjectIndex: number;
+};
+
+const ProjectSlider: React.FC<ProjectSliderProps> = ({
+    currentProjectIndex,
+}) => {
     const [shuffledProjects, setShuffledProjects] = useState<Project[]>([]);
 
     useEffect(() => {
@@ -30,6 +36,12 @@ const ProjectSlider: React.FC = () => {
         }
         setShuffledProjects(shuffledArray);
     }, []);
+
+    const filteredProjects = shuffledProjects.filter(
+        (project, index) =>
+            index !== currentProjectIndex &&
+            project.id !== projects[currentProjectIndex].id
+    );
     return (
         <section className='pt-[32px] lg:pt-[156px] px-0 md:px-[64px] lg:px-[128px]'>
             <div className='flex flex-col'>
@@ -57,7 +69,7 @@ const ProjectSlider: React.FC = () => {
                                 spaceBetween: 20,
                             },
                         }}>
-                        {shuffledProjects.map((project) => (
+                        {filteredProjects.map((project) => (
                             <SwiperSlide key={project.id}>
                                 <ProjectItem
                                     link={project.link}

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import Navbar from '@/components/navbar';
 import Footer from '@/components/footer';
 import ProjectSlider from '@/components/projects-slider';
@@ -41,6 +41,12 @@ const SportExpress: React.FC = () => {
         { src: img10.src, mobileSrc: imgMobile10.src },
         { src: img11.src, mobileSrc: imgMobile11.src },
     ];
+
+    const [currentProjectIndex, setCurrentProjectIndex] = useState(8);
+
+    const handleSlideChange = (swiper: any) => {
+        setCurrentProjectIndex(swiper.activeIndex);
+    };
 
     return (
         <section>
@@ -89,7 +95,7 @@ const SportExpress: React.FC = () => {
                     )}
                 </picture>
             ))}
-            <ProjectSlider />
+            <ProjectSlider currentProjectIndex={currentProjectIndex}/>
             <Footer />
         </section>
     );

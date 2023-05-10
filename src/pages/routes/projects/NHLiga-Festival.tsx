@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Navbar from '@/components/navbar';
 import Footer from '@/components/footer';
 import ProjectSlider from '@/components/projects-slider';
@@ -25,7 +25,7 @@ import {
     imgMobile9,
 } from '../../../../public/projects/routing/NHLiga-Festival/index';
 
-const newishSport: React.FC = () => {
+const NHLigaFestival: React.FC = () => {
     const images = [
         { src: img1.src, mobileSrc: imgMobile1.src },
         { src: img2.src, mobileSrc: imgMobile2.src },
@@ -39,6 +39,12 @@ const newishSport: React.FC = () => {
         { src: img10.src },
         { src: img11.src },
     ];
+
+    const [currentProjectIndex, setCurrentProjectIndex] = useState(3);
+
+    const handleSlideChange = (swiper: any) => {
+        setCurrentProjectIndex(swiper.activeIndex);
+    };
     return (
         <section>
             <div className='absolute xl:left-1/2 xl:-translate-x-1/2 translate-y-[1050px] text-white px-6 xl:px-0 text-text-routing'>
@@ -90,10 +96,10 @@ const newishSport: React.FC = () => {
                     )}
                 </picture>
             ))}
-            <ProjectSlider />
+            <ProjectSlider currentProjectIndex={currentProjectIndex} />
             <Footer />
         </section>
     );
 };
 
-export default newishSport;
+export default NHLigaFestival;

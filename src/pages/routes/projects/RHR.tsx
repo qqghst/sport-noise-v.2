@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Navbar from '@/components/navbar';
 import Footer from '@/components/footer';
 import ProjectSlider from '@/components/projects-slider';
@@ -48,6 +48,12 @@ const RHR: React.FC = () => {
         { src: img14.src },
         { src: img15.src },
     ];
+
+    const [currentProjectIndex, setCurrentProjectIndex] = useState(0);
+
+    const handleSlideChange = (swiper: any) => {
+        setCurrentProjectIndex(swiper.activeIndex);
+    };
     return (
         <section className=''>
             <Navbar />
@@ -100,7 +106,7 @@ const RHR: React.FC = () => {
                     )}
                 </picture>
             ))}
-            <ProjectSlider />
+            <ProjectSlider currentProjectIndex={currentProjectIndex} />
             <Footer />
         </section>
     );

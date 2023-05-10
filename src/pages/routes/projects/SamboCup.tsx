@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import Navbar from '@/components/navbar';
 import Footer from '@/components/footer';
 import ProjectSlider from '@/components/projects-slider';
@@ -48,6 +48,12 @@ const SamboCup: React.FC = () => {
         { src: img14.src },
         { src: img15.src },
     ];
+
+    const [currentProjectIndex, setCurrentProjectIndex] = useState(5);
+
+    const handleSlideChange = (swiper: any) => {
+        setCurrentProjectIndex(swiper.activeIndex);
+    };
     return (
         <section>
             <div className='absolute xl:left-1/2 xl:-translate-x-1/2 translate-y-[1050px] text-white px-6 xl:px-0 text-text-routing'>
@@ -99,7 +105,7 @@ const SamboCup: React.FC = () => {
                     )}
                 </picture>
             ))}
-            <ProjectSlider />
+            <ProjectSlider currentProjectIndex={currentProjectIndex}/>
             <Footer />
         </section>
     );
