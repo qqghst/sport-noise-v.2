@@ -34,7 +34,7 @@ const MenuItem: React.FC<{ exitRef: React.RefObject<HTMLDivElement> }> = ({
 
                         <li className=''>
                             <Link
-                                href='http://localhost:3000/#projects'
+                                href='/#projects'
                                 className='text-blue hover:text-hover transition ease-in-out duration-400 pr-[72px] lg:pr-[120px]'>
                                 ПРОЕКТЫ
                             </Link>
@@ -42,19 +42,19 @@ const MenuItem: React.FC<{ exitRef: React.RefObject<HTMLDivElement> }> = ({
 
                         <div className='block lg:hidden h-[1px] bg-line w-full' />
                         <li>
-                            <a
-                                href='http://localhost:3000/#services'
+                            <Link
+                                href='/#services'
                                 className='text-blue hover:text-hover transition ease-in-out duration-400 pr-[72px] lg:pr-[150px]'>
                                 УСЛУГИ
-                            </a>
+                            </Link>
                         </li>
                         <div className='block lg:hidden h-[1px] bg-line w-full' />
                         <li>
-                            <a
-                                href='http://localhost:3000/#aboutSecond'
+                            <Link
+                                href='/#aboutSecond'
                                 className='text-blue hover:text-hover transition ease-in-out duration-400 pr-[72px] lg:pr-[160px]'>
                                 О НАС
-                            </a>
+                            </Link>
                         </li>
                         <div className='block lg:hidden h-[1px] bg-line w-full' />
                     </ul>
