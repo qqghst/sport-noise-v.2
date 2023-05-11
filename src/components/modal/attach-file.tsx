@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import Image from 'next/image';
 import plus from '../../../public/modal/plus.svg';
+import check2 from '../../../public/modal/check2.svg';
 
 interface IAttachFIle {
     name: string;
@@ -8,7 +9,9 @@ interface IAttachFIle {
 }
 
 const AttachFile: React.FC<IAttachFIle> = ({ name, register }) => {
-    const [drag, setDrag] = useState(false);
+    const [drag, setDrag] = useState<boolean>(false);
+    const [fileAttached, setFileAttached] = useState<boolean>(false);
+
     const dragStartHandler = (e: React.DragEvent<HTMLDivElement>) => {
         e.preventDefault();
         setDrag(true);
@@ -24,6 +27,7 @@ const AttachFile: React.FC<IAttachFIle> = ({ name, register }) => {
         let files = Array.from(e.dataTransfer.files);
         console.log(files);
         setDrag(false);
+        setFileAttached(true);
     };
     return (
         <div className='hidden lg:block'>
@@ -62,6 +66,7 @@ const AttachFile: React.FC<IAttachFIle> = ({ name, register }) => {
                                     if (span) {
                                         // span.textContent = `Файл загружен: ${fileName}`;
                                         span.textContent = 'Файл загружен';
+                                        setFileAttached(true);
                                     }
                                 }
                             }}
@@ -69,8 +74,8 @@ const AttachFile: React.FC<IAttachFIle> = ({ name, register }) => {
                         <p className='flex flex-row items-center gap-3 text-[17px] tracking-[0.4px] leading-[30px] font-medium text-blue'>
                             <span>
                                 <Image
-                                    src={plus}
-                                    alt='plus'
+                                    src={fileAttached ? check2 : plus}
+                                    alt='attach-file'
                                     width={50 / 2}
                                     height={50 / 2}
                                 />
