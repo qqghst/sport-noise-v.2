@@ -29,10 +29,8 @@ export default function Home() {
                 <title>Sport Noise</title>
                 <meta
                     name='description'
-                    content='Создаем и оптимизируем спортивные бренды, помогаем компаниям
-                    реализовывать свой digital-потенциал. Меняем спортивную
-                    культуру, улучшаем узнаваемость и позиционирование, чтобы
-                    игра была яркой, а победа красивой'
+                    content='SportNoise. Логодизайн, бренд-айдентика, событийном брендинг.
+                    Digital-решения для развития спортивных и клубных брендов.'
                 />
                 <meta
                     name='viewport'
@@ -41,6 +39,19 @@ export default function Home() {
                 <link
                     rel='icon'
                     href='/favicon/favicon.png'
+                />
+                <meta
+                    property='og:title'
+                    content='Sport Noise'
+                />
+                <meta
+                    property='og:description'
+                    content='SportNoise. Логодизайн, бренд-айдентика, событийном брендинг.
+                    Digital-решения для развития спортивных и клубных брендов.'
+                />
+                <meta
+                    property='og:image'
+                    content='/open-graph/SportNoise.jpg'
                 />
             </Head>
             <div
