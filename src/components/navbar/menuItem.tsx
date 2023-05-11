@@ -131,7 +131,7 @@ const MenuItem: React.FC<{ exitRef: React.RefObject<HTMLDivElement> }> = ({
                         </li>
                     </ul>
                 </div>
-                <div ref={exitRef} className='block md:hidden fixed '>
+                <div ref={exitRef} className='block md:hidden fixed bottom-0'>
                     <Button onClick={allowScroll} />
                 </div>
             </div>
