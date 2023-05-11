@@ -3,7 +3,11 @@
 @tailwind utilities;
 
 html {
-    // scroll-behavior: smooth;
+    height: -webkit-fill-available;
+}
+
+body {
+    height: -webkit-fill-available;
 }
 
 .content-area {
