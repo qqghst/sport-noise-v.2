@@ -17,7 +17,7 @@ const MenuItem: React.FC<{ exitRef: React.RefObject<HTMLDivElement> }> = ({
             <Modal
                 isOpen={isOpen}
                 toggle={toggle}></Modal>
-            <div className='menuOpen fixed top-0 right-[-100%] w-full md:w-[50%] xl:w-[35%] 2xl:w-[30%] h-screen bg-white flex flex-col items-center justify-start opacity-0 z-[30007582354723] drop-shadow-[0_4px_25px_rgba(0,0,0,0.13)]'>
+            <div className='menuOpen overflow-scroll fixed top-0 right-[-100%] w-full md:w-[50%] xl:w-[35%] 2xl:w-[30%] h-screen bg-white flex flex-col items-center justify-start opacity-0 z-[30007582354723] drop-shadow-[0_4px_25px_rgba(0,0,0,0.13)]'>
                 <div className='flex flex-row items-center justify-between py-[58px] gap-[148px]'>
                     <div className='text-[26px] tracking-[-1px] leading-[32px] font-medium flex gap-3'>
                         <span className='text-black underline'>Ru</span>
