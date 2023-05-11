@@ -18,7 +18,7 @@ type Project = {
 };
 
 type ProjectSliderProps = {
-    currentProjectIndex?: number;
+    currentProjectIndex: number;
 };
 
 const ProjectSlider: React.FC<ProjectSliderProps> = ({

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Navbar from '@/components/navbar';
 import Footer from '@/components/footer';
 import ProjectSlider from '@/components/projects-slider';
@@ -47,6 +47,12 @@ const NHLiga: React.FC = () => {
         { src: img14.src },
         { src: img15.src },
     ];
+
+    const [currentProjectIndex, setCurrentProjectIndex] = useState(103);
+
+    const handleSlideChange = (swiper: any) => {
+        setCurrentProjectIndex(swiper.activeIndex);
+    };
     return (
         <section>
             <Navbar />
@@ -95,7 +101,7 @@ const NHLiga: React.FC = () => {
                     )}
                 </picture>
             ))}
-            <ProjectSlider />
+            <ProjectSlider currentProjectIndex={currentProjectIndex} />
             <Footer />
         </section>
     );

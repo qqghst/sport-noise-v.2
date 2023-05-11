@@ -143,7 +143,7 @@
 
 .inputPlaceholder::placeholder {
     color: theme('colors.blue');
-    font-size: 10px;
+    font-size: 15px;
     font-weight: 500;
     line-height: 26px;
     letter-spacing: 2%;
@@ -184,10 +184,11 @@
 @media (min-width: 1024px) {
     .inputPlaceholder::placeholder {
         color: theme('colors.blue');
-        font-size: 17px;
+        font-size: 170px;
         font-weight: 500;
         line-height: 30px;
         letter-spacing: 2%;
+        transform: translateY(-3px);
     }
 
     .inputPlaceholder::-webkit-input-placeholder {
@@ -196,6 +197,7 @@
         font-weight: 500;
         line-height: 30px;
         letter-spacing: 2%;
+        transform: translateY(-3px);
     }
 
     .inputPlaceholder::-moz-placeholder {
@@ -204,6 +206,7 @@
         font-weight: 500;
         line-height: 30px;
         letter-spacing: 2%;
+        transform: translateY(-3px);
     }
 
     .inputPlaceholder:-ms-input-placeholder {
@@ -212,6 +215,7 @@
         font-weight: 500;
         line-height: 30px;
         letter-spacing: 2%;
+        transform: translateY(-3px);
     }
 
     .inputPlaceholder:-moz-placeholder {
@@ -220,6 +224,7 @@
         font-weight: 500;
         line-height: 30px;
         letter-spacing: 2%;
+        transform: translateY(-3px);
     }
 }
 
