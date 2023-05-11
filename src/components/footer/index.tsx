@@ -30,7 +30,7 @@ const Footer = () => {
                             </span>
                         </button>
                         <div className='hidden lg:block  text-blue'>
-                            <Link href='#masthead'>
+                            <Link href='#navbar'>
                                 {/* <Image
                                     src={arrow}
                                     alt='SportNoise'
@@ -142,7 +142,7 @@ const Footer = () => {
                                 Спортнойз.
                             </p>
                             <div className='block md:hidden text-blue'>
-                                <a href='#masthead'>
+                                <Link href='#navbar'>
                                     {/* <Image
                                         src={arrow}
                                         alt='SportNoise'
@@ -169,7 +169,7 @@ const Footer = () => {
                                             clip-rule='evenodd'
                                         />
                                     </svg>
-                                </a>
+                                </Link>
                             </div>
                         </div>
                     </div>
