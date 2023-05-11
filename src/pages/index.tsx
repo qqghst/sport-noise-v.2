@@ -51,7 +51,7 @@ export default function Home() {
                 />
                 <meta
                     property='og:image'
-                    content='https://en.wikipedia.org/wiki/File:Image_created_with_a_mobile_phone.png'
+                    content='https://ahrefs.com/blog/wp-content/uploads/2019/12/fb-how-to-become-an-seo-expert.png'
                 />
             </Head>
             <div
