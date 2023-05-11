@@ -3,11 +3,13 @@
 @tailwind utilities;
 
 html {
-    height: -webkit-fill-available;
+    min-height: -webkit-fill-available;
+    // height: 100%;
 }
 
 body {
-    height: -webkit-fill-available;
+    min-height: -webkit-fill-available;
+    // height: 100%;
 }
 
 .content-area {
