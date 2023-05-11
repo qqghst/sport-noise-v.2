@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import Image from 'next/image';
-import plus from '../../../public/modal/plus.svg'
+import plus from '../../../public/modal/plus.svg';
 
 interface IAttachFIle {
     name: string;
@@ -47,12 +47,35 @@ const AttachFile: React.FC<IAttachFIle> = ({ name, register }) => {
                             type='file'
                             name={name}
                             {...register(name, { required: false })}
+                            onChange={(e) => {
+                                if (
+                                    e.target &&
+                                    e.target.files &&
+                                    e.target.files.length > 0
+                                ) {
+                                    const file = e.target.files[0];
+                                    const fileName = file.name;
+                                    const span =
+                                        e.target.parentElement?.querySelector(
+                                            'span:last-of-type'
+                                        );
+                                    if (span) {
+                                        // span.textContent = `Файл загружен: ${fileName}`;
+                                        span.textContent = 'Файл загружен';
+                                    }
+                                }
+                            }}
                         />
                         <p className='flex flex-row items-center gap-3 text-[17px] tracking-[0.4px] leading-[30px] font-medium text-blue'>
                             <span>
-                                <Image src={plus} alt='plus' width={50 / 2} height={50 / 2}/>
+                                <Image
+                                    src={plus}
+                                    alt='plus'
+                                    width={50 / 2}
+                                    height={50 / 2}
+                                />
                             </span>
-                            Прикрепить файл
+                            <span>Прикрепить файл</span>
                         </p>
                     </label>
                 </div>

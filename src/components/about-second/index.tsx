@@ -39,15 +39,15 @@ const AboutSecond: React.FC = () => {
     }, []);
     return (
         <section
-            className='bg-white mt-[77px] md:mt-[136px] mb-[77px] md:mb-[268px] px-5 md:px-[64px] lg:px-[128px] '
+            className='bg-white mt-[77px] md:mt-[136px] mb-[77px] md:mb-[268px] px-5 md:px-[64px] lg:px-[128px]'
             id='aboutSecond'>
-            <div className='mx-auto flex flex-col'>
-                <h4 className='xl: text-[37px] tracking-[-1%] leading-[52px] font-medium text-blue pb-[32px]'>
+            <div className=''>
+                <h4 className='text-[21px] xl:text-[37px] tracking-[-0.5px] leading-[52px] font-medium text-blue pb-[32px]'>
                     О нас
                 </h4>
                 <p
                     ref={aboutSecondRef}
-                    className='text-[21px] lg:text-[28px] 2xl:text-[37px] tracking-[-0.5px] 2xl:tracking-[-1px] leading-[30px] lg:leading-[38px] 2xl:leading-[52px] font-medium text-black w-full sm:w-[90%] md:w-[85%] lg:w-[75%] 2xl:lg-[70px]'>
+                    className='text-[21px] lg:text-[28px] xl:text-[37px] tracking-[-0.5px] xl:tracking-[-0.2px] leading-[30px] lg:leading-[38px] xl:leading-[52px] font-medium text-black w-full sm:w-[90%] xl:w-[80%]'>
                     Мы, digital-студия «SportNoise», специализируемся на
                     визуальном дизайне и коммуникациях. Решаем маркетинговые
                     задачи с помощью адаптивных digital-сценариев и продуктовых

@@ -88,16 +88,17 @@ const Footer = () => {
                                 </button>
                             </li>
                             <li>
-                                <button
+                                <Link
                                     className='text-blue lg:hover:text-hover transition ease-in-out duration-400 tracking-[0.5px]'
-                                    rel='noopener noreferrer'>
+                                    href='https://docs.google.com/forms/d/e/1FAIpQLSd3m57aXVTB-0EKbo3nQ_lPyx7SA2KIdw6TqOXr71Q6J8--eQ/viewform'
+                                    rel='noopener noreferrer'
+                                    target="_blank">
                                     &#x25CF; Заполнить бриф
-                                </button>
+                                </Link>
                             </li>
                             <li>
                                 <button
                                     className='text-blue lg:hover:text-hover transition ease-in-out duration-400 tracking-[0.5px]'
-                                    rel='noopener noreferrer'
                                     onClick={() => {
                                         toggle();
                                         blockScroll();
@@ -108,7 +109,10 @@ const Footer = () => {
                             <li>
                                 <button
                                     className='text-blue lg:hover:text-hover transition ease-in-out duration-400 tracking-[0.5px]'
-                                    rel='noopener noreferrer'>
+                                    onClick={() => {
+                                        toggle();
+                                        blockScroll();
+                                    }}>
                                     &#x25CF; Пригласить в аудит
                                 </button>
                             </li>

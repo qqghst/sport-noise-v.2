@@ -22,8 +22,8 @@ const Button: React.FC<IButtonProps> = ({ onClick }) => {
             /> */}
             <svg
                 xmlns='http://www.w3.org/2000/svg'
-                width='19'
-                height='18'
+                width='22'
+                height='22'
                 fill='none'>
                 <path
                     fill='currentColor'

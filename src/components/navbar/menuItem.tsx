@@ -61,8 +61,8 @@ const MenuItem: React.FC<{ exitRef: React.RefObject<HTMLDivElement> }> = ({
                         </li>
                         <div className='block lg:hidden h-[1px] bg-line w-full' />
                     </ul>
-                    <ul className='navAnimation text-blue font-medium text-left text-[15px] lg:text-[17px] leading-[26px] lg:leading-[30px] tracking-[0.5px] flex flex-col gap-2 py-7'>
-                        <li>
+                    <ul className='text-blue font-medium text-left text-[15px] lg:text-[17px] leading-[26px] lg:leading-[30px] tracking-[0.5px] flex flex-col gap-2 py-7'>
+                        <li className='navAnimation'>
                             <Link
                                 href='/'
                                 className='text-blue hover:text-hover transition ease-in-out duration-400 pr-[72px] lg:pr-[100px]'
@@ -70,15 +70,21 @@ const MenuItem: React.FC<{ exitRef: React.RefObject<HTMLDivElement> }> = ({
                                 &#x25CF; Скачать презентацию
                             </Link>
                         </li>
-                        <li>
+                        <li className='navAnimation'>
                             <Link
                                 className='text-blue hover:text-hover transition ease-in-out duration-400 pr-[72px] lg:pr-[150px]'
-                                href='/'
-                                rel='noopener noreferrer'>
+                                href='https://docs.google.com/forms/d/e/1FAIpQLSd3m57aXVTB-0EKbo3nQ_lPyx7SA2KIdw6TqOXr71Q6J8--eQ/viewform'
+                                rel='noopener noreferrer'
+                                target='_blank'>
                                 &#x25CF; Заполнить бриф
                             </Link>
                         </li>
-                        <li>
+                        <li
+                            onClick={() => {
+                                toggle();
+                                blockScroll();
+                            }}
+                            className='navAnimation'>
                             <button
                                 className='text-blue hover:text-hover transition ease-in-out duration-400 pr-[72px] lg:pr-[150px]'
                                 onClick={() => {
@@ -89,13 +95,15 @@ const MenuItem: React.FC<{ exitRef: React.RefObject<HTMLDivElement> }> = ({
                                 &#x25CF; Дизайн аудит
                             </button>
                         </li>
-                        <li>
-                            <Link
-                                className='text-blue hover:text-hover transition ease-in-out duration-400 pr-[72px] lg:pr-[100px]'
-                                href='/'
-                                rel='noopener noreferrer'>
+                        <li
+                            onClick={() => {
+                                toggle();
+                                blockScroll();
+                            }}
+                            className='navAnimation'>
+                            <button className='text-blue hover:text-hover transition ease-in-out duration-400 pr-[72px] lg:pr-[100px]'>
                                 &#x25CF; Пригласить в тендер
-                            </Link>
+                            </button>
                         </li>
                     </ul>
 

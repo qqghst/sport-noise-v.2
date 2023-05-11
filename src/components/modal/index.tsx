@@ -261,7 +261,7 @@ const Modal: React.FC<IUseModalProps> = ({ isOpen, toggle }) => {
                                     />
                                     <button
                                         type='submit'
-                                        className='rounded-full px-[72px] lg:px-[58] py-[12px] lg:py-[18px] bg-blue  w-full lg:w-6/12'>
+                                        className='rounded-full px-[72px] lg:px-[58] py-[12px] lg:py-[18px] bg-blue hover:bg-hover transition ease-in-out duration-400  w-full lg:w-6/12'>
                                         <span className='text-[18px] lg:text-[19px] tracking-wide leading-[24px] font-medium text-white'>
                                             <input
                                                 type='submit'

@@ -127,7 +127,7 @@ const Navbar: React.FC = () => {
                     </Link>
                     <div
                         ref={menuRef}
-                        className='hidden md:block'>
+                        className='hidden md:block fixed right-5 md:right-[64px] lg:right-[128px] z-[51]'>
                         <button
                             type='button'
                             className='rounded-full px-[16px] py-[8px]  bg-blue '>

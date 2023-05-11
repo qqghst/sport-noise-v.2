@@ -1,4 +1,5 @@
 import { useEffect, useRef } from 'react';
+import Head from 'next/head';
 import gsap from 'gsap';
 import Navbar from '@/components/navbar';
 import Masthead from '@/components/masthead';
@@ -24,6 +25,24 @@ export default function Home() {
     });
     return (
         <>
+            <Head>
+                <title>Sport Noise</title>
+                <meta
+                    name='description'
+                    content='Создаем и оптимизируем спортивные бренды, помогаем компаниям
+                    реализовывать свой digital-потенциал. Меняем спортивную
+                    культуру, улучшаем узнаваемость и позиционирование, чтобы
+                    игра была яркой, а победа красивой'
+                />
+                <meta
+                    name='viewport'
+                    content='width=device-width, initial-scale=1'
+                />
+                <link
+                    rel='icon'
+                    href='/favicon/favicon.png'
+                />
+            </Head>
             <div
                 className='content-area'
                 ref={(el) => (contentArea.current = el)}>
