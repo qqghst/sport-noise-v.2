@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import styles from './styles.module.scss'
+import styles from './styles.module.scss';
 import { SubmitHandler, useForm } from 'react-hook-form';
 
 import Input from './input';
@@ -69,17 +69,18 @@ const Modal: React.FC<IUseModalProps> = ({ isOpen, toggle }) => {
                                     onClick={() => {
                                         toggle();
                                         allowScroll();
-                                    }} />
-                               
+                                    }}
+                                />
                             </div>
                             <div className='mb-3'>
                                 <div className='sm:hidden flex flex-row justify-between items-center mb-1'>
                                     <div className=''></div>
-                                    <Button
+                                    {/* <Button
                                         onClick={() => {
                                             toggle();
                                             allowScroll();
-                                        }} />
+                                        }}
+                                    /> */}
                                 </div>
                                 <h2 className='sm:hidden flex text-[19px] tracking-[0.13px]  leading-[25px] font-medium text-black self-end items-end'>
                                     Получите консультацию или узнайте стоимость
@@ -288,6 +289,14 @@ const Modal: React.FC<IUseModalProps> = ({ isOpen, toggle }) => {
                                     </button>
                                 </div>
                             </form>
+                            <div className='flex sm:hidden justify-center items-center mt-7'>
+                                <Button
+                                    onClick={() => {
+                                        toggle();
+                                        allowScroll();
+                                    }}
+                                />
+                            </div>
                         </section>
                     </div>
                 </div>
