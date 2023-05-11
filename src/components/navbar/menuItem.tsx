@@ -29,9 +29,8 @@ const MenuItem: React.FC<{ exitRef: React.RefObject<HTMLDivElement> }> = ({
                 </div>
 
                 <div>
-                    <ul className='navAnimation text-blue font-medium text-left text-[26px] lg:text-[42px] tracking-[-0.5px] leading-[32px] lg:leading-[57px] flex flex-col gap-3'>
+                    <ul onClick={allowScroll}  className='navAnimation text-blue font-medium text-left text-[26px] lg:text-[42px] tracking-[-0.5px] leading-[32px] lg:leading-[57px] flex flex-col gap-3'>
                         <div className=' block lg:hidden h-[1px] bg-line w-full left-0 right-0' />
-
                         <li className=''>
                             <Link
                                 href='/#projects'
