@@ -17,13 +17,15 @@ const MenuItem: React.FC<{ exitRef: React.RefObject<HTMLDivElement> }> = ({
             <Modal
                 isOpen={isOpen}
                 toggle={toggle}></Modal>
-            <div className='menuOpen  fixed top-0 right-[-100%] w-full md:w-[50%] xl:w-[35%] 2xl:w-[30%] h-screen bg-white flex flex-col items-center justify-start opacity-0 z-[30007582354723] drop-shadow-[0_4px_25px_rgba(0,0,0,0.13)]'>
-                <div className='flex flex-row items-center justify-between py-[58px] gap-[148px]'>
+            <div className='menuOpen overflow-scroll  fixed top-0 right-[-100%] w-full md:w-[50%] xl:w-[35%] 2xl:w-[30%] h-full bg-white flex flex-col items-center justify-start opacity-0 z-[30007582354723] drop-shadow-[0_4px_25px_rgba(0,0,0,0.13)]'>
+                <div className='flex flex-row items-center justify-between gap-[150px] lg:gap-[180px]  py-5 md:pt-[58px]'>
                     <div className='text-[26px] tracking-[-1px] leading-[32px] font-medium flex gap-3'>
                         <span className='text-black underline'>Ru</span>
                         <span className='text-grey'>En</span>
                     </div>
-                    <div ref={exitRef} className='opacity-0 md:opacity-100'>
+                    <div
+                        ref={exitRef}
+                        className='opacity-0 md:opacity-100'>
                         <Button onClick={allowScroll} />
                     </div>
                 </div>
@@ -114,7 +116,9 @@ const MenuItem: React.FC<{ exitRef: React.RefObject<HTMLDivElement> }> = ({
 
                     <ul className='navAnimation flex flex-col gap-[10px] text-[13px] tracking-[4%] leading-[17px] font-medium text-blue  py-[24px]'>
                         <li className='text-[28px] tracking-[1%] leading-[32px] pb-[12px]'>
-                            hello@sportnoise.ru
+                            <Link href='mailto:hello@sportnoise.ru'>
+                                hello@sportnoise.ru
+                            </Link>
                         </li>
                         <li className='text-[13px] lg:text-[15px] leading-[17px] lg:leading-[26px] tracking-[0.5px]'>
                             Москва, ул. Полковая д. 3, стр. 6
@@ -131,7 +135,9 @@ const MenuItem: React.FC<{ exitRef: React.RefObject<HTMLDivElement> }> = ({
                         </li>
                     </ul>
                 </div>
-                <div ref={exitRef} className='block md:hidden fixed bottom-0 py-4'>
+                <div
+                    ref={exitRef}
+                    className='block md:hidden fixed bottom-0 py-4'>
                     <Button onClick={allowScroll} />
                 </div>
             </div>
