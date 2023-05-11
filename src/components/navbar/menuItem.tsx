@@ -23,9 +23,9 @@ const MenuItem: React.FC<{ exitRef: React.RefObject<HTMLDivElement> }> = ({
                         <span className='text-black underline'>Ru</span>
                         <span className='text-grey'>En</span>
                     </div>
-                    <div ref={exitRef} className='opacity-0 md:opacity-100'>
+                    {/* <div ref={exitRef} className='opacity-0 md:opacity-100'>
                         <Button onClick={allowScroll} />
-                    </div>
+                    </div> */}
                 </div>
 
                 <div>
@@ -131,9 +131,9 @@ const MenuItem: React.FC<{ exitRef: React.RefObject<HTMLDivElement> }> = ({
                         </li>
                     </ul>
                 </div>
-                {/* <div ref={exitRef} className='block md:hidden fixed bottom-0 py-4 left-1/2 transform -translate-x-1/2 z-[999999]'>
+                <div ref={exitRef} className='block md:hidden fixed bottom-0 py-4 left-1/2 transform -translate-x-1/2 z-[999999]'>
                     <Button onClick={allowScroll} />
-                </div> */}
+                </div>
             </div>
         </>
     );
