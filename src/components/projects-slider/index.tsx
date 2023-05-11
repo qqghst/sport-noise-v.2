@@ -56,11 +56,11 @@ const ProjectSlider: React.FC<ProjectSliderProps> = ({
                         slidesPerView={2}
                         spaceBetween={32}
                         loop={true}
-                        mousewheel={true}
+                        // mousewheel={true}
                         breakpoints={{
                             320: {
                                 slidesPerView: 1.1,
-                                spaceBetween: 20,
+                                spaceBetween: 8,
                             },
                             768: {
                                 slidesPerView: 1.2,

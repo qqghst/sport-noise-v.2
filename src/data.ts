@@ -101,7 +101,7 @@ export const moreprojects = [
     {
         id: 2,
         link: '/routes/projects-more/VHL',
-        title: 'Русская классика ВХЛ, Москва, 2017г',
+        title: 'Русская классика ВХЛ, Москва, 2017',
         imageSrc: '/projects/more-projects/2.webp',
     },
     {
@@ -113,7 +113,7 @@ export const moreprojects = [
     {
         id: 4,
         link: '/routes/projects-more/NHLiga',
-        title: 'Кубок Чемпионов» — серия логотипов',
+        title: '«Кубок Чемпионов» — серия логотипов',
         imageSrc: '/projects/more-projects/4.webp',
     },
     {

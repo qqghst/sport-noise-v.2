@@ -32,13 +32,13 @@ const ProjectItem: React.FC<IProjectItemProps> = ({link, imageMobile, image, tit
             </a>
 
             <div className='flex flex-col px-5 md:px-0'>
-                <p className='text-[16px] lg:text-[28px] tracking-[1%] leading-[32px] font-medium text-black pb-1'>
+                <p className='text-[12px] xl:text-[13px] tracking-[0.2px] xl:tracking-[0.6px] leading-[16px] font-medium text-black pb-[2.5px]'>
                     {title}
                 </p>
-                <p className='text-[14px] lg:text-[17px] tracking-[2%] leading-[18px] font-medium text-black pb-2'>
+                <p className='text-[14px] lg:text-[17px] tracking-[0.2px] xl:tracking-[0.4px] leading-[18px] font-medium text-black pb-[8px]'>
                     {description}
                 </p>
-                <p className='text-[12px] lg:text-[13px] tracking-[4%] leading-[17px] font-medium text-grey'>
+                <p className='text-[12px] lg:text-[13px] tracking-[0.2px] xl:tracking-[0.6px] leading-[16px] font-medium text-grey'>
                     {smallDescription}
                 </p>
             </div>

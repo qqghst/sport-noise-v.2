@@ -81,7 +81,7 @@ const ProjectItem: React.FC<IProjectItemProps> = ({
                                         alt={title}
                                         width={2000 / 2}
                                         height={2000 / 2}
-                                        className='w-full h-[250px] sm:h-[350px] lg:h-full object-fit block'
+                                        className='w-full h-[250px] sm:h-[350px] lg:h-full object-cover block'
                                     />
                                 )
                             )}

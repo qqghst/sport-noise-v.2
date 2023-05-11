@@ -213,29 +213,10 @@ const Modal: React.FC<IUseModalProps> = ({ isOpen, toggle }) => {
                                                 </div>
                                                 <div className='flex flex-row gap-[10px]'>
                                                     <Checkbox
-                                                        text='комплексные услуги'
-                                                        name='checkbox'
-                                                        register={register}
-                                                    />
-                                                    <Checkbox
                                                         text='дизайн-аудит'
                                                         name='checkbox'
                                                         register={register}
                                                     />
-                                                </div>
-                                                <div className='flex flex-col gap-[20px]'>
-                                                    <Checkbox
-                                                        text='дизайн сопровождение'
-                                                        name='checkbox'
-                                                        register={register}
-                                                    />
-                                                    <Checkbox
-                                                        text='техническое партнерство'
-                                                        name='checkbox'
-                                                        register={register}
-                                                    />
-                                                </div>
-                                                <div className='flex flex-row gap-[10px]'>
                                                     <Checkbox
                                                         text='тендер'
                                                         name='checkbox'
@@ -247,6 +228,7 @@ const Modal: React.FC<IUseModalProps> = ({ isOpen, toggle }) => {
                                                         register={register}
                                                     />
                                                 </div>
+                                              
                                             </div>
                                         </div>
                                     </div>

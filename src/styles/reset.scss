@@ -120,3 +120,10 @@ label {
 legend {
     display: block;
 }
+
+textarea:focus,
+textarea:hover,
+select:focus,
+select:hover {
+    outline: none !important;
+}
