@@ -58,7 +58,7 @@ const NewishSport: React.FC = () => {
     return (
         <section>
             <Navbar />
-            <div className='absolute xl:left-1/2 xl:-translate-x-1/2 translate-y-[900px] text-white px-6 xl:px-0 text-text-routing'>
+            <div className='absolute xl:left-1/2 xl:-translate-x-1/2 translate-y-[900px] text-[#40FF98] px-6 xl:px-0 text-text-routing'>
                 <h1 className='text-[24px] 2xl:text-[32.67px] -tracking-[0.6px] lg:tracking-[0.6px] leading-[36px] lg:leading-[48.3px] pb-[20px]'>
                     Дизайн бренда для Newish Sport, 2022
                 </h1>

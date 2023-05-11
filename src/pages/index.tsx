@@ -12,6 +12,7 @@ import MarqueeText from '@/components/marquee-text';
 import AboutSecond from '@/components/about-second';
 import Footer from '@/components/footer';
 import MarqueeTest from '@/components/marquee-test';
+import OgImage from '../../public/open/SportNoise.jpg'
 
 export default function Home() {
     let contentArea = useRef<HTMLDivElement | null>(null);
@@ -51,7 +52,7 @@ export default function Home() {
                 />
                 <meta
                     property='og:image'
-                    content='https://ahrefs.com/blog/wp-content/uploads/2019/12/fb-how-to-become-an-seo-expert.png'
+                    content={OgImage.src}
                 />
             </Head>
             <div
