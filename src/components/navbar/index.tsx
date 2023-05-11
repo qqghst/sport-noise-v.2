@@ -139,7 +139,7 @@ const Navbar: React.FC = () => {
                     <div
                         ref={menuMobileRef}
                         onClick={blockScroll}
-                        className='block md:hidden fixed bottom-0 py-4 left-1/2 transform -translate-x-1/2 z-[999999] '>
+                        className='block md:hidden fixed bottom-0 py-4 left-1/2 transform -translate-x-1/2 z-40'>
                         <button
                             type='button'
                             className='rounded-full px-[16px] py-[8px]  bg-blue'>
