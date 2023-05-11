@@ -12,7 +12,7 @@ const Button: React.FC<IButtonProps> = ({ onClick }) => {
     return (
         <button
             type='button'
-            className='rounded-full px-4 lg:px-7 py-1 lg:py-2 border-1 border-solid border-[#686767]'
+            className='rounded-full px-4 lg:px-7 py-1 lg:py-2 border-[1px] border-solid border-[#686767]'
             onClick={onClick}>
             <Image  
                 className='w-[12px] lg:w-[22px] h-[12px] lg:h-[22px]'
