@@ -51,7 +51,7 @@ export default function Home() {
                 />
                 <meta
                     property='og:image'
-                    content='/open-graph/SportNoise.jpg'
+                    content='https://en.wikipedia.org/wiki/File:Image_created_with_a_mobile_phone.png'
                 />
             </Head>
             <div
