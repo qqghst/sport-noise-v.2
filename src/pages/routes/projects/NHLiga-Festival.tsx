@@ -24,6 +24,7 @@ import {
     imgMobile8,
     imgMobile9,
 } from '../../../../public/projects/routing/NHLiga-Festival/index';
+import Text from '@/ui/routes/text';
 
 const NHLigaFestival: React.FC = () => {
     const images = [
@@ -47,7 +48,7 @@ const NHLigaFestival: React.FC = () => {
     };
     return (
         <section>
-            <div className='absolute xl:left-1/2 xl:-translate-x-1/2 translate-y-[900px] text-[#ACC7FF] px-6 xl:px-0 text-text-routing'>
+            {/* <div className='absolute xl:left-1/2 xl:-translate-x-1/2 translate-y-[900px] text-[#ACC7FF] px-6 xl:px-0 text-text-routing'>
                 <h1 className='text-[24px] 2xl:text-[32.67px] -tracking-[0.6px] lg:tracking-[0.6px] leading-[36px] lg:leading-[48.3px] pb-[20px]'>
                     «Фестиваль хоккея 2021» для Ночной Лиги (NHLiga), 2021
                 </h1>
@@ -66,7 +67,22 @@ const NHLigaFestival: React.FC = () => {
                 <p className='text-[13px] 2xl:text-[16.67px] tracking-[1px] leading-[22px] lg:leading-[28.3px]'>
                     Продюсирование события, разработка ключевых нарративов, мерч
                 </p>
-            </div>
+            </div> */}
+            <Text
+                title='«Фестиваль хоккея 2021» для Ночной Лиги (NHLiga), 2021'
+                paragraph='Самый масштабный проект любительского хоккея в России. Финал
+                    сезона ежегодно проходит в мае на берегу Черного моря — в
+                    Олимпийской деревне Сочи. Знаковое событие объединяет тысячи
+                    зрителей и лучших из лучших среди 1 207 команд и 23 272
+                    участников. Разработали идейно-художественную базу, создали
+                    концептуальный нарратив и изготовление фирменный мерч
+                    фестиваля. Для финального этапа 2020/21 отрисовали
+                    стилизованную иллюстрацию с выдающимися игроками прошлых
+                    сезонов, которая стала ключевым визуальным образом
+                    фестиваля.'
+                ending='Продюсирование события, разработка ключевых нарративов, мерч'
+                color='#ACC7FF'
+            />
             <Navbar />
             {images.map((image, index) => (
                 <picture key={index}>

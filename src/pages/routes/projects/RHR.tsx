@@ -145,6 +145,7 @@ import {
     imgMobile9,
     imgMobile10,
 } from '../../../../public/projects/routing/RHR/index';
+import Text from '@/ui/routes/text';
 
 const RHR: React.FC = () => {
     const images = [
@@ -173,7 +174,7 @@ const RHR: React.FC = () => {
     return (
         <section className=''>
             <Navbar />
-            <div className='absolute text-white text-text-routing'>
+            {/* <div className='absolute text-white text-text-routing'>
                 <h1 className='pb-[20px] text-routing-h1'>
                     Ультрамарафон White Bride Ultra Gelendzhik для Running
                     Heroes Russia (RHR), 2022
@@ -193,7 +194,23 @@ const RHR: React.FC = () => {
                 <p className='text-routing-p2'>
                     Фирменный стиль, событийный брендинг, атрибутика
                 </p>
-            </div>
+            </div> */}
+            <Text
+                color='#fff'
+                title='Ультрамарафон White Bride Ultra Gelendzhik для Running
+                    Heroes Russia (RHR), 2022'
+                paragraph=' Самый массовый горный старт от команды RHR, которая уже 8
+                    лет организовывает ультрамарафоны в самых красивых местах
+                    России. Сложнейшая гонка White Bride Ultra Gelendzhik
+                    («Белая невеста») с титульной дистанцией 120 километров и
+                    набором высоты до 5 550 метров с 2022 года проходит в
+                    Геленджике. Для события создали гармоничное характеру и
+                    экстерьеру оформление с контрастными и выразительными
+                    акцентами. Разработали фирменный стиль и логотип, отразив в
+                    них символы гонки на выносливость и места их проведения:
+                    силуэты резких'
+                ending=' Фирменный стиль, событийный брендинг, атрибутика'
+            />
             {images.map((image, index) => (
                 <picture key={index}>
                     {image.mobileSrc && (

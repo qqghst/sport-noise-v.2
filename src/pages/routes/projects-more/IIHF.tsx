@@ -22,6 +22,7 @@ import {
     imgMobile6,
     imgMobile7,
 } from '../../../../public/projects/routing/projects-more/IIHF/index';
+import Text from '@/ui/routes/text';
 
 const IIHF: React.FC = () => {
     const images = [
@@ -46,7 +47,7 @@ const IIHF: React.FC = () => {
     return (
         <section>
             <Navbar />
-            <div className='absolute xl:left-1/2 xl:-translate-x-1/2 translate-y-[900px] text-[#30FFE9] px-6 xl:px-0 text-text-routing'>
+            {/* <div className='absolute xl:left-1/2 xl:-translate-x-1/2 translate-y-[900px] text-[#30FFE9] px-6 xl:px-0 text-text-routing'>
                 <h1 className='text-[24px] 2xl:text-[32.67px] -tracking-[0.6px] lg:tracking-[0.6px] leading-[36px] lg:leading-[48.3px] pb-[20px]'>
                     Кубок мира для Международной федерации хоккея на льду
                     (IIHF), 2016
@@ -62,7 +63,19 @@ const IIHF: React.FC = () => {
                 <p className='text-[13px] 2xl:text-[16.67px] tracking-[1px] leading-[22px] lg:leading-[28.3px]'>
                     Разработка фирменного стиля и логотипа, брендинг
                 </p>
-            </div>
+            </div> */}
+            <Text
+                title='Кубок мира для Международной федерации хоккея на льду
+                    (IIHF), 2016'
+                paragraph='Шестой Кубок мира среди молодежных команд и второй в истории
+                    МХЛ российский финал. Матч состоялся в двух городах
+                    Татарстана — Нижнекамске и Набережных Челнах. Традиционные
+                    мотивы республики были использованы в фирменном стиле и
+                    логотипе Кубка. Обновлен леттеринг и отрисован доминирующий
+                    элемент (хоккеист). Эмблема выполнена с эффектом 3D-объема.'
+                ending='Разработка фирменного стиля и логотипа, брендинг'
+                color='#30FFE9'
+            />
             {images.map((image, index) => (
                 <picture key={index}>
                     {image.mobileSrc && (

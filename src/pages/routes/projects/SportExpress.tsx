@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, { useState } from 'react';
 import Navbar from '@/components/navbar';
 import Footer from '@/components/footer';
 import ProjectSlider from '@/components/projects-slider';
@@ -26,6 +26,7 @@ import {
     imgMobile10,
     imgMobile11,
 } from '../../../../public/projects/routing/SportExpress/index';
+import Text from '@/ui/routes/text';
 
 const SportExpress: React.FC = () => {
     const images = [
@@ -51,7 +52,7 @@ const SportExpress: React.FC = () => {
     return (
         <section>
             <Navbar />
-            <div className='absolute xl:left-1/2 xl:-translate-x-1/2 translate-y-[900px] text-white px-6 xl:px-0 text-text-routing'>
+            {/* <div className='absolute xl:left-1/2 xl:-translate-x-1/2 translate-y-[900px] text-white px-6 xl:px-0 text-text-routing'>
                 <h1 className='text-[24px] 2xl:text-[32.67px] -tracking-[0.6px] lg:tracking-[0.6px] leading-[36px] lg:leading-[48.3px] pb-[20px]'>
                     Юбилейная атрибутика для «Спорт-Экспресса», 2021
                 </h1>
@@ -66,7 +67,18 @@ const SportExpress: React.FC = () => {
                 <p className='text-[13px] 2xl:text-[16.67px] tracking-[1px] leading-[22px] lg:leading-[28.3px]'>
                     Дизайн мерча
                 </p>
-            </div>
+            </div> */}
+            <Text
+                title='Юбилейная атрибутика для «Спорт-Экспресса», 2021'
+                paragraph='Ведущее федеральное СМИ о спорте, основанное в 1991 году. В
+                    2021 году издание праздновало свое 30-летие, к которому мы
+                    разработали капсульный юбилейный мерч для друзей, партнеров
+                    и коллег. Фирменный паттерн, символизирующий различные виды
+                    спорта, объединяется в тройную римскую цифру Х — 30-летие
+                    «Спорт-Экспресса».'
+                ending='Дизайн мерча'
+                color='#fff'
+            />
             {images.map((image, index) => (
                 <picture key={index}>
                     {image.mobileSrc && (
@@ -95,7 +107,7 @@ const SportExpress: React.FC = () => {
                     )}
                 </picture>
             ))}
-            <ProjectSlider currentProjectIndex={currentProjectIndex}/>
+            <ProjectSlider currentProjectIndex={currentProjectIndex} />
             <Footer />
         </section>
     );

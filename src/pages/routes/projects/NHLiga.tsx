@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, { useState } from 'react';
 import Navbar from '@/components/navbar';
 import Footer from '@/components/footer';
 import ProjectSlider from '@/components/projects-slider';
@@ -23,6 +23,7 @@ import {
     imgMobile6,
     imgMobile7,
 } from '../../../../public/projects/routing/NHLiga/index';
+import Text from '@/ui/routes/text';
 
 const NHLiga: React.FC = () => {
     const images = [
@@ -47,7 +48,7 @@ const NHLiga: React.FC = () => {
     };
     return (
         <section>
-            <div className='absolute xl:left-1/2 xl:-translate-x-1/2 translate-y-[900px] text-[#171F2A] px-6 xl:px-0 text-text-routing'>
+            {/* <div className='absolute xl:left-1/2 xl:-translate-x-1/2 translate-y-[900px] text-[#171F2A] px-6 xl:px-0 text-text-routing'>
                 <h1 className='text-[24px] 2xl:text-[32.67px] -tracking-[0.6px] lg:tracking-[0.6px] leading-[36px] lg:leading-[48.3px] pb-[20px]'>
                     Редизайн сайта для Ночной Лиги (NHLiga), 2021
                 </h1>
@@ -67,7 +68,23 @@ const NHLiga: React.FC = () => {
                 <p className='text-[13px] 2xl:text-[16.67px] tracking-[1px] leading-[22px] lg:leading-[28.3px]'>
                     UX/UI дизайн, лендинг
                 </p>
-            </div>
+            </div> */}
+            <Text
+                title='Редизайн сайта для Ночной Лиги (NHLiga), 2021'
+                paragraph='Ведущая в России организация по любительскому хоккею.
+                    Редизайн начался с детального исследования потребностей
+                    аудитории и формирования ключевых особенностей нового
+                    ресурса. Объемный этап прототипирования завершился 48
+                    уникальными страницами и дизайн-гайдом. Определили структуру
+                    и предусмотрели оптимальные решения для «горячих» мест на
+                    сайте. Теперь на главной странице все самое полезное и
+                    востребованное: свежие новости, тематические подборки по
+                    событиям и активациям лиги, галерея, статистика и лидеры.
+                    Бонусно собрали стильный и информативный лендинг о NHLiga с
+                    главными цифрами, рекордами и наградами.'
+                ending='UX/UI дизайн, лендинг'
+                color='#171F2A'
+            />
             <Navbar />
             {images.map((image, index) => (
                 <picture key={index}>
@@ -97,7 +114,7 @@ const NHLiga: React.FC = () => {
                     )}
                 </picture>
             ))}
-            <ProjectSlider currentProjectIndex={currentProjectIndex}/>
+            <ProjectSlider currentProjectIndex={currentProjectIndex} />
             <Footer />
         </section>
     );

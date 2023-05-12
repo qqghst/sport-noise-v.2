@@ -16,6 +16,7 @@ import {
     imgMobile5,
     imgMobile6,
 } from '../../../../public/projects/routing/projects-more/FHR/index';
+import Text from '@/ui/routes/text';
 
 const FHR: React.FC = () => {
     const images = [
@@ -35,7 +36,7 @@ const FHR: React.FC = () => {
     return (
         <section>
             <Navbar />
-            <div className='absolute xl:left-1/2 xl:-translate-x-1/2 translate-y-[900px] text-white px-6 xl:px-0 text-text-routing'>
+            {/* <div className='absolute xl:left-1/2 xl:-translate-x-1/2 translate-y-[900px] text-white px-6 xl:px-0 text-text-routing'>
                 <h1 className='text-[24px] 2xl:text-[32.67px] -tracking-[0.6px] lg:tracking-[0.6px] leading-[36px] lg:leading-[48.3px] pb-[20px]'>
                     Образовательный проект для Федерации Хоккея России (FHR),
                     2017
@@ -53,7 +54,21 @@ const FHR: React.FC = () => {
                 <p className='text-[13px] 2xl:text-[16.67px] tracking-[1px] leading-[22px] lg:leading-[28.3px]'>
                     Дизайн, верстка, издательская деятельность
                 </p>
-            </div>
+            </div> */}
+            <Text
+                title='Образовательный проект для Федерации Хоккея России (FHR),
+                    2017'
+                paragraph='Важный проект для национального спорта России. Разработали
+                    большой кейс из трех книг и пособия с упражнениями для
+                    молодых хоккеистов, которые хотят стать чемпионами. Единая
+                    визуальная система и фирменный стиль созданы с учетом
+                    философии и ключевых паттернов спортивной культуры ФХР.
+                    Издание стало новым стандартом для обучения будущих
+                    профессиональных хоккеистов по всей стране. Разработано
+                    совместно с ИД «Просвещение». '
+                ending='Дизайн, верстка, издательская деятельность'
+                color='#fff'
+            />
             {images.map((image, index) => (
                 <picture key={index}>
                     {image.mobileSrc && (

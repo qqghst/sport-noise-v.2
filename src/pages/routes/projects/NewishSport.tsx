@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, { useState } from 'react';
 import Navbar from '@/components/navbar';
 import Footer from '@/components/footer';
 import ProjectSlider from '@/components/projects-slider';
@@ -28,6 +28,7 @@ import {
     imgMobile7,
     imgMobile8,
 } from '../../../../public/projects/routing/NewishSport/index';
+import Text from '@/ui/routes/text';
 
 const NewishSport: React.FC = () => {
     const images = [
@@ -49,7 +50,6 @@ const NewishSport: React.FC = () => {
         { src: img16.src },
     ];
 
-
     const [currentProjectIndex, setCurrentProjectIndex] = useState(4);
 
     const handleSlideChange = (swiper: any) => {
@@ -58,7 +58,7 @@ const NewishSport: React.FC = () => {
     return (
         <section>
             <Navbar />
-            <div className='absolute xl:left-1/2 xl:-translate-x-1/2 translate-y-[900px] text-[#40FF98] px-6 xl:px-0 text-text-routing'>
+            {/* <div className='absolute xl:left-1/2 xl:-translate-x-1/2 translate-y-[900px] text-[#40FF98] px-6 xl:px-0 text-text-routing'>
                 <h1 className='text-[24px] 2xl:text-[32.67px] -tracking-[0.6px] lg:tracking-[0.6px] leading-[36px] lg:leading-[48.3px] pb-[20px]'>
                     Дизайн бренда для Newish Sport, 2022
                 </h1>
@@ -76,7 +76,21 @@ const NewishSport: React.FC = () => {
                 <p className='text-[13px] 2xl:text-[16.67px] tracking-[1px] leading-[22px] lg:leading-[28.3px]'>
                     Логотип бренда, корпоративная айдентика 
                 </p>
-            </div>
+            </div> */}
+            <Text
+                title='Дизайн бренда для Newish Sport, 2022'
+                paragraph='Производитель профессиональной экипировки с локальной
+                    швейной фабрикой и модельерным бюро. Бренд специализируется
+                    на изготовлении спортивной формы для триатлонистов,
+                    конькобежцев, лыжников, ультрамарофонцев и велоспортсменов.
+                    Перед нами стояла задача уйти от триколорной преемственности
+                    (белый, синий, красный) и создать динамичный образ бренда,
+                    отражающий специфику компании, интересы и характер ее ЦА.
+                    Провели аналитику, разработали главный паттерн и общую
+                    концепцию нового бренд-позиционирования Newish Sport.'
+                ending='Логотип бренда, корпоративная айдентика '
+                color='#40FF98'
+            />
             {images.map((image, index) => (
                 <picture key={index}>
                     {image.mobileSrc && (

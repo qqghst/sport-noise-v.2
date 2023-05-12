@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, { useState } from 'react';
 import Navbar from '@/components/navbar';
 import Footer from '@/components/footer';
 import ProjectSlider from '@/components/projects-slider';
@@ -19,6 +19,7 @@ import {
     imgMobile5,
     imgMobile6,
 } from '../../../../public/projects/routing/FHR/index';
+import Text from '@/ui/routes/text';
 
 const FHR: React.FC = () => {
     const images = [
@@ -39,7 +40,7 @@ const FHR: React.FC = () => {
     };
     return (
         <section>
-            <div className='absolute xl:left-1/2 xl:-translate-x-1/2 translate-y-[900px] text-[#F9EFE3] px-6 xl:px-0 text-text-routing'>
+            {/* <div className='absolute xl:left-1/2 xl:-translate-x-1/2 translate-y-[900px] text-[#F9EFE3] px-6 xl:px-0 text-text-routing'>
                 <h1 className='text-[24px] 2xl:text-[32.67px] -tracking-[0.6px] lg:tracking-[0.6px] leading-[36px] lg:leading-[48.3px] pb-[20px]'>
                     Лендинг для Федерации Хоккея России (FHR), 2021
                 </h1>
@@ -59,7 +60,23 @@ const FHR: React.FC = () => {
                 <p className='text-[13px] 2xl:text-[16.67px] tracking-[1px] leading-[22px] lg:leading-[28.3px]'>
                     Лендинг пейдж
                 </p>
-            </div>
+            </div> */}
+            <Text
+                title='Лендинг для Федерации Хоккея России (FHR), 2021'
+                paragraph='  Великая история СССР – Канада. По запросу нашего постоянного
+                    клиента ФХР разработали тематический лендинг, посвященный
+                    75-летней истории хоккея. Стиль современной летописи с
+                    удобной навигацией по годам планомерно погружает
+                    пользователя в богатую историю важнейшего спорта страны.
+                    Блочная структура не перегружает внимание: лендинг разбит на
+                    десятилетия, сопровождаемые историческими фотографиями,
+                    рекордами, фактами и художественно-историческими элементами
+                    тех событий. Выразительные акценты расставлены с помощью
+                    микроанимации. Лендинг адаптирован под разные устройства и
+                    дополнен промороликом.'
+                ending='Лендинг пейдж'
+                color='#F9EFE3'
+            />
             <Navbar />
             {images.map((image, index) => (
                 <picture key={index}>
@@ -89,7 +106,7 @@ const FHR: React.FC = () => {
                     )}
                 </picture>
             ))}
-            <ProjectSlider currentProjectIndex={currentProjectIndex}/>
+            <ProjectSlider currentProjectIndex={currentProjectIndex} />
             <Footer />
         </section>
     );
