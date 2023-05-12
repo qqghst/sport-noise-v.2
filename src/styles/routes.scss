@@ -7,6 +7,7 @@
 
 @media (min-width: 320px) and (max-width: 359px) {
     .text-text-routing {
+        padding: 0px 24px;
         top: 920px;
     }
     .text-routing-h1 {
@@ -28,6 +29,7 @@
 
 @media (min-width: 360px) and (max-width: 414px) {
     .text-text-routing {
+        padding: 0px 24px;
         top: 1035px;
     }
     .text-routing-h1 {
@@ -49,6 +51,7 @@
 
 @media (min-width: 415px) and (max-width: 500px) {
     .text-text-routing {
+        padding: 0px 24px;
         top: 1200px;
     }
     .text-routing-h1 {
@@ -70,6 +73,7 @@
 
 @media (min-width: 500px) and (max-width: 640px) {
     .text-text-routing {
+        padding: 0px 24px;
         top: 1700px;
     }
     .text-routing-h1 {
@@ -91,6 +95,7 @@
 
 @media (min-width: 641px) and (max-width: 767px) {
     .text-text-routing {
+        padding: 0px 40px;
         top: 2200px;
     }
     .text-routing-h1 {
@@ -112,6 +117,7 @@
 
 @media (min-width: 768px) and (max-width: 899px) {
     .text-text-routing {
+        padding: 0px 80px;
         top: 2700px;
     }
     .text-routing-h1 {
@@ -133,6 +139,7 @@
 
 @media (min-width: 900px) and (max-width: 1024px) {
     .text-text-routing {
+        padding: 0px 80px;
         top: 2900px;
     }
     .text-routing-h1 {
@@ -154,6 +161,7 @@
 
 @media (min-width: 1025px) and (max-width: 1279px) {
     .text-text-routing {
+        padding: 0px 120px;
         top: 3200px;
     }
     .text-routing-h1 {
@@ -175,7 +183,15 @@
 
 @media (min-width: 1280px) and (max-width: 1365px) {
     .text-text-routing {
-        top: 960px;
+        // display: flex;
+        // flex-direction: column;
+        // justify-content: center;
+        // align-items: center;
+        // xl:left-1/2 xl:-translate-x-1/2
+        padding: 0px 0px;
+        left: 50%;
+        transform: translateX(-50%);
+        top: 850px;
     }
     .text-routing-h1 {
         font-size: 29px;
@@ -194,9 +210,12 @@
     }
 }
 
-@media (min-width: 1366px) and (max-width: 1440px) {
+@media (min-width: 1366px) and (max-width: 1439px) {
     .text-text-routing {
-        top: 1000px;
+        padding: 0px 0px;
+        left: 50%;
+        transform: translateX(-50%);
+        top: 900px;
     }
     .text-routing-h1 {
         font-size: 31px;
@@ -215,9 +234,12 @@
     }
 }
 
-@media (min-width: 1441px) and (max-width: 1920px) {
+@media (min-width: 1440px) and (max-width: 1579px) {
     .text-text-routing {
-        top: 1060px;
+        padding: 0px 0px;
+        left: 50%;
+        transform: translateX(-50%);
+        top: 930px;
     }
     .text-routing-h1 {
         font-size: 32px;
@@ -238,6 +260,9 @@
 
 @media (min-width: 1580px) and (max-width: 1800px) {
     .text-text-routing {
+        padding: 0px 0px;
+        left: 50%;
+        transform: translateX(-50%);
         top: 1200px;
     }
     .text-routing-h1 {
@@ -259,6 +284,9 @@
 
 @media (min-width: 1801px) and (max-width: 1919px) {
     .text-text-routing {
+        padding: 0px 0px;
+        left: 50%;
+        transform: translateX(-50%);
         top: 1280px;
     }
     .text-routing-h1 {
@@ -280,6 +308,9 @@
 
 @media (min-width: 1920px) and (max-width: 2139px) {
     .text-text-routing {
+        padding: 0px 0px;
+        left: 50%;
+        transform: translateX(-50%);
         top: 1400px;
     }
     .text-routing-h1 {
@@ -301,6 +332,9 @@
 
 @media (min-width: 2140px) and (max-width: 2300px) {
     .text-text-routing {
+        padding: 0px 0px;
+        left: 50%;
+        transform: translateX(-50%);
         top: 1500px;
     }
     .text-routing-h1 {
@@ -322,6 +356,9 @@
 
 @media (min-width: 2301px) and (max-width: 2450px) {
     .text-text-routing {
+        padding: 0px 0px;
+        left: 50%;
+        transform: translateX(-50%);
         top: 1600px;
     }
     .text-routing-h1 {
@@ -343,6 +380,9 @@
 
 @media (min-width: 2451px) and (max-width: 2620px) {
     .text-text-routing {
+        padding: 0px 0px;
+        left: 50%;
+        transform: translateX(-50%);
         top: 1700px;
     }
     .text-routing-h1 {
@@ -364,6 +404,9 @@
 
 @media (min-width: 2621px) and (max-width: 2800px) {
     .text-text-routing {
+        padding: 0px 0px;
+        left: 50%;
+        transform: translateX(-50%);
         top: 1900px;
     }
     .text-routing-h1 {

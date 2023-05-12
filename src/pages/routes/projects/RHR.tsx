@@ -173,7 +173,7 @@ const RHR: React.FC = () => {
     return (
         <section className=''>
             <Navbar />
-            <div className='absolute xl:left-1/2 xl:-translate-x-1/2 text-white  px-6 sm:px-10 md:px-[80px] xl:px-0 text-text-routing'>
+            <div className='absolute text-white text-text-routing'>
                 <h1 className='pb-[20px] text-routing-h1'>
                     Ультрамарафон White Bride Ultra Gelendzhik для Running
                     Heroes Russia (RHR), 2022
@@ -200,7 +200,7 @@ const RHR: React.FC = () => {
                         <source
                             className='image-routing'
                             srcSet={image.mobileSrc}
-                            media='(max-width: 1280px)'
+                            media='(max-width: 1279px)'
                         />
                     )}
                     {index >= images.length - 5 ? (
