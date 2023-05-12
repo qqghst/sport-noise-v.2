@@ -38,9 +38,16 @@ const LoxinoIslanders: React.FC = () => {
     const handleSlideChange = (swiper: any) => {
         setCurrentProjectIndex(swiper.activeIndex);
     };
+    const [designAudit, setDesignAudit] = useState(false);
+    const [joinTenderChecked, setJoinTenderChecked] = useState(false);
     return (
         <section>
-            <Navbar />
+            <Navbar
+                designAudit={designAudit}
+                setDesignAudit={setDesignAudit}
+                joinTenderChecked={joinTenderChecked}
+                setJoinTenderChecked={setJoinTenderChecked}
+            />
             {/* <div className='absolute xl:left-1/2 xl:-translate-x-1/2 translate-y-[900px] text-[#23ABDD] px-6 xl:px-0 text-text-routing'>
                 <h1 className='text-[24px] 2xl:text-[32.67px] -tracking-[0.6px] lg:tracking-[0.6px] leading-[36px] lg:leading-[48.3px] pb-[20px]'>
                     Логотип для хоккейного клуба Loxino Islanders, 2021
@@ -107,7 +114,12 @@ const LoxinoIslanders: React.FC = () => {
                 </picture>
             ))}
             <ProjectSlider currentProjectIndex={currentProjectIndex} />
-            <Footer />
+            <Footer
+                designAudit={designAudit}
+                setDesignAudit={setDesignAudit}
+                joinTenderChecked={joinTenderChecked}
+                setJoinTenderChecked={setJoinTenderChecked}
+            />
         </section>
     );
 };

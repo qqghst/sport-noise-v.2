@@ -171,9 +171,16 @@ const RHR: React.FC = () => {
     const handleSlideChange = (swiper: any) => {
         setCurrentProjectIndex(swiper.activeIndex);
     };
+    const [designAudit, setDesignAudit] = useState(false);
+    const [joinTenderChecked, setJoinTenderChecked] = useState(false);
     return (
         <section className=''>
-            <Navbar />
+            <Navbar
+                designAudit={designAudit}
+                setDesignAudit={setDesignAudit}
+                joinTenderChecked={joinTenderChecked}
+                setJoinTenderChecked={setJoinTenderChecked}
+            />
             {/* <div className='absolute text-white text-text-routing'>
                 <h1 className='pb-[20px] text-routing-h1'>
                     Ультрамарафон White Bride Ultra Gelendzhik для Running
@@ -240,7 +247,12 @@ const RHR: React.FC = () => {
                 </picture>
             ))}
             <ProjectSlider currentProjectIndex={currentProjectIndex} />
-            <Footer />
+            <Footer
+                designAudit={designAudit}
+                setDesignAudit={setDesignAudit}
+                joinTenderChecked={joinTenderChecked}
+                setJoinTenderChecked={setJoinTenderChecked}
+            />
         </section>
     );
 };

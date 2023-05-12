@@ -38,6 +38,9 @@ const FHR: React.FC = () => {
     const handleSlideChange = (swiper: any) => {
         setCurrentProjectIndex(swiper.activeIndex);
     };
+
+    const [designAudit, setDesignAudit] = useState(false);
+    const [joinTenderChecked, setJoinTenderChecked] = useState(false);
     return (
         <section>
             {/* <div className='absolute xl:left-1/2 xl:-translate-x-1/2 translate-y-[900px] text-[#F9EFE3] px-6 xl:px-0 text-text-routing'>
@@ -77,7 +80,12 @@ const FHR: React.FC = () => {
                 ending='Лендинг пейдж'
                 color='#F9EFE3'
             />
-            <Navbar />
+            <Navbar
+                designAudit={designAudit}
+                setDesignAudit={setDesignAudit}
+                joinTenderChecked={joinTenderChecked}
+                setJoinTenderChecked={setJoinTenderChecked}
+            />
             {images.map((image, index) => (
                 <picture key={index}>
                     {image.mobileSrc && (
@@ -107,7 +115,12 @@ const FHR: React.FC = () => {
                 </picture>
             ))}
             <ProjectSlider currentProjectIndex={currentProjectIndex} />
-            <Footer />
+            <Footer
+                designAudit={designAudit}
+                setDesignAudit={setDesignAudit}
+                joinTenderChecked={joinTenderChecked}
+                setJoinTenderChecked={setJoinTenderChecked}
+            />
         </section>
     );
 };

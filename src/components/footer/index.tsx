@@ -7,12 +7,28 @@ import Modal from '../modal';
 import useModal from '@/hooks/useModal';
 import { useScrollBlock } from '@/hooks/useScrollBlock';
 
-const Footer = () => {
+interface ICheckedProps {
+    designAudit: any;
+    setDesignAudit: any;
+    joinTenderChecked: any;
+    setJoinTenderChecked: any;
+}
+
+const Footer: React.FC<ICheckedProps> = ({
+    designAudit,
+    setDesignAudit,
+    joinTenderChecked,
+    setJoinTenderChecked,
+}) => {
     const { isOpen, toggle } = useModal();
     const [blockScroll, allowScroll] = useScrollBlock();
     return (
         <>
             <Modal
+                designAudit={designAudit}
+                joinTenderChecked={joinTenderChecked}
+                setDesignAudit={setDesignAudit}
+                setJoinTenderChecked={setJoinTenderChecked}
                 isOpen={isOpen}
                 toggle={toggle}></Modal>
             <section className='px-5 md:px-[64px] lg:px-[128px] pb-12'>
@@ -62,7 +78,9 @@ const Footer = () => {
                     </div>
                     <div className='flex flex-col'>
                         <h1 className='text-[36px] lg:text-[40px] xl:text-[64px] tracking-[-0.75px] lg:tracking-[-0.6px] leading-[29px] lg:leading-[68px] font-medium text-blue lg:hover:text-hover  lg:pb-[17px] pb-[24px] textFooter'>
-                            <Link href='mailto:hello@sportnoise.ru'>hello@sportnoise.ru</Link>
+                            <Link href='mailto:hello@sportnoise.ru'>
+                                hello@sportnoise.ru
+                            </Link>
                         </h1>
                         <ul className='flex xl:flex-row md:flex-col  justify-between gap-4 text-[17px] tracking-0 lg:tracking-[0.3px] leading-[28px] font-medium text-blue pb-[22px]'>
                             <li className='text-blue '>+7 (495) 755-85-38</li>
@@ -92,7 +110,7 @@ const Footer = () => {
                                     className='text-blue lg:hover:text-hover transition ease-in-out duration-400 tracking-[0.5px]'
                                     href='https://docs.google.com/forms/d/e/1FAIpQLSd3m57aXVTB-0EKbo3nQ_lPyx7SA2KIdw6TqOXr71Q6J8--eQ/viewform'
                                     rel='noopener noreferrer'
-                                    target="_blank">
+                                    target='_blank'>
                                     &#x25CF; Заполнить бриф
                                 </Link>
                             </li>
@@ -102,6 +120,7 @@ const Footer = () => {
                                     onClick={() => {
                                         toggle();
                                         blockScroll();
+                                        setDesignAudit(!designAudit);
                                     }}>
                                     &#x25CF; Дизайн аудит
                                 </button>
@@ -112,6 +131,7 @@ const Footer = () => {
                                     onClick={() => {
                                         toggle();
                                         blockScroll();
+                                        setJoinTenderChecked(!joinTenderChecked)
                                     }}>
                                     &#x25CF; Пригласить в аудит
                                 </button>

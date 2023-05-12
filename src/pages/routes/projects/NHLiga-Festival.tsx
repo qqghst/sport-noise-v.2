@@ -46,6 +46,8 @@ const NHLigaFestival: React.FC = () => {
     const handleSlideChange = (swiper: any) => {
         setCurrentProjectIndex(swiper.activeIndex);
     };
+    const [designAudit, setDesignAudit] = useState(false);
+    const [joinTenderChecked, setJoinTenderChecked] = useState(false);
     return (
         <section>
             {/* <div className='absolute xl:left-1/2 xl:-translate-x-1/2 translate-y-[900px] text-[#ACC7FF] px-6 xl:px-0 text-text-routing'>
@@ -83,7 +85,10 @@ const NHLigaFestival: React.FC = () => {
                 ending='Продюсирование события, разработка ключевых нарративов, мерч'
                 color='#ACC7FF'
             />
-            <Navbar />
+            <Navbar  designAudit={designAudit}
+                setDesignAudit={setDesignAudit}
+                joinTenderChecked={joinTenderChecked}
+                setJoinTenderChecked={setJoinTenderChecked}/>
             {images.map((image, index) => (
                 <picture key={index}>
                     {image.mobileSrc && (
@@ -113,7 +118,10 @@ const NHLigaFestival: React.FC = () => {
                 </picture>
             ))}
             <ProjectSlider currentProjectIndex={currentProjectIndex} />
-            <Footer />
+            <Footer  designAudit={designAudit}
+                setDesignAudit={setDesignAudit}
+                joinTenderChecked={joinTenderChecked}
+                setJoinTenderChecked={setJoinTenderChecked}/>
         </section>
     );
 };

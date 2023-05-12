@@ -48,10 +48,17 @@ const SportExpress: React.FC = () => {
     const handleSlideChange = (swiper: any) => {
         setCurrentProjectIndex(swiper.activeIndex);
     };
+    const [designAudit, setDesignAudit] = useState(false);
+    const [joinTenderChecked, setJoinTenderChecked] = useState(false);
 
     return (
         <section>
-            <Navbar />
+            <Navbar
+                designAudit={designAudit}
+                setDesignAudit={setDesignAudit}
+                joinTenderChecked={joinTenderChecked}
+                setJoinTenderChecked={setJoinTenderChecked}
+            />
             {/* <div className='absolute xl:left-1/2 xl:-translate-x-1/2 translate-y-[900px] text-white px-6 xl:px-0 text-text-routing'>
                 <h1 className='text-[24px] 2xl:text-[32.67px] -tracking-[0.6px] lg:tracking-[0.6px] leading-[36px] lg:leading-[48.3px] pb-[20px]'>
                     Юбилейная атрибутика для «Спорт-Экспресса», 2021
@@ -108,7 +115,12 @@ const SportExpress: React.FC = () => {
                 </picture>
             ))}
             <ProjectSlider currentProjectIndex={currentProjectIndex} />
-            <Footer />
+            <Footer
+                designAudit={designAudit}
+                setDesignAudit={setDesignAudit}
+                joinTenderChecked={joinTenderChecked}
+                setJoinTenderChecked={setJoinTenderChecked}
+            />
         </section>
     );
 };

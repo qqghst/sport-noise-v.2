@@ -106,7 +106,12 @@ export default function Home() {
                 direction='left'
                 directionBorder='right'
             /> */}
-                <Footer />
+                <Footer
+                    designAudit={designAudit}
+                    setDesignAudit={setDesignAudit}
+                    joinTenderChecked={joinTenderChecked}
+                    setJoinTenderChecked={setJoinTenderChecked}
+                />
             </div>
         </>
     );
