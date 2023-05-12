@@ -5,99 +5,380 @@
     object-fit: cover;
 }
 
-
-@media (min-width: 460px) and (max-width: 550px) {
+@media (min-width: 320px) and (max-width: 359px) {
     .text-text-routing {
-        top: 400px;
+        top: 920px;
+    }
+    .text-routing-h1 {
+        font-size: 17px;
+        letter-spacing: -2%;
+        line-height: 24px;
+    }
+    .text-routing-p {
+        font-size: 14px;
+        letter-spacing: 2%;
+        line-height: 21px;
+    }
+    .text-routing-p2 {
+        font-size: 13px;
+        letter-spacing: 4%;
+        line-height: 19px;
     }
 }
 
-@media (min-width: 550px) and (max-width: 650px) {
+@media (min-width: 360px) and (max-width: 414px) {
     .text-text-routing {
-        top: 700px;
+        top: 1035px;
+    }
+    .text-routing-h1 {
+        font-size: 20px;
+        letter-spacing: -2%;
+        line-height: 27px;
+    }
+    .text-routing-p {
+        font-size: 15px;
+        letter-spacing: 2%;
+        line-height: 24px;
+    }
+    .text-routing-p2 {
+        font-size: 13px;
+        letter-spacing: 4%;
+        line-height: 19px;
     }
 }
 
-@media (min-width: 650px) and (max-width: 750px) {
+@media (min-width: 415px) and (max-width: 500px) {
     .text-text-routing {
         top: 1200px;
     }
+    .text-routing-h1 {
+        font-size: 20px;
+        letter-spacing: -2%;
+        line-height: 27px;
+    }
+    .text-routing-p {
+        font-size: 15px;
+        letter-spacing: 2%;
+        line-height: 24px;
+    }
+    .text-routing-p2 {
+        font-size: 13px;
+        letter-spacing: 4%;
+        line-height: 19px;
+    }
 }
 
-@media (min-width: 750px) and (max-width: 850px) {
+@media (min-width: 500px) and (max-width: 640px) {
+    .text-text-routing {
+        top: 1700px;
+    }
+    .text-routing-h1 {
+        font-size: 20px;
+        letter-spacing: -2%;
+        line-height: 27px;
+    }
+    .text-routing-p {
+        font-size: 15px;
+        letter-spacing: 2%;
+        line-height: 24px;
+    }
+    .text-routing-p2 {
+        font-size: 13px;
+        letter-spacing: 4%;
+        line-height: 19px;
+    }
+}
+
+@media (min-width: 641px) and (max-width: 767px) {
+    .text-text-routing {
+        top: 2200px;
+    }
+    .text-routing-h1 {
+        font-size: 24px;
+        letter-spacing: -2%;
+        line-height: 32px;
+    }
+    .text-routing-p {
+        font-size: 16px;
+        letter-spacing: 2%;
+        line-height: 24px;
+    }
+    .text-routing-p2 {
+        font-size: 13px;
+        letter-spacing: 4%;
+        line-height: 19px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 899px) {
+    .text-text-routing {
+        top: 2700px;
+    }
+    .text-routing-h1 {
+        font-size: 26px;
+        letter-spacing: -2%;
+        line-height: 32px;
+    }
+    .text-routing-p {
+        font-size: 17px;
+        letter-spacing: 2%;
+        line-height: 29px;
+    }
+    .text-routing-p2 {
+        font-size: 14px;
+        letter-spacing: 4%;
+        line-height: 23px;
+    }
+}
+
+@media (min-width: 900px) and (max-width: 1024px) {
+    .text-text-routing {
+        top: 2900px;
+    }
+    .text-routing-h1 {
+        font-size: 26px;
+        letter-spacing: -2%;
+        line-height: 32px;
+    }
+    .text-routing-p {
+        font-size: 17px;
+        letter-spacing: 2%;
+        line-height: 29px;
+    }
+    .text-routing-p2 {
+        font-size: 14px;
+        letter-spacing: 4%;
+        line-height: 23px;
+    }
+}
+
+@media (min-width: 1025px) and (max-width: 1279px) {
+    .text-text-routing {
+        top: 3200px;
+    }
+    .text-routing-h1 {
+        font-size: 29px;
+        letter-spacing: 1%;
+        line-height: 37px;
+    }
+    .text-routing-p {
+        font-size: 17px;
+        letter-spacing: 2%;
+        line-height: 29px;
+    }
+    .text-routing-p2 {
+        font-size: 14px;
+        letter-spacing: 4%;
+        line-height: 23px;
+    }
+}
+
+@media (min-width: 1280px) and (max-width: 1365px) {
+    .text-text-routing {
+        top: 960px;
+    }
+    .text-routing-h1 {
+        font-size: 29px;
+        letter-spacing: 1%;
+        line-height: 37px;
+    }
+    .text-routing-p {
+        font-size: 17px;
+        letter-spacing: 2%;
+        line-height: 29px;
+    }
+    .text-routing-p2 {
+        font-size: 14px;
+        letter-spacing: 4%;
+        line-height: 23px;
+    }
+}
+
+@media (min-width: 1366px) and (max-width: 1440px) {
+    .text-text-routing {
+        top: 1000px;
+    }
+    .text-routing-h1 {
+        font-size: 31px;
+        letter-spacing: 1%;
+        line-height: 40px;
+    }
+    .text-routing-p {
+        font-size: 18px;
+        letter-spacing: 2%;
+        line-height: 31px;
+    }
+    .text-routing-p2 {
+        font-size: 17px;
+        letter-spacing: 4%;
+        line-height: 25px;
+    }
+}
+
+@media (min-width: 1441px) and (max-width: 1920px) {
+    .text-text-routing {
+        top: 1060px;
+    }
+    .text-routing-h1 {
+        font-size: 32px;
+        letter-spacing: 1%;
+        line-height: 42px;
+    }
+    .text-routing-p {
+        font-size: 19px;
+        letter-spacing: 2%;
+        line-height: 33px;
+    }
+    .text-routing-p2 {
+        font-size: 17px;
+        letter-spacing: 4%;
+        line-height: 25px;
+    }
+}
+
+@media (min-width: 1580px) and (max-width: 1800px) {
+    .text-text-routing {
+        top: 1200px;
+    }
+    .text-routing-h1 {
+        font-size: 32px;
+        letter-spacing: 1%;
+        line-height: 42px;
+    }
+    .text-routing-p {
+        font-size: 19px;
+        letter-spacing: 2%;
+        line-height: 33px;
+    }
+    .text-routing-p2 {
+        font-size: 17px;
+        letter-spacing: 4%;
+        line-height: 25px;
+    }
+}
+
+@media (min-width: 1801px) and (max-width: 1919px) {
+    .text-text-routing {
+        top: 1280px;
+    }
+    .text-routing-h1 {
+        font-size: 32px;
+        letter-spacing: 1%;
+        line-height: 42px;
+    }
+    .text-routing-p {
+        font-size: 19px;
+        letter-spacing: 2%;
+        line-height: 33px;
+    }
+    .text-routing-p2 {
+        font-size: 17px;
+        letter-spacing: 4%;
+        line-height: 25px;
+    }
+}
+
+@media (min-width: 1920px) and (max-width: 2139px) {
+    .text-text-routing {
+        top: 1400px;
+    }
+    .text-routing-h1 {
+        font-size: 43px;
+        letter-spacing: 1%;
+        line-height: 56px;
+    }
+    .text-routing-p {
+        font-size: 24px;
+        letter-spacing: 2%;
+        line-height: 44px;
+    }
+    .text-routing-p2 {
+        font-size: 20px;
+        letter-spacing: 4%;
+        line-height: 29px;
+    }
+}
+
+@media (min-width: 2140px) and (max-width: 2300px) {
     .text-text-routing {
         top: 1500px;
     }
-}
-
-@media (min-width: 850px) and (max-width: 950px) {
-    .text-text-routing {
-        top: 2000px;
+    .text-routing-h1 {
+        font-size: 43px;
+        letter-spacing: 1%;
+        line-height: 56px;
+    }
+    .text-routing-p {
+        font-size: 24px;
+        letter-spacing: 2%;
+        line-height: 44px;
+    }
+    .text-routing-p2 {
+        font-size: 20px;
+        letter-spacing: 4%;
+        line-height: 29px;
     }
 }
 
-@media (min-width: 950px) and (max-width: 1024px) {
+@media (min-width: 2301px) and (max-width: 2450px) {
     .text-text-routing {
-        top: 2400px;
+        top: 1600px;
+    }
+    .text-routing-h1 {
+        font-size: 43px;
+        letter-spacing: 1%;
+        line-height: 56px;
+    }
+    .text-routing-p {
+        font-size: 24px;
+        letter-spacing: 2%;
+        line-height: 44px;
+    }
+    .text-routing-p2 {
+        font-size: 20px;
+        letter-spacing: 4%;
+        line-height: 29px;
     }
 }
 
-@media (min-width: 1024px) and (max-width: 1150px) {
+@media (min-width: 2451px) and (max-width: 2620px) {
     .text-text-routing {
-        top: 2800px;
+        top: 1700px;
+    }
+    .text-routing-h1 {
+        font-size: 43px;
+        letter-spacing: 1%;
+        line-height: 56px;
+    }
+    .text-routing-p {
+        font-size: 24px;
+        letter-spacing: 2%;
+        line-height: 44px;
+    }
+    .text-routing-p2 {
+        font-size: 20px;
+        letter-spacing: 4%;
+        line-height: 29px;
     }
 }
 
-@media (min-width: 1150px) and (max-width: 1280px) {
+@media (min-width: 2621px) and (max-width: 2800px) {
     .text-text-routing {
-        top: 3100px;
+        top: 1900px;
     }
-}
-
-@media (min-width: 1280px) and (max-width: 1400px) {
-    .text-text-routing {
-        top: -100px;
+    .text-routing-h1 {
+        font-size: 43px;
+        letter-spacing: 1%;
+        line-height: 56px;
     }
-}
-
-@media (min-width: 1400px) and (max-width: 1536px) {
-    .text-text-routing {
-        top: 10px;
+    .text-routing-p {
+        font-size: 24px;
+        letter-spacing: 2%;
+        line-height: 44px;
     }
-}
-
-@media (min-width: 1700px) and (max-width: 1820px) {
-    .text-text-routing {
-        top: 200px;
-    }
-}
-
-@media (min-width: 1820px) and (max-width: 1920px) {
-    .text-text-routing {
-        top: 300px;
-    }
-}
-
-@media (min-width: 1920px) and (max-width: 2200px) {
-    .text-text-routing {
-        top: 400px;
-    }
-}
-
-@media (min-width: 2200px) and (max-width: 2400px) {
-    .text-text-routing {
-        top: 600px;
-    }
-}
-
-@media (min-width: 2400px) and (max-width: 2700px) {
-    .text-text-routing {
-        top: 800px;
-    }
-}
-
-@media (min-width: 2700px) {
-    .text-text-routing {
-        top: 1000px;
+    .text-routing-p2 {
+        font-size: 20px;
+        letter-spacing: 4%;
+        line-height: 29px;
     }
 }
