@@ -43,6 +43,7 @@ const Modal: React.FC<IUseModalProps> = ({ isOpen, toggle }) => {
             if (event.key === 'Escape' && isOpen) {
                 toggle();
                 allowScroll();
+                reset()
             }
         };
 
@@ -69,6 +70,7 @@ const Modal: React.FC<IUseModalProps> = ({ isOpen, toggle }) => {
                                     onClick={() => {
                                         toggle();
                                         allowScroll();
+                                        reset();
                                     }}
                                 />
                             </div>
@@ -127,58 +129,58 @@ const Modal: React.FC<IUseModalProps> = ({ isOpen, toggle }) => {
                                                 <div className='flex flex-row gap-[10px]'>
                                                     <Checkbox
                                                         text='логотип'
-                                                        name='checkbox'
+                                                        name='логотип'
                                                         register={register}
                                                     />
                                                     <Checkbox
                                                         text='фирменный стиль'
-                                                        name='checkbox'
+                                                        name='фирменный стиль'
                                                         register={register}
                                                     />
                                                     <Checkbox
                                                         text='брендинг'
-                                                        name='checkbox'
+                                                        name='брендинг'
                                                         register={register}
                                                     />
                                                 </div>
                                                 <div className='flex flex-row gap-[10px]'>
                                                     <Checkbox
                                                         text='веб-разработка'
-                                                        name='checkbox'
+                                                        name='веб-разработка'
                                                         register={register}
                                                     />
                                                     <Checkbox
                                                         text='комплексные услуги'
-                                                        name='checkbox'
+                                                        name='комплексные услуги'
                                                         register={register}
                                                     />
                                                 </div>
                                                 <div className='flex flex-row gap-[10px]'>
                                                     <Checkbox
                                                         text='дизайн-аудит'
-                                                        name='checkbox'
+                                                        name='дизайн-аудит'
                                                         register={register}
                                                     />
                                                     <Checkbox
                                                         text='дизайн сопровождение'
-                                                        name='checkbox'
+                                                        name='дизайн сопровождение'
                                                         register={register}
                                                     />
                                                 </div>
                                                 <div className='flex flex-row gap-[10px]'>
                                                     <Checkbox
                                                         text='техническое партнерство'
-                                                        name='checkbox'
+                                                        name='техническое партнерство'
                                                         register={register}
                                                     />
                                                     <Checkbox
                                                         text='тендер'
-                                                        name='checkbox'
+                                                        name='тендер'
                                                         register={register}
                                                     />
                                                     <Checkbox
                                                         text='другое'
-                                                        name='checkbox'
+                                                        name='другое'
                                                         register={register}
                                                     />
                                                 </div>
@@ -190,41 +192,41 @@ const Modal: React.FC<IUseModalProps> = ({ isOpen, toggle }) => {
                                                 <div className='flex flex-row gap-[10px]'>
                                                     <Checkbox
                                                         text='логотип'
-                                                        name='checkbox'
+                                                        name='логотип'
                                                         register={register}
                                                     />
                                                     <Checkbox
                                                         text='фирменный стиль'
-                                                        name='checkbox'
+                                                        name='фирменный стиль'
                                                         register={register}
                                                     />
                                                 </div>
                                                 <div className='flex flex-row gap-[10px]'>
                                                     <Checkbox
                                                         text='брендинг'
-                                                        name='checkbox'
+                                                        name='брендинг'
                                                         register={register}
                                                     />
                                                     <Checkbox
                                                         text='веб-разработка'
-                                                        name='checkbox'
+                                                        name='веб-разработка'
                                                         register={register}
                                                     />
                                                 </div>
                                                 <div className='flex flex-row gap-[10px]'>
                                                     <Checkbox
                                                         text='дизайн-аудит'
-                                                        name='checkbox'
+                                                        name='дизайн-аудит'
                                                         register={register}
                                                     />
                                                     <Checkbox
                                                         text='тендер'
-                                                        name='checkbox'
+                                                        name='тендер'
                                                         register={register}
                                                     />
                                                     <Checkbox
                                                         text='другое'
-                                                        name='checkbox'
+                                                        name='другое'
                                                         register={register}
                                                     />
                                                 </div>
@@ -248,7 +250,7 @@ const Modal: React.FC<IUseModalProps> = ({ isOpen, toggle }) => {
                                 <div className='mt-[22px]'>
                                     <PersonalData
                                         register={register}
-                                        name='checkbox'
+                                        name='personalData'
                                         errors={errors}
                                         required='Обязательное условие'
                                     />
@@ -276,6 +278,7 @@ const Modal: React.FC<IUseModalProps> = ({ isOpen, toggle }) => {
                                     onClick={() => {
                                         toggle();
                                         allowScroll();
+                                        reset()
                                     }}
                                 />
                             </div>
