@@ -47,13 +47,6 @@ const Footer: React.FC<ICheckedProps> = ({
                         </button>
                         <div className='hidden lg:block  text-blue'>
                             <Link href='#navbar'>
-                                {/* <Image
-                                    src={arrow}
-                                    alt='SportNoise'
-                                    width={80 / 2}
-                                    height={80 / 2}
-                                    className='-rotate-90'
-                                /> */}
                                 <svg
                                     className='text-blue hover:text-hover -rotate-90'
                                     xmlns='http://www.w3.org/2000/svg'
@@ -138,21 +131,6 @@ const Footer: React.FC<ICheckedProps> = ({
                             </li>
                         </ul>
                         <div className='flex flex-row justify-between items-end'>
-                            {/* <p className='w-[300px] lg:w-[420px] pt-[16px] text-[13px] tracking-[4%] leading-[17px] font-medium text-grey text-newGrey'>
-                                ООО Спортнойз. Digital-решения для развития
-                                спортивных и клубных брендов.{' '}
-                                <span>
-                                    {' '}
-                                    <Link
-                                        href='https://disk.yandex.ru/d/CFt-0eN46Vt4jQ'
-                                        target='_blank'
-                                        rel='noopener noreferrer'>
-                                        Политика.
-                                    </Link>
-                                </span>{' '}
-                                © 2016 — 2023. Digital-студия SportNoise. ООО
-                                Спортнойз.
-                            </p> */}
                             <p className='w-[300px] lg:w-[500px] pt-[16px] text-[13px] tracking-[0.5px] leading-[21px] font-medium text-grey'>
                                 Digital-решения для развития спортивных и
                                 клубных брендов.{' '}
@@ -167,13 +145,6 @@ const Footer: React.FC<ICheckedProps> = ({
                             </p>
                             <div className='block md:hidden text-blue'>
                                 <Link href='#navbar'>
-                                    {/* <Image
-                                        src={arrow}
-                                        alt='SportNoise'
-                                        width={80 / 2}
-                                        height={80 / 2}
-                                        className='-rotate-90'
-                                    /> */}
                                     <svg
                                         className='text-blue  -rotate-90'
                                         xmlns='http://www.w3.org/2000/svg'
@@ -211,13 +182,6 @@ const Footer: React.FC<ICheckedProps> = ({
                         </button>
                         <div className='hidden md:block translate-y-[275px] xl:translate-y-[80px]'>
                             <Link href='#navbar'>
-                                {/* <Image
-                                    src={arrow}
-                                    alt='SportNoise'
-                                    width={80 / 2}
-                                    height={80 / 2}
-                                    className='-rotate-90'
-                                /> */}
                                 <svg
                                     className='text-blue hover:text-hover -rotate-90'
                                     xmlns='http://www.w3.org/2000/svg'

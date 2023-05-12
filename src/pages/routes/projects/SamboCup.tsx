@@ -59,26 +59,6 @@ const SamboCup: React.FC = () => {
     const [joinTenderChecked, setJoinTenderChecked] = useState(false);
     return (
         <section>
-            {/* <div className='absolute xl:left-1/2 xl:-translate-x-1/2 translate-y-[900px] text-white px-6 xl:px-0 text-text-routing'>
-                <h1 className='text-[24px] 2xl:text-[32.67px] -tracking-[0.6px] lg:tracking-[0.6px] leading-[36px] lg:leading-[48.3px] pb-[20px]'>
-                    Open European SAMBO cup. Romania для Международной Федерации
-                    Самбо (FIAS), 2021
-                </h1>
-                <p className='text-[14px] 2xl:text-[18.33px] tracking-[0.5px] leading-[28px] lg:leading-[34px] pb-[54px] lg:pb-[23px]'>
-                    FIAS руководит развитием самбо в мире и регулярно проводит
-                    локальные и международные чемпионаты. Один из них — Open
-                    European SAMBO cup. Romania. Разработали для
-                    континентального события символичный логотип и фирменный
-                    стиль с динамичными акцентами. Визуальной доминантой в
-                    логотипе стал силуэт Триумфальной арки — талисмана
-                    Бухареста. На ее фасаде «проецируются» важные детали о
-                    чемпионате: дата и место проведения, титульный спонсор и
-                    принадлежность к FIAS.
-                </p>
-                <p className='text-[13px] 2xl:text-[16.67px] tracking-[1px] leading-[22px] lg:leading-[28.3px]'>
-                    Логотип турнира, фирменный стиль
-                </p>
-            </div> */}
             <Text
                 title='Open European SAMBO cup. Romania для Международной Федерации
                     Самбо (FIAS), 2021'

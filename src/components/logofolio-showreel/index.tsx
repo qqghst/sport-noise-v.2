@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import Image from 'next/image';
 import styles from './styles.module.scss';
-import close from '../../../public/close.svg';
 import arrow from '../../../public/logofolio-and-showreel/arrow.svg';
 import { useScrollBlock } from '@/hooks/useScrollBlock';
 import Button from '@/ui/buttons/button-video';

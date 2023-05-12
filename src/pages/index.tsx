@@ -11,7 +11,6 @@ import Services from '@/components/services';
 import MarqueeText from '@/components/marquee-text';
 import AboutSecond from '@/components/about-second';
 import Footer from '@/components/footer';
-import MarqueeTest from '@/components/marquee-test';
 import OgImage from '../../public/open/SportNoise.jpg';
 
 export default function Home() {
@@ -83,29 +82,10 @@ export default function Home() {
                     className='mt-[78px] lg:mt-[231px]'
                     text='Новая культура в спорте для больших побед в бизнесе&nbsp;'
                 />
-                {/* <MarqueeTest
-                text='Новая культура в спорте для больших побед в бизнесе&nbsp;'
-                textBorder='Новая культура в спорте для больших побед в бизнесе&nbsp;'
-                direction='left'
-                directionBorder='right'
-            /> */}
                 <Services />
                 <MarqueeText text='Играй ярко и побеждай красиво&nbsp;' />
-                {/* <MarqueeTest
-                text='Играй ярко и побеждай красиво&nbsp;'
-                textBorder='Играй ярко и побеждай красиво&nbsp;'
-                direction='right'
-                directionBorder='left'
-            /> */}
-
                 <AboutSecond />
                 <MarqueeText text='Начнём новую историю ваших побед&nbsp;' />
-                {/* <MarqueeTest
-                text='Начнём новую историю ваших побед&nbsp;'
-                textBorder='Начнём новую историю ваших побед&nbsp;'
-                direction='left'
-                directionBorder='right'
-            /> */}
                 <Footer
                     designAudit={designAudit}
                     setDesignAudit={setDesignAudit}

@@ -14,13 +14,6 @@ const Button: React.FC<IButtonProps> = ({ onClick }) => {
             type='button'
             className='rounded-full px-4 lg:px-7 py-1 lg:py-2 border-[1px] border-solid border-[#686767]'
             onClick={onClick}>
-            {/* <Image  
-                className='w-[12px] lg:w-[22px] h-[12px] lg:h-[22px]'
-                src={close}
-                alt='SportNoise'
-                width={44 / 2}
-                height={44 / 2}
-            /> */}
             <svg
                 xmlns='http://www.w3.org/2000/svg'
                 width='19'

@@ -59,26 +59,6 @@ const VHL: React.FC = () => {
                 joinTenderChecked={joinTenderChecked}
                 setJoinTenderChecked={setJoinTenderChecked}
             />
-            {/* <div className='absolute xl:left-1/2 xl:-translate-x-1/2 translate-y-[900px] text-[#1E4E7E] px-6 xl:px-0 text-text-routing'>
-                <h1 className='text-[24px] 2xl:text-[32.67px] -tracking-[0.6px] lg:tracking-[0.6px] leading-[36px] lg:leading-[48.3px] pb-[20px]'>
-                    Матч «Русская классика» для Всероссийской хоккейной лиги
-                    (ВХЛ), 2017
-                </h1>
-                <p className='text-[14px] 2xl:text-[18.33px] tracking-[0.5px] leading-[28px] lg:leading-[34px] pb-[54px] lg:pb-[23px]'>
-                    Юбилейный пятый матч «Русской классики» на открытом воздухе.
-                    Такие тематические события с фестивальной атмосферой требуют
-                    особой сюжетной и художественной проработки. В основе
-                    генерального образа логотипа — русская классика, снегири,
-                    самовар, близость Кремля и новая хоккейная коробка «Парка
-                    Легенд». Визуальную сюиту объединяет фирменный шрифт с
-                    мотивами советской плакатной типографики. В дополнение —
-                    обширная коллекция памятной атрибутики и мерча для
-                    участников и гостей.
-                </p>
-                <p className='text-[13px] 2xl:text-[16.67px] tracking-[1px] leading-[22px] lg:leading-[28.3px]'>
-                    Дизайн логотипа, разработка фирменного стиля, брендинг
-                </p>
-            </div> */}
             <Text
                 title='Матч «Русская классика» для Всероссийской хоккейной лиги
                     (ВХЛ), 2017'
