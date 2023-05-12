@@ -23,8 +23,19 @@ interface IReactHookFormProps {
 interface IUseModalProps {
     isOpen: boolean;
     toggle: () => void;
+    designAudit: any;
+    joinTenderChecked: any;
+    setDesignAudit: any;
+    setJoinTenderChecked: any;
 }
-const Modal: React.FC<IUseModalProps> = ({ isOpen, toggle }) => {
+const Modal: React.FC<IUseModalProps> = ({
+    isOpen,
+    toggle,
+    designAudit,
+    joinTenderChecked,
+    setDesignAudit,
+    setJoinTenderChecked,
+}) => {
     const [blockScroll, allowScroll] = useScrollBlock();
     const {
         register,
@@ -43,7 +54,7 @@ const Modal: React.FC<IUseModalProps> = ({ isOpen, toggle }) => {
             if (event.key === 'Escape' && isOpen) {
                 toggle();
                 allowScroll();
-                reset()
+                reset();
             }
         };
 
@@ -53,6 +64,11 @@ const Modal: React.FC<IUseModalProps> = ({ isOpen, toggle }) => {
             document.removeEventListener('keydown', handleKeyDown);
         };
     }, [isOpen]);
+
+    const handleModalClose = () => {
+        setDesignAudit(false);
+        setJoinTenderChecked(false);
+    };
     return (
         <>
             {isOpen && (
@@ -71,6 +87,7 @@ const Modal: React.FC<IUseModalProps> = ({ isOpen, toggle }) => {
                                         toggle();
                                         allowScroll();
                                         reset();
+                                        handleModalClose();
                                     }}
                                 />
                             </div>
@@ -131,16 +148,19 @@ const Modal: React.FC<IUseModalProps> = ({ isOpen, toggle }) => {
                                                         text='логотип'
                                                         name='логотип'
                                                         register={register}
+                                                        defaultChecked={false}
                                                     />
                                                     <Checkbox
                                                         text='фирменный стиль'
                                                         name='фирменный стиль'
                                                         register={register}
+                                                        defaultChecked={false}
                                                     />
                                                     <Checkbox
                                                         text='брендинг'
                                                         name='брендинг'
                                                         register={register}
+                                                        defaultChecked={false}
                                                     />
                                                 </div>
                                                 <div className='flex flex-row gap-[10px]'>
@@ -148,23 +168,29 @@ const Modal: React.FC<IUseModalProps> = ({ isOpen, toggle }) => {
                                                         text='веб-разработка'
                                                         name='веб-разработка'
                                                         register={register}
+                                                        defaultChecked={false}
                                                     />
                                                     <Checkbox
                                                         text='комплексные услуги'
                                                         name='комплексные услуги'
                                                         register={register}
+                                                        defaultChecked={false}
                                                     />
                                                 </div>
                                                 <div className='flex flex-row gap-[10px]'>
                                                     <Checkbox
-                                                        text='дизайн-аудит'
-                                                        name='дизайн-аудит'
+                                                        text='дизайн-аудит '
+                                                        name='дизайн-аудит '
                                                         register={register}
+                                                        defaultChecked={
+                                                            designAudit
+                                                        }
                                                     />
                                                     <Checkbox
                                                         text='дизайн сопровождение'
                                                         name='дизайн сопровождение'
                                                         register={register}
+                                                        defaultChecked={false}
                                                     />
                                                 </div>
                                                 <div className='flex flex-row gap-[10px]'>
@@ -172,16 +198,21 @@ const Modal: React.FC<IUseModalProps> = ({ isOpen, toggle }) => {
                                                         text='техническое партнерство'
                                                         name='техническое партнерство'
                                                         register={register}
+                                                        defaultChecked={false}
                                                     />
                                                     <Checkbox
-                                                        text='тендер'
-                                                        name='тендер'
+                                                        text='тендер '
+                                                        name='тендер '
                                                         register={register}
+                                                        defaultChecked={
+                                                            joinTenderChecked
+                                                        }
                                                     />
                                                     <Checkbox
                                                         text='другое'
                                                         name='другое'
                                                         register={register}
+                                                        defaultChecked={false}
                                                     />
                                                 </div>
                                             </div>
@@ -194,11 +225,13 @@ const Modal: React.FC<IUseModalProps> = ({ isOpen, toggle }) => {
                                                         text='логотип'
                                                         name='логотип'
                                                         register={register}
+                                                        defaultChecked={false}
                                                     />
                                                     <Checkbox
                                                         text='фирменный стиль'
                                                         name='фирменный стиль'
                                                         register={register}
+                                                        defaultChecked={false}
                                                     />
                                                 </div>
                                                 <div className='flex flex-row gap-[10px]'>
@@ -206,31 +239,39 @@ const Modal: React.FC<IUseModalProps> = ({ isOpen, toggle }) => {
                                                         text='брендинг'
                                                         name='брендинг'
                                                         register={register}
+                                                        defaultChecked={false}
                                                     />
                                                     <Checkbox
                                                         text='веб-разработка'
                                                         name='веб-разработка'
                                                         register={register}
+                                                        defaultChecked={false}
                                                     />
                                                 </div>
                                                 <div className='flex flex-row gap-[10px]'>
                                                     <Checkbox
-                                                        text='дизайн-аудит'
-                                                        name='дизайн-аудит'
+                                                        text='дизайн-аудит '
+                                                        name='дизайн-аудит '
                                                         register={register}
+                                                        defaultChecked={
+                                                            designAudit
+                                                        }
                                                     />
                                                     <Checkbox
-                                                        text='тендер'
-                                                        name='тендер'
+                                                        text='тендер '
+                                                        name='тендер '
                                                         register={register}
+                                                        defaultChecked={
+                                                            joinTenderChecked
+                                                        }
                                                     />
                                                     <Checkbox
                                                         text='другое'
                                                         name='другое'
                                                         register={register}
+                                                        defaultChecked={false}
                                                     />
                                                 </div>
-                                              
                                             </div>
                                         </div>
                                     </div>
@@ -278,7 +319,8 @@ const Modal: React.FC<IUseModalProps> = ({ isOpen, toggle }) => {
                                     onClick={() => {
                                         toggle();
                                         allowScroll();
-                                        reset()
+                                        reset();
+                                        handleModalClose();
                                     }}
                                 />
                             </div>

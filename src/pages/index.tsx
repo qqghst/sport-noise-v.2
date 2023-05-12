@@ -1,4 +1,4 @@
-import { useEffect, useRef } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import Head from 'next/head';
 import gsap from 'gsap';
 import Navbar from '@/components/navbar';
@@ -12,7 +12,7 @@ import MarqueeText from '@/components/marquee-text';
 import AboutSecond from '@/components/about-second';
 import Footer from '@/components/footer';
 import MarqueeTest from '@/components/marquee-test';
-import OgImage from '../../public/open/SportNoise.jpg'
+import OgImage from '../../public/open/SportNoise.jpg';
 
 export default function Home() {
     let contentArea = useRef<HTMLDivElement | null>(null);
@@ -24,6 +24,9 @@ export default function Home() {
             });
         }
     });
+
+    const [designAudit, setDesignAudit] = useState(false);
+    const [joinTenderChecked, setJoinTenderChecked] = useState(false);
     return (
         <>
             <Head>
@@ -58,7 +61,12 @@ export default function Home() {
             <div
                 className='content-area'
                 ref={(el) => (contentArea.current = el)}>
-                <Navbar />
+                <Navbar
+                    designAudit={designAudit}
+                    setDesignAudit={setDesignAudit}
+                    joinTenderChecked={joinTenderChecked}
+                    setJoinTenderChecked={setJoinTenderChecked}
+                />
                 <Masthead />
                 <About />
                 <LogofolioAndShowreel

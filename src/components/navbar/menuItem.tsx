@@ -7,8 +7,23 @@ import useModal from '../../hooks/useModal';
 import { useScrollBlock } from '@/hooks/useScrollBlock';
 import Button from '../../ui/buttons/button-border';
 
-const MenuItem: React.FC<{ exitRef: React.RefObject<HTMLDivElement> }> = ({
+interface ICheckProps {
+    designAudit: any;
+    setDesignAudit: any;
+    joinTenderChecked: any;
+    setJoinTenderChecked: any;
+    exitRef: any;
+}
+
+// const MenuItem: React.FC<{ exitRef: React.RefObject<HTMLDivElement> }> = ({
+//     exitRef,
+// }) => {
+const MenuItem: React.FC<ICheckProps> = ({
     exitRef,
+    designAudit,
+    setDesignAudit,
+    joinTenderChecked,
+    setJoinTenderChecked,
 }) => {
     const { isOpen, toggle } = useModal();
     const [blockScroll, allowScroll] = useScrollBlock();
@@ -16,7 +31,11 @@ const MenuItem: React.FC<{ exitRef: React.RefObject<HTMLDivElement> }> = ({
         <>
             <Modal
                 isOpen={isOpen}
-                toggle={toggle}></Modal>
+                toggle={toggle}
+                designAudit={designAudit}
+                joinTenderChecked={joinTenderChecked}
+                setDesignAudit={setDesignAudit}
+                setJoinTenderChecked={setJoinTenderChecked}></Modal>
             <div className='menuOpen overflow-scroll  fixed top-0 right-[-100%] w-full md:w-[50%] xl:w-[35%] 2xl:w-[30%] h-full bg-white flex flex-col items-center justify-start opacity-0 z-[30007582354723] drop-shadow-[0_4px_25px_rgba(0,0,0,0.13)]'>
                 <div className='flex flex-row items-center justify-between gap-[150px] lg:gap-[180px]  py-5 md:pt-[58px]'>
                     <div className='text-[26px] tracking-[-1px] leading-[32px] font-medium flex gap-3'>
@@ -83,14 +102,11 @@ const MenuItem: React.FC<{ exitRef: React.RefObject<HTMLDivElement> }> = ({
                             onClick={() => {
                                 toggle();
                                 blockScroll();
+                                setDesignAudit(!designAudit);
                             }}
                             className='navAnimation'>
                             <button
                                 className='text-blue hover:text-hover transition ease-in-out duration-400 pr-[72px] lg:pr-[150px]'
-                                onClick={() => {
-                                    toggle();
-                                    blockScroll();
-                                }}
                                 rel='noopener noreferrer'>
                                 &#x25CF; Дизайн аудит
                             </button>
@@ -99,6 +115,7 @@ const MenuItem: React.FC<{ exitRef: React.RefObject<HTMLDivElement> }> = ({
                             onClick={() => {
                                 toggle();
                                 blockScroll();
+                                setJoinTenderChecked(!joinTenderChecked);
                             }}
                             className='navAnimation'>
                             <button className='text-blue hover:text-hover transition ease-in-out duration-400 pr-[72px] lg:pr-[100px]'>

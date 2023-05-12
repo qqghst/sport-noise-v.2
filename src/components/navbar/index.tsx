@@ -7,7 +7,19 @@ import SplitType from 'split-type';
 import MenuItem from './menuItem';
 import { useScrollBlock } from '@/hooks/useScrollBlock';
 
-const Navbar: React.FC = () => {
+interface ICheckedProps {
+    designAudit: any;
+    setDesignAudit: any;
+    joinTenderChecked: any;
+    setJoinTenderChecked: any;
+}
+
+const Navbar: React.FC<ICheckedProps> = ({
+    designAudit,
+    setDesignAudit,
+    joinTenderChecked,
+    setJoinTenderChecked,
+}) => {
     const [blockScroll, allowScroll] = useScrollBlock();
     const menuRef = useRef(null) as React.RefObject<HTMLDivElement>;
     const menuMobileRef = useRef(null) as React.RefObject<HTMLDivElement>;
@@ -149,7 +161,13 @@ const Navbar: React.FC = () => {
                         </button>
                     </div>
                 </div>
-                <MenuItem exitRef={exitRef} />
+                <MenuItem
+                    exitRef={exitRef}
+                    designAudit={designAudit}
+                    setDesignAudit={setDesignAudit}
+                    joinTenderChecked={joinTenderChecked}
+                    setJoinTenderChecked={setJoinTenderChecked}
+                />
             </section>
         </>
     );

@@ -2,13 +2,15 @@ interface ICheckboxProps {
     text: string;
     register: any;
     name: string;
+    defaultChecked?: any;
 }
 
-const Checkbox: React.FC<ICheckboxProps> = ({text, register, name}) => {
+const Checkbox: React.FC<ICheckboxProps> = ({ text, register, name, defaultChecked }) => {
     return (
         <div className='customCheckbox'>
             <label>
                 <input
+                    defaultChecked={defaultChecked}
                     className='hidden'
                     type='checkbox'
                     name={name}
