@@ -77,7 +77,7 @@ const LogofolioAndShowreel: React.FC<ILogofolioProps> = ({
                 </section>
                 {isOpen && (
                     <div className={`${styles.video}`}>
-                        <div className='top-8 right-8 fixed z-50'>
+                        <div className='top-8 right-8 fixed z-[52]'>
                             <Button
                                 onClick={() => {
                                     handleOpenVideo();

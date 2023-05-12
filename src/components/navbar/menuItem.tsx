@@ -40,7 +40,11 @@ const MenuItem: React.FC<ICheckProps> = ({
                 <div className='flex flex-row items-center justify-between gap-[150px] lg:gap-[180px]  py-5 md:pt-[58px]'>
                     <div className='text-[26px] tracking-[-1px] leading-[32px] font-medium flex gap-3'>
                         <span className='text-black underline'>Ru</span>
-                        <span className='text-grey'>En</span>
+                        <button>
+                            <span className='text-grey hover:text-hover transition ease-in-out duration-400'>
+                                En
+                            </span>
+                        </button>
                     </div>
                     <div
                         ref={exitRef}
@@ -140,7 +144,7 @@ const MenuItem: React.FC<ICheckProps> = ({
                     </div>
 
                     <ul className='navAnimation flex flex-col gap-[10px] text-[13px] tracking-[4%] leading-[17px] font-medium text-blue  py-[24px]'>
-                        <li className='text-[28px] tracking-[1%] leading-[32px] pb-[12px]'>
+                        <li className='text-[28px] tracking-[1%] leading-[32px] pb-[12px] hover:text-hover transition ease-in-out duration-400'>
                             <Link href='mailto:hello@sportnoise.ru'>
                                 hello@sportnoise.ru
                             </Link>
@@ -149,7 +153,7 @@ const MenuItem: React.FC<ICheckProps> = ({
                             Москва, ул. Полковая д. 3, стр. 6
                         </li>
                         <li>+7 (495) 755-85-38</li>
-                        <li>
+                        <li className='hover:text-hover transition ease-in-out duration-400'>
                             <Link
                                 href='https://t.me/sportnoise'
                                 target='_blank'

@@ -14,13 +14,25 @@ const Button: React.FC<IButtonProps> = ({ onClick }) => {
             type='button'
             className='rounded-full px-4 lg:px-7 py-1 lg:py-2 border-[1px] border-solid border-[#686767]'
             onClick={onClick}>
-            <Image  
+            {/* <Image  
                 className='w-[12px] lg:w-[22px] h-[12px] lg:h-[22px]'
                 src={close}
                 alt='SportNoise'
                 width={44 / 2}
                 height={44 / 2}
-            />
+            /> */}
+            <svg
+                xmlns='http://www.w3.org/2000/svg'
+                width='19'
+                height='18'
+                fill='none'>
+                <path
+                    fill='#686767'
+                    fill-rule='evenodd'
+                    d='m16.791 17.86 1.768-1.767-7.071-7.072 7.071-7.07L16.791.182l-7.07 7.07L2.648.184.881 1.95l7.071 7.071-7.07 7.072 1.767 1.767 7.071-7.07 7.071 7.07Z'
+                    clip-rule='evenodd'
+                />
+            </svg>
         </button>
     );
 };
