@@ -85,8 +85,12 @@ const LogofolioAndShowreel: React.FC<ILogofolioProps> = ({
                             />
                         </div>
                         <video
+                            controls
                             id='video'
-                            loop
+                            onEnded={() => {
+                                handleOpenVideo();
+                                allowScroll();
+                            }}
                             playsInline
                             autoPlay
                             className={`block m-auto`}>
