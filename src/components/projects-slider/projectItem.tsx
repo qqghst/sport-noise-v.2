@@ -27,6 +27,7 @@ const ProjectItem: React.FC<IProjectItemProps> = ({link, imageMobile, image, tit
                         alt={title}
                         width={2000 / 2}
                         height={2000 / 2}
+                        loading='lazy'
                     />
                 </picture>
             </a>
