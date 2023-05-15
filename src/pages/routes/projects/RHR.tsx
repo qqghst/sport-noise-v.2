@@ -94,17 +94,15 @@ const RHR: React.FC = () => {
                         <img
                             className='image-routing hidden xl:block'
                             alt={`image-${index}`}
-                            width={2500 / 2}
-                            height={2500 / 2}
                             src={image.src}
+                            loading='lazy'
                         />
                     ) : (
                         <img
                             className='image-routing'
                             alt={`image-${index}`}
-                            width={2500 / 2}
-                            height={2500 / 2}
                             src={image.src}
+                            loading='lazy'
                         />
                     )}
                 </picture>
