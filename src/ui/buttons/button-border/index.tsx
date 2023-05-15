@@ -24,7 +24,8 @@ const Button: React.FC<IButtonProps> = ({ onClick }) => {
                 xmlns='http://www.w3.org/2000/svg'
                 width='18'
                 height='19'
-                fill='none'>
+                fill='none'
+                viewBox='0 0 18 19'>
                 <path
                     fill='currentColor'
                     fill-rule='evenodd'
