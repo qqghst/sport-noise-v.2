@@ -93,6 +93,7 @@ const LogofolioAndShowreel: React.FC<ILogofolioProps> = ({
                             playsInline
                             webkit-playsinline
                             autoPlay
+                            preload='metadata'
                             className={`block m-auto`}>
                             {videoSrc === 'showreel' && (
                                 <>
