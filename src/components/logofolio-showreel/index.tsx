@@ -91,6 +91,7 @@ const LogofolioAndShowreel: React.FC<ILogofolioProps> = ({
                                 allowScroll();
                             }}
                             playsInline
+                            webkit-playsinline
                             autoPlay
                             className={`block m-auto`}>
                             {videoSrc === 'showreel' && (
@@ -98,10 +99,12 @@ const LogofolioAndShowreel: React.FC<ILogofolioProps> = ({
                                     <source
                                         src='/logofolio-and-showreel/showreel/showreel-video.mp4'
                                         type='video/mp4; codecs=hvc1'
+                                        webkit-playsinline={true}
                                     />
                                     <source
                                         src='/logofolio-and-showreel/showreel/showreel-video.webm'
                                         type='video/webm; codecs=vp9'
+                                        webkit-playsinline={true}
                                     />
                                 </>
                             )}
@@ -110,10 +113,12 @@ const LogofolioAndShowreel: React.FC<ILogofolioProps> = ({
                                     <source
                                         src='/logofolio-and-showreel/logofolio/logofolio-video.mp4'
                                         type='video/mp4; codecs=hvc1'
+                                        webkit-playsinline={true}
                                     />
                                     <source
                                         src='/logofolio-and-showreel/logofolio/logofolio-video.webm'
                                         type='video/webm; codecs=vp9'
+                                        webkit-playsinline={true}
                                     />
                                 </>
                             )}
