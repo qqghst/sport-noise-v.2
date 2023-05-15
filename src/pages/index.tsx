@@ -11,7 +11,7 @@ import Services from '@/components/services';
 import MarqueeText from '@/components/marquee-text';
 import AboutSecond from '@/components/about-second';
 import Footer from '@/components/footer';
-import OgImage from '../../public/open/file.jpg';
+import OgImage from '../../public/open/SportNoise.jpg';
 
 export default function Home() {
     let contentArea = useRef<HTMLDivElement | null>(null);

@@ -85,7 +85,6 @@ const LogofolioAndShowreel: React.FC<ILogofolioProps> = ({
                             />
                         </div>
                         <video
-                            controls
                             id='video'
                             onEnded={() => {
                                 handleOpenVideo();
