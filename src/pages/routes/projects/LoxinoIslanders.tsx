@@ -1,6 +1,4 @@
 import React, { useState } from 'react';
-import Navbar from '@/components/navbar';
-import Footer from '@/components/footer';
 import ProjectSlider from '@/components/projects-slider';
 import {
     img1,
@@ -38,16 +36,9 @@ const LoxinoIslanders: React.FC = () => {
     const handleSlideChange = (swiper: any) => {
         setCurrentProjectIndex(swiper.activeIndex);
     };
-    const [designAudit, setDesignAudit] = useState(false);
-    const [joinTenderChecked, setJoinTenderChecked] = useState(false);
+
     return (
         <section>
-            <Navbar
-                designAudit={designAudit}
-                setDesignAudit={setDesignAudit}
-                joinTenderChecked={joinTenderChecked}
-                setJoinTenderChecked={setJoinTenderChecked}
-            />
             <Text
                 title='Логотип для хоккейного клуба Loxino Islanders, 2021'
                 paragraph='Любительская хоккейная команда с профессиональным подходом.
@@ -91,12 +82,6 @@ const LoxinoIslanders: React.FC = () => {
                 </picture>
             ))}
             <ProjectSlider currentProjectIndex={currentProjectIndex} />
-            <Footer
-                designAudit={designAudit}
-                setDesignAudit={setDesignAudit}
-                joinTenderChecked={joinTenderChecked}
-                setJoinTenderChecked={setJoinTenderChecked}
-            />
         </section>
     );
 };

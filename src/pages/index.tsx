@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState } from 'react';
 import Head from 'next/head';
 import gsap from 'gsap';
-import Navbar from '@/components/navbar';
+// import Navbar from '@/components/navbar';
 import Masthead from '@/components/masthead';
 import About from '@/components/about';
 import LogofolioAndShowreel from '@/components/logofolio-showreel';
@@ -10,7 +10,7 @@ import ProjectsMore from '@/components/projects-more';
 import Services from '@/components/services';
 import MarqueeText from '@/components/marquee-text';
 import AboutSecond from '@/components/about-second';
-import Footer from '@/components/footer';
+// import Footer from '@/components/footer';
 import OgImage from '../../public/open/SportNoise.jpg';
 
 export default function Home() {
@@ -24,8 +24,8 @@ export default function Home() {
         }
     });
 
-    const [designAudit, setDesignAudit] = useState(false);
-    const [joinTenderChecked, setJoinTenderChecked] = useState(false);
+    // const [designAudit, setDesignAudit] = useState(false);
+    // const [joinTenderChecked, setJoinTenderChecked] = useState(false);
     return (
         <>
             <Head>
@@ -60,12 +60,12 @@ export default function Home() {
             <div
                 className='content-area'
                 ref={(el) => (contentArea.current = el)}>
-                <Navbar
+                {/* <Navbar
                     designAudit={designAudit}
                     setDesignAudit={setDesignAudit}
                     joinTenderChecked={joinTenderChecked}
                     setJoinTenderChecked={setJoinTenderChecked}
-                />
+                /> */}
                 <Masthead />
                 <About />
                 <LogofolioAndShowreel
@@ -86,12 +86,12 @@ export default function Home() {
                 <MarqueeText text='Играй ярко и побеждай красиво&nbsp;' />
                 <AboutSecond />
                 <MarqueeText text='Начнём новую историю ваших побед&nbsp;' />
-                <Footer
+                {/* <Footer
                     designAudit={designAudit}
                     setDesignAudit={setDesignAudit}
                     joinTenderChecked={joinTenderChecked}
                     setJoinTenderChecked={setJoinTenderChecked}
-                />
+                /> */}
             </div>
         </>
     );

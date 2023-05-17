@@ -1,6 +1,4 @@
 import React, { useState } from 'react';
-import Navbar from '@/components/navbar';
-import Footer from '@/components/footer';
 import ProjectSlider from '@/components/projects-slider';
 import {
     img1,
@@ -35,8 +33,6 @@ const SBC: React.FC = () => {
     const handleSlideChange = (swiper: any) => {
         setCurrentProjectIndex(swiper.activeIndex);
     };
-    const [designAudit, setDesignAudit] = useState(false);
-    const [joinTenderChecked, setJoinTenderChecked] = useState(false);
     return (
         <section>
             <Text
@@ -54,12 +50,6 @@ const SBC: React.FC = () => {
                     событий и полноценную мобильную версию.'
                 ending='UX/UI дизайн'
                 color='#C0CBED'
-            />
-            <Navbar
-                designAudit={designAudit}
-                setDesignAudit={setDesignAudit}
-                joinTenderChecked={joinTenderChecked}
-                setJoinTenderChecked={setJoinTenderChecked}
             />
             {images.map((image, index) => (
                 <picture key={index}>
@@ -88,12 +78,6 @@ const SBC: React.FC = () => {
                 </picture>
             ))}
             <ProjectSlider currentProjectIndex={currentProjectIndex} />
-            <Footer
-                designAudit={designAudit}
-                setDesignAudit={setDesignAudit}
-                joinTenderChecked={joinTenderChecked}
-                setJoinTenderChecked={setJoinTenderChecked}
-            />
         </section>
     );
 };

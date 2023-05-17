@@ -17,6 +17,7 @@ import { Montserrat } from 'next/font/google';
 import { ScrollBlockProvider } from '@/hooks/useScrollBlock';
 import CursorManager from '@/ui/custom-cursor/cursor-manager';
 import CustomCursor from '@/ui/custom-cursor';
+import Layout from '@/components/layout';
 
 const montserrat = Montserrat({
     subsets: ['latin'],
@@ -30,7 +31,9 @@ export default function App({ Component, pageProps }: AppProps) {
                 <CursorManager>
                     <div>
                         <CustomCursor />
-                        <Component {...pageProps} />
+                        <Layout>
+                            <Component {...pageProps} />
+                        </Layout>
                     </div>
                 </CursorManager>
             </ScrollBlockProvider>

@@ -1,6 +1,4 @@
 import React, { useState } from 'react';
-import Navbar from '@/components/navbar';
-import Footer from '@/components/footer';
 import ProjectSlider from '@/components/projects-slider';
 import {
     img1,
@@ -54,16 +52,8 @@ const NHLiga: React.FC = () => {
     const handleSlideChange = (swiper: any) => {
         setCurrentProjectIndex(swiper.activeIndex);
     };
-    const [designAudit, setDesignAudit] = useState(false);
-    const [joinTenderChecked, setJoinTenderChecked] = useState(false);
     return (
         <section>
-            <Navbar
-                designAudit={designAudit}
-                setDesignAudit={setDesignAudit}
-                joinTenderChecked={joinTenderChecked}
-                setJoinTenderChecked={setJoinTenderChecked}
-            />
             <Text
                 title='Серия логотипов «Кубок Чемпионов» для Ночной Лиги (NHLiga),
                     2021'
@@ -103,12 +93,6 @@ const NHLiga: React.FC = () => {
                 </picture>
             ))}
             <ProjectSlider currentProjectIndex={currentProjectIndex} />
-            <Footer
-                designAudit={designAudit}
-                setDesignAudit={setDesignAudit}
-                joinTenderChecked={joinTenderChecked}
-                setJoinTenderChecked={setJoinTenderChecked}
-            />
         </section>
     );
 };

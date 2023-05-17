@@ -1,6 +1,4 @@
 import React, { useState } from 'react';
-import Navbar from '@/components/navbar';
-import Footer from '@/components/footer';
 import ProjectSlider from '@/components/projects-slider';
 import {
     img1,
@@ -33,16 +31,8 @@ const FHR: React.FC = () => {
     const handleSlideChange = (swiper: any) => {
         setCurrentProjectIndex(swiper.activeIndex);
     };
-    const [designAudit, setDesignAudit] = useState(false);
-    const [joinTenderChecked, setJoinTenderChecked] = useState(false);
     return (
         <section>
-            <Navbar
-                designAudit={designAudit}
-                setDesignAudit={setDesignAudit}
-                joinTenderChecked={joinTenderChecked}
-                setJoinTenderChecked={setJoinTenderChecked}
-            />
             <Text
                 title='Образовательный проект для Федерации Хоккея России (FHR),
                     2017'
@@ -84,12 +74,6 @@ const FHR: React.FC = () => {
                 </picture>
             ))}
             <ProjectSlider currentProjectIndex={currentProjectIndex} />
-            <Footer
-                designAudit={designAudit}
-                setDesignAudit={setDesignAudit}
-                joinTenderChecked={joinTenderChecked}
-                setJoinTenderChecked={setJoinTenderChecked}
-            />
         </section>
     );
 };

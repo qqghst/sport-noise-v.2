@@ -1,6 +1,4 @@
 import React, { useState } from 'react';
-import Navbar from '@/components/navbar';
-import Footer from '@/components/footer';
 import ProjectSlider from '@/components/projects-slider';
 import {
     img1,
@@ -46,8 +44,6 @@ const NHLigaFestival: React.FC = () => {
     const handleSlideChange = (swiper: any) => {
         setCurrentProjectIndex(swiper.activeIndex);
     };
-    const [designAudit, setDesignAudit] = useState(false);
-    const [joinTenderChecked, setJoinTenderChecked] = useState(false);
     return (
         <section>
             <Text
@@ -65,10 +61,6 @@ const NHLigaFestival: React.FC = () => {
                 ending='Продюсирование события, разработка ключевых нарративов, мерч'
                 color='#ACC7FF'
             />
-            <Navbar  designAudit={designAudit}
-                setDesignAudit={setDesignAudit}
-                joinTenderChecked={joinTenderChecked}
-                setJoinTenderChecked={setJoinTenderChecked}/>
             {images.map((image, index) => (
                 <picture key={index}>
                     {image.mobileSrc && (
@@ -96,10 +88,6 @@ const NHLigaFestival: React.FC = () => {
                 </picture>
             ))}
             <ProjectSlider currentProjectIndex={currentProjectIndex} />
-            <Footer  designAudit={designAudit}
-                setDesignAudit={setDesignAudit}
-                joinTenderChecked={joinTenderChecked}
-                setJoinTenderChecked={setJoinTenderChecked}/>
         </section>
     );
 };

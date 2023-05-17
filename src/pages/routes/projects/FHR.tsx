@@ -1,6 +1,4 @@
 import React, { useState } from 'react';
-import Navbar from '@/components/navbar';
-import Footer from '@/components/footer';
 import ProjectSlider from '@/components/projects-slider';
 import {
     img1,
@@ -39,8 +37,6 @@ const FHR: React.FC = () => {
         setCurrentProjectIndex(swiper.activeIndex);
     };
 
-    const [designAudit, setDesignAudit] = useState(false);
-    const [joinTenderChecked, setJoinTenderChecked] = useState(false);
     return (
         <section>
             <Text
@@ -58,12 +54,6 @@ const FHR: React.FC = () => {
                     дополнен промороликом.'
                 ending='Лендинг пейдж'
                 color='#F9EFE3'
-            />
-            <Navbar
-                designAudit={designAudit}
-                setDesignAudit={setDesignAudit}
-                joinTenderChecked={joinTenderChecked}
-                setJoinTenderChecked={setJoinTenderChecked}
             />
             {images.map((image, index) => (
                 <picture key={index}>
@@ -92,12 +82,6 @@ const FHR: React.FC = () => {
                 </picture>
             ))}
             <ProjectSlider currentProjectIndex={currentProjectIndex} />
-            <Footer
-                designAudit={designAudit}
-                setDesignAudit={setDesignAudit}
-                joinTenderChecked={joinTenderChecked}
-                setJoinTenderChecked={setJoinTenderChecked}
-            />
         </section>
     );
 };
