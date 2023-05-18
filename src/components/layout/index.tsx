@@ -14,7 +14,7 @@ const Layout: React.FC<ILayoutProps> = ({ children }) => {
                 joinTenderChecked={joinTenderChecked}
                 setJoinTenderChecked={setJoinTenderChecked}
             />
-            {children}
+            <main>{children}</main>
             <Footer
                 designAudit={designAudit}
                 setDesignAudit={setDesignAudit}
