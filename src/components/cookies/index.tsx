@@ -10,8 +10,8 @@ const Cookies: React.FC = () => {
                     <Image
                         src={cookie}
                         alt='cookie'
-                        width={64 / 2}
-                        height={64 / 2}
+                        width={60 / 2}
+                        height={60 / 2}
                     />
                     <p className='text-[12px] lg:text-[13px] tracking-normal lg:tracking-wide leading-[16px] lg:leading-[17px] font-medium text-blue'>
                         Мы используем cookie.

@@ -4,8 +4,8 @@ import Footer from '../footer';
 import { ILayoutProps } from '@/interfaces/layout.interface';
 
 const Layout: React.FC<ILayoutProps> = ({ children }) => {
-    const [designAudit, setDesignAudit] = useState(false);
-    const [joinTenderChecked, setJoinTenderChecked] = useState(false);
+    const [designAudit, setDesignAudit] = useState<boolean>(false);
+    const [joinTenderChecked, setJoinTenderChecked] = useState<boolean>(false);
     return (
         <>
             <Navbar

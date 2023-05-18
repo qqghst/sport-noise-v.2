@@ -1,18 +1,9 @@
 import React from 'react';
-import arrow from '../../../public/arrow.svg';
-import Image from 'next/image';
 import Link from 'next/link';
-
 import Modal from '../modal';
 import useModal from '@/hooks/useModal';
 import { useScrollBlock } from '@/hooks/useScrollBlock';
-
-interface ICheckedProps {
-    designAudit: any;
-    setDesignAudit: any;
-    joinTenderChecked: any;
-    setJoinTenderChecked: any;
-}
+import { ICheckedProps } from '@/interfaces/checked.interface';
 
 const Footer: React.FC<ICheckedProps> = ({
     designAudit,
@@ -31,7 +22,7 @@ const Footer: React.FC<ICheckedProps> = ({
                 setJoinTenderChecked={setJoinTenderChecked}
                 isOpen={isOpen}
                 toggle={toggle}></Modal>
-            <section className='px-5 md:px-[64px] lg:px-[128px] pb-12'>
+            <footer className='px-5 md:px-[64px] lg:px-[128px] pb-12'>
                 <div className='mx-auto flex flex-col md:flex-row   md:items-start justify-between mt-[83px] md:mt-[128px]'>
                     <div className='flex md:hidden  lg:flex-col justify-center w-full'>
                         <button
@@ -205,7 +196,7 @@ const Footer: React.FC<ICheckedProps> = ({
                         </div>
                     </div>
                 </div>
-            </section>
+            </footer>
         </>
     );
 };

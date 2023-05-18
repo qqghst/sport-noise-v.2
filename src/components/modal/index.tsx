@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 import styles from './styles.module.scss';
 import { SubmitHandler, useForm } from 'react-hook-form';
+import { useScrollBlock } from '@/hooks/useScrollBlock';
 
 import Input from './input';
 import Checkbox from './checkbox';
@@ -9,7 +10,6 @@ import PersonalData from './personal-data';
 import AttachFile from './attach-file';
 
 import Button from '../../ui/buttons/button-border';
-import { useScrollBlock } from '@/hooks/useScrollBlock';
 
 interface IReactHookFormProps {
     name: string;

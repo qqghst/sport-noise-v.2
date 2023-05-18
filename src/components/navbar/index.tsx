@@ -1,18 +1,12 @@
 import React, { useEffect, useRef } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
-import styles from './styles.module.scss';
 import gsap from 'gsap';
 import SplitType from 'split-type';
-import MenuItem from './menuItem';
 import { useScrollBlock } from '@/hooks/useScrollBlock';
+import MenuItem from './menuItem';
+import { ICheckedProps } from '@/interfaces/checked.interface';
 
-interface ICheckedProps {
-    designAudit: any;
-    setDesignAudit: any;
-    joinTenderChecked: any;
-    setJoinTenderChecked: any;
-}
 
 const Navbar: React.FC<ICheckedProps> = ({
     designAudit,
@@ -124,7 +118,7 @@ const Navbar: React.FC<ICheckedProps> = ({
     }, []);
     return (
         <>
-            <section id='navbar'>
+            <nav id='navbar'>
                 <div className='flex flex-col md:flex-row justify-between items-start md:items-center py-[32px]  px-5 md:px-[64px] lg:px-[128px] bg-white lg:mx-auto left-0 right-0 z-[100]'>
                     <Link
                         rel='noopener noreferrer'
@@ -168,7 +162,7 @@ const Navbar: React.FC<ICheckedProps> = ({
                     joinTenderChecked={joinTenderChecked}
                     setJoinTenderChecked={setJoinTenderChecked}
                 />
-            </section>
+            </nav>
         </>
     );
 };

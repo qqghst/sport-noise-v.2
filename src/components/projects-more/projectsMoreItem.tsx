@@ -3,11 +3,7 @@ import Image from 'next/image';
 import styles from './styles.module.scss';
 import gsap from 'gsap';
 import arrow from '../../../public/arrow.svg';
-
-interface IProjectsMoreItemsProps {
-    title: string;
-    imageSrc: string;
-}
+import { IProjectsMoreItemsProps } from '@/interfaces/projectMore.interface';
 
 const ProjectMoreItems: React.FC<IProjectsMoreItemsProps> = ({title, imageSrc}) => {
     useEffect(() => {

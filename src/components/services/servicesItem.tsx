@@ -1,11 +1,6 @@
 import React from 'react';
 import styles from './styles.module.scss';
-
-interface IServiceItemProps {
-    title: string;
-    subtitles: string[];
-    color: string;
-}
+import { IServiceItemProps } from '@/interfaces/serviceItem.interface';
 
 const ServicesItem: React.FC<IServiceItemProps> = ({title, subtitles, color}) => {
     const isRed = color === 'red';

@@ -1,16 +1,13 @@
 import React, { useState, useEffect } from 'react';
 import Image from 'next/image';
 import styles from './styles.module.scss';
-import arrow from '../../../public/logofolio-and-showreel/arrow.svg';
-import { useScrollBlock } from '@/hooks/useScrollBlock';
-import Button from '@/ui/buttons/button-video';
 import { CursorContext } from '@/ui/custom-cursor/cursor-manager';
 import { useContext } from 'react';
+import { useScrollBlock } from '@/hooks/useScrollBlock';
+import arrow from '../../../public/logofolio-and-showreel/arrow.svg';
+import Button from '@/ui/buttons/button-video';
+import { ILogofolioProps } from '@/interfaces/logofolio-showreel.interface';
 
-interface ILogofolioProps {
-    videoSrc: string;
-    name: string;
-}
 
 const LogofolioAndShowreel: React.FC<ILogofolioProps> = ({
     videoSrc,

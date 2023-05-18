@@ -1,10 +1,6 @@
 import React from 'react';
 import Marquee from 'react-fast-marquee';
-
-interface IMarqueeProps {
-    text: string;
-    className?: string;
-}
+import { IMarqueeProps } from '@/interfaces/marquee.interface';
 
 const MarqueeText: React.FC<IMarqueeProps> = ({text, className,}) => {
     return (

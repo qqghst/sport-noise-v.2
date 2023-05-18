@@ -6,19 +6,12 @@ import Modal from '../modal';
 import useModal from '../../hooks/useModal';
 import { useScrollBlock } from '@/hooks/useScrollBlock';
 import Button from '../../ui/buttons/button-border';
-
-interface ICheckProps {
-    designAudit: any;
-    setDesignAudit: any;
-    joinTenderChecked: any;
-    setJoinTenderChecked: any;
-    exitRef: any;
-}
+import { ICheckedProps } from '@/interfaces/checked.interface';
 
 // const MenuItem: React.FC<{ exitRef: React.RefObject<HTMLDivElement> }> = ({
 //     exitRef,
 // }) => {
-const MenuItem: React.FC<ICheckProps> = ({
+const MenuItem: React.FC<ICheckedProps> = ({
     exitRef,
     designAudit,
     setDesignAudit,
