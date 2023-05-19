@@ -26,11 +26,11 @@ const Projects: React.FC<ProjectsProps> = ({ projects }) => {
                         gsap.fromTo(
                             elem,
                             {
-                                y: '5%',
+                                y: '3%',
                                 opacity: 0,
                             },
                             {
-                                duration: 0.6,
+                                duration: 0.5,
                                 y: '0%',
                                 opacity: 1,
                                 ease: 'power3.out',
@@ -38,6 +38,7 @@ const Projects: React.FC<ProjectsProps> = ({ projects }) => {
                                     trigger: elem,
                                     start: 'top bottom',
                                     end: 'bottom',
+                                    markers: true,
                                 },
                             }
                         );

@@ -2,17 +2,18 @@ import React, { useRef, useState, useEffect, useContext } from 'react';
 import styles from './styles.module.scss';
 import { CursorContext } from '@/ui/custom-cursor/cursor-manager';
 import { IProjectItemProps } from '@/interfaces/projectItem.interface';
+import Image from 'next/image';
 
 const ProjectItem: React.FC<IProjectItemProps> = ({
     title,
     description,
     smallDescription,
     image,
+    imageMobile,
     videoSrc,
     videoType,
     videoSrc2,
     videoType2,
-    imageMobile,
 }) => {
     const { setSize } = useContext(CursorContext);
 
@@ -23,18 +24,10 @@ const ProjectItem: React.FC<IProjectItemProps> = ({
         setSize('regular');
     };
 
-    const [screenWidth, setScreenWidth] = useState<number>(641);
-
-    const updateScreenWidth = () => {
-        setScreenWidth(window.innerWidth);
-    };
+    const [isMobile, setIsMobile] = useState(false);
 
     useEffect(() => {
-        updateScreenWidth();
-        window.addEventListener('resize', updateScreenWidth);
-        return () => {
-            window.removeEventListener('resize', updateScreenWidth);
-        };
+        setIsMobile(window.innerWidth < 768);
     }, []);
     return (
         <>
@@ -43,9 +36,19 @@ const ProjectItem: React.FC<IProjectItemProps> = ({
                     className='w-full h-full md:h-full'
                     onMouseEnter={handleMouseEnter}
                     onMouseLeave={handleMouseLeave}>
-                    {videoSrc && videoSrc2 ? (
-                        <picture>
-                            {screenWidth > 640 ? (
+                    {isMobile ? (
+                        imageMobile && (
+                            <Image
+                                className='w-full h-full object-cover block'
+                                src={imageMobile}
+                                alt='SportNoise'
+                                width={1700 / 2}
+                                height={1000 / 2}
+                            />
+                        )
+                    ) : videoSrc && videoSrc2 ? (
+                        <div className={`${styles.zoomHover}`}>
+                            <figure className='overflow-hidden'>
                                 <video
                                     autoPlay
                                     loop
@@ -62,39 +65,22 @@ const ProjectItem: React.FC<IProjectItemProps> = ({
                                         type={videoType2}
                                     />
                                 </video>
-                            ) : (
-                                imageMobile && (
-                                    <img
-                                        src={imageMobile}
-                                        alt={title}
-                                        width={2000 / 2}
-                                        height={2000 / 2}
-                                        className='w-full h-[250px] sm:h-[350px] lg:h-full object-cover block'
-                                    />
-                                )
-                            )}
-                        </picture>
-                    ) : (
-                        <div className={`${styles.zoomHover}`}>
-                            <figure className='overflow-hidden'>
-                                {image && (
-                                    <picture>
-                                        <source
-                                            className='w-full h-full object-fit block'
-                                            srcSet={imageMobile}
-                                            media='(max-width: 640px)'
-                                        />
-                                        <img
-                                            className='w-full h-[250px] sm:h-[350px] lg:h-full object-fit block'
-                                            src={image}
-                                            alt={title}
-                                            width={2000 / 2}
-                                            height={2000 / 2}
-                                        />
-                                    </picture>
-                                )}
                             </figure>
                         </div>
+                    ) : (
+                        image && (
+                            <div className={`${styles.zoomHover}`}>
+                                <figure className='overflow-hidden'>
+                                    <Image
+                                        className='w-full h-[250px] sm:h-[350px] lg:h-full object-cover block'
+                                        src={image}
+                                        alt='SportNoise'
+                                        width={2400 / 2}
+                                        height={1000 / 2}
+                                    />
+                                </figure>
+                            </div>
+                        )
                     )}
                 </div>
                 <div className='flex flex-row justify-between items-end w-full'>
