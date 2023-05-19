@@ -1,9 +1,10 @@
-import React, { useEffect, useRef } from 'react';
+import React, { useEffect, useRef, useContext } from 'react';
 import ProjectItem from './projectItem';
 import { projects } from '@/data';
 import gsap from 'gsap';
 import ScrollTrigger from 'gsap/dist/ScrollTrigger';
 import Link from 'next/link';
+import { CursorContext } from '@/ui/custom-cursor/cursor-manager';
 
 interface ProjectsProps {
     projects: any;
@@ -11,6 +12,7 @@ interface ProjectsProps {
 
 const Projects: React.FC<ProjectsProps> = ({ projects }) => {
     const projectsRef = useRef<HTMLDivElement>(null);
+    const { setSize } = useContext(CursorContext);
 
     useEffect(() => {
         if (projectsRef.current) {
@@ -43,6 +45,10 @@ const Projects: React.FC<ProjectsProps> = ({ projects }) => {
             });
         }
     }, []);
+
+    const handleLinkClick = () => {
+        setSize('regular');
+    };
     return (
         <section
             className='mt-[91px] lg:mt-[198px] mb-[40px] md:mb-[96px]  md:px-[64px] lg:px-[128px]'
@@ -56,12 +62,13 @@ const Projects: React.FC<ProjectsProps> = ({ projects }) => {
                     className='flex flex-col gap-[32px] lg:gap-[64px]'>
                     {projects &&
                         projects.map((project: any) => (
-                            <a
+                            <Link
+                                onClick={handleLinkClick}
                                 key={project.id}
                                 rel='noopener noreferrer'
                                 href={`projects/${project.id}`}>
                                 <ProjectItem {...project} />
-                            </a>
+                            </Link>
                         ))}
                 </div>
             </div>
