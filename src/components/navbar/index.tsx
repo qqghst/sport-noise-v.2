@@ -124,7 +124,7 @@ const Navbar: React.FC<ICheckedProps> = ({
                         rel='noopener noreferrer'
                         href='/'>
                         <Image
-                            src='/navbar/logo.png'
+                            src='/navbar/logo.webp'
                             alt='SportNoise'
                             width={400 / 2}
                             height={90 / 2}
