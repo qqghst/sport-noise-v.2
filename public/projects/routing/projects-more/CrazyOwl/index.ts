@@ -26,7 +26,7 @@ import imgMobile8 from './mobile/8.webp';
 import imgMobile9 from './mobile/9.webp';
 import imgMobile10 from './mobile/10.webp';
 
-export {
+const CrazyOwl = {
     img1,
     img2,
     img3,
@@ -53,3 +53,5 @@ export {
     imgMobile9,
     imgMobile10,
 };
+
+export default CrazyOwl;

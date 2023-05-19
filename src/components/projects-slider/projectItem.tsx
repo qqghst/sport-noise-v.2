@@ -7,7 +7,7 @@ interface IProjectItemProps {
     description: string;
     smallDescription: string;
     image?: string;
-    link: string;
+    link?: string;
     imageMobile?:string;
 }
 

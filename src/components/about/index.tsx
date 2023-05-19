@@ -9,7 +9,7 @@ const About: React.FC = () => {
     useEffect(() => {
         gsap.registerPlugin(ScrollTrigger);
         function setupSplits() {
-            const tl = gsap.timeline({ delay: 0.3 });
+            const tl = gsap.timeline({ delay: 0.7 });
 
             const splitParent = new SplitType(refAbout.current!, {
                 types: 'lines',

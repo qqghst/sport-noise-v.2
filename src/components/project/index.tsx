@@ -5,7 +5,11 @@ import gsap from 'gsap';
 import ScrollTrigger from 'gsap/dist/ScrollTrigger';
 import Link from 'next/link';
 
-const Projects: React.FC = () => {
+interface ProjectsProps {
+    projects: any;
+}
+
+const Projects: React.FC<ProjectsProps> = ({ projects }) => {
     const projectsRef = useRef<HTMLDivElement>(null);
 
     useEffect(() => {
@@ -50,14 +54,15 @@ const Projects: React.FC = () => {
                 <div
                     ref={projectsRef}
                     className='flex flex-col gap-[32px] lg:gap-[64px]'>
-                    {projects.map((project) => (
-                        <a
-                            key={project.id}
-                            rel='noopener noreferrer'
-                            href={project.link}>
-                            <ProjectItem {...project} />
-                        </a>
-                    ))}
+                    {projects &&
+                        projects.map((project: any) => (
+                            <a
+                                key={project.id}
+                                rel='noopener noreferrer'
+                                href={`projects/${project.id}`}>
+                                <ProjectItem {...project} />
+                            </a>
+                        ))}
                 </div>
             </div>
         </section>

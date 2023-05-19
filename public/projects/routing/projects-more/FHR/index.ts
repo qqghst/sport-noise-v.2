@@ -12,7 +12,7 @@ import imgMobile4 from './mobile/4.webp';
 import imgMobile5 from './mobile/5.webp';
 import imgMobile6 from './mobile/6.webp';
 
-export {
+const FHR2 = {
     img1,
     img2,
     img3,
@@ -26,3 +26,5 @@ export {
     imgMobile5,
     imgMobile6,
 };
+
+export default FHR2;

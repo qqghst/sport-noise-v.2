@@ -93,31 +93,31 @@ export const projects = [
 
 export const moreprojects = [
     {
-        id: 1,
+        id: 10,
         link: '/routes/projects-more/FHR',
         title: 'Национальная программа подготовки хоккеистов, 2017',
         imageSrc: '/projects/more-projects/1.webp',
     },
     {
-        id: 2,
+        id: 11,
         link: '/routes/projects-more/VHL',
         title: 'Русская классика ВХЛ, Москва, 2017',
         imageSrc: '/projects/more-projects/2.webp',
     },
     {
-        id: 3,
+        id: 12,
         link: '/routes/projects-more/IIHF',
         title: 'Кубок мира среди молодёжных клубных команд, Татарстан, 2016 ',
         imageSrc: '/projects/more-projects/3.webp',
     },
     {
-        id: 4,
+        id: 13,
         link: '/routes/projects-more/NHLiga',
         title: '«Кубок Чемпионов» — серия логотипов',
         imageSrc: '/projects/more-projects/4.webp',
     },
     {
-        id: 5,
+        id: 14,
         link: '/routes/projects-more/CrazyOwl',
         title: 'Ультрамарафон Crazy Owl 50',
         imageSrc: '/projects/more-projects/5.webp',

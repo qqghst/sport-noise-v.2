@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import ProjectItem from './projectItem';
 import { projects } from '@/data';
-import { moreprojects } from '@/data';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import SwiperCore, { Mousewheel } from 'swiper';
@@ -39,11 +38,9 @@ const ProjectSlider: React.FC<ProjectSliderProps> = ({
     }, []);
 
     const filteredProjects = shuffledProjects.filter(
-        (project, index) =>
-            currentProjectIndex !== undefined &&
-            index !== currentProjectIndex &&
-            project.id !== projects[currentProjectIndex]?.id
+        (project) => project.id !== currentProjectIndex
     );
+
     return (
         <section className='pt-[32px] lg:pt-[156px] px-0 md:px-[64px] lg:px-[128px]'>
             <div className='flex flex-col'>
@@ -56,7 +53,6 @@ const ProjectSlider: React.FC<ProjectSliderProps> = ({
                         slidesPerView={2}
                         spaceBetween={32}
                         loop={true}
-                        // mousewheel={true}
                         breakpoints={{
                             320: {
                                 slidesPerView: 1.1,
@@ -73,15 +69,18 @@ const ProjectSlider: React.FC<ProjectSliderProps> = ({
                         }}>
                         {filteredProjects.map((project) => (
                             <SwiperSlide key={project.id}>
-                                <ProjectItem
-                                    link={project.link}
-                                    key={project.id}
-                                    image={project.image}
-                                    imageMobile={project.imageMobile}
-                                    title={project.title}
-                                    description={project.description}
-                                    smallDescription={project.smallDescription}
-                                />
+                                <a href={`/projects/${project.id}`}>
+                                    <ProjectItem
+                                        key={project.id}
+                                        image={project.image}
+                                        imageMobile={project.imageMobile}
+                                        title={project.title}
+                                        description={project.description}
+                                        smallDescription={
+                                            project.smallDescription
+                                        }
+                                    />
+                                </a>
                             </SwiperSlide>
                         ))}
                     </Swiper>

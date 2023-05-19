@@ -25,7 +25,7 @@ import imgMobile7 from './mobile/7.webp';
 import imgMobile8 from './mobile/8.webp';
 import imgMobile9 from './mobile/9.webp';
 
-export {
+const NHLiga2 = {
     img1,
     img2,
     img3,
@@ -51,3 +51,5 @@ export {
     imgMobile8,
     imgMobile9,
 };
+
+export default NHLiga2;

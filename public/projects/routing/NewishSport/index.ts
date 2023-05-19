@@ -24,7 +24,7 @@ import imgMobile6 from './mobile/6.webp';
 import imgMobile7 from './mobile/7.webp';
 import imgMobile8 from './mobile/8.webp';
 
-export {
+const NewishSport = {
     img1,
     img2,
     img3,
@@ -50,3 +50,5 @@ export {
     imgMobile7,
     imgMobile8,
 };
+
+export default NewishSport

@@ -22,7 +22,7 @@ import imgMobile9 from './mobile/9.webp';
 import imgMobile10 from './mobile/10.webp';
 import imgMobile11 from './mobile/11.webp';
 
-export {
+const SportExpress = {
     img1,
     img2,
     img3,
@@ -46,3 +46,5 @@ export {
     imgMobile10,
     imgMobile11,
 };
+
+export default SportExpress;

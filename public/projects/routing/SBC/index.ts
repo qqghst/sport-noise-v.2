@@ -13,7 +13,7 @@ import imgMobile3 from './mobile/3.webp';
 import imgMobile4 from './mobile/4.webp';
 import imgMobile5 from './mobile/5.webp';
 
-export {
+const SBC = {
     img1,
     img2,
     img3,
@@ -28,3 +28,5 @@ export {
     imgMobile4,
     imgMobile5,
 };
+
+export default SBC;

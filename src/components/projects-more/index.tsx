@@ -1,9 +1,8 @@
 import React from 'react';
 import Link from 'next/link';
-import { moreprojects } from '@/data';
 import ProjectMoreItems from './projectsMoreItem';
 
-const ProjectsMore = () => {
+const ProjectsMore = ({ moreprojects }: any) => {
     return (
         <section
             id='serviceId'
@@ -13,18 +12,19 @@ const ProjectsMore = () => {
                     Больше проектов
                 </h2>
                 <div>
-                    {moreprojects.map((item, index) => (
-                        <a
-                            key={item.id}
-                            rel='noopener noreferrer'
-                            href={item.link}>
-                            <ProjectMoreItems
+                    {moreprojects &&
+                        moreprojects.map((item: any, index: any) => (
+                            <a
                                 key={item.id}
-                                title={item.title}
-                                imageSrc={item.imageSrc}
-                            />
-                        </a>
-                    ))}
+                                rel='noopener noreferrer'
+                                href={`projects/${item.id}`}>
+                                <ProjectMoreItems
+                                    key={item.id}
+                                    title={item.title}
+                                    imageSrc={item.imageSrc}
+                                />
+                            </a>
+                        ))}
                     <div className='h-[1px] bg-line w-full' />
                 </div>
             </div>
