@@ -32,35 +32,6 @@ export default function Home({ projects, moreprojects }: any) {
 
     return (
         <>
-            {/* <Head>
-                <title>Sport Noise</title>
-                <meta
-                    name='description'
-                    content='SportNoise. Логодизайн, бренд-айдентика, событийном брендинг.
-                    Digital-решения для развития спортивных и клубных брендов.'
-                />
-                <meta
-                    name='viewport'
-                    content='width=device-width, initial-scale=1'
-                />
-                <link
-                    rel='icon'
-                    href='/favicon/favicon.png'
-                />
-                <meta
-                    property='og:title'
-                    content='Sport Noise'
-                />
-                <meta
-                    property='og:description'
-                    content='SportNoise. Логодизайн, бренд-айдентика, событийном брендинг.
-                    Digital-решения для развития спортивных и клубных брендов.'
-                />
-                <meta
-                    property='og:image'
-                    content={OgImage.src}
-                />
-            </Head> */}
             <div
                 className='content-area'
                 ref={(el) => (contentArea.current = el)}>

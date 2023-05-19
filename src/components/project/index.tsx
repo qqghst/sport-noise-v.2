@@ -38,7 +38,6 @@ const Projects: React.FC<ProjectsProps> = ({ projects }) => {
                                     trigger: elem,
                                     start: 'top bottom',
                                     end: 'bottom',
-                                    markers: true,
                                 },
                             }
                         );

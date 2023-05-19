@@ -21,9 +21,9 @@ const Button: React.FC<IButtonProps> = ({ onClick }) => {
                 fill='none'>
                 <path
                     fill='#686767'
-                    fill-rule='evenodd'
+                    fillRule='evenodd'
                     d='m16.791 17.86 1.768-1.767-7.071-7.072 7.071-7.07L16.791.182l-7.07 7.07L2.648.184.881 1.95l7.071 7.071-7.07 7.072 1.767 1.767 7.071-7.07 7.071 7.07Z'
-                    clip-rule='evenodd'
+                    clipRule='evenodd'
                 />
             </svg>
         </button>

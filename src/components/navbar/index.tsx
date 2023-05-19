@@ -122,8 +122,7 @@ const Navbar: React.FC<ICheckedProps> = ({
                 <div className='flex flex-col md:flex-row justify-between items-start md:items-center py-[32px]  px-5 md:px-[64px] lg:px-[128px] bg-white lg:mx-auto left-0 right-0 z-[100]'>
                     <Link
                         rel='noopener noreferrer'
-                        href='/'
-                        className=''>
+                        href='/'>
                         <Image
                             src='/navbar/logo.png'
                             alt='SportNoise'

@@ -14,7 +14,7 @@ const ProjectsMore = ({ moreprojects }: any) => {
                 <div>
                     {moreprojects &&
                         moreprojects.map((item: any, index: any) => (
-                            <a
+                            <Link
                                 key={item.id}
                                 rel='noopener noreferrer'
                                 href={`projects/${item.id}`}>
@@ -23,7 +23,7 @@ const ProjectsMore = ({ moreprojects }: any) => {
                                     title={item.title}
                                     imageSrc={item.imageSrc}
                                 />
-                            </a>
+                            </Link>
                         ))}
                     <div className='h-[1px] bg-line w-full' />
                 </div>

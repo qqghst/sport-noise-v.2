@@ -46,15 +46,15 @@ const Footer: React.FC<ICheckedProps> = ({
                                     fill='none'>
                                     <path
                                         fill='currentColor'
-                                        fill-rule='evenodd'
+                                        fillRule='evenodd'
                                         d='M.46 19.464h34.014v-4.361H.46v4.36Z'
-                                        clip-rule='evenodd'
+                                        clipRule='evenodd'
                                     />
                                     <path
                                         fill='currentColor'
-                                        fill-rule='evenodd'
+                                        fillRule='evenodd'
                                         d='M33.739 17.29 19.918 3.47 23 .385 39.907 17.29 23 34.195l-3.084-3.084 13.822-13.82Z'
-                                        clip-rule='evenodd'
+                                        clipRule='evenodd'
                                     />
                                 </svg>
                             </Link>
@@ -144,15 +144,15 @@ const Footer: React.FC<ICheckedProps> = ({
                                         fill='none'>
                                         <path
                                             fill='currentColor'
-                                            fill-rule='evenodd'
+                                            fillRule='evenodd'
                                             d='M.46 19.464h34.014v-4.361H.46v4.36Z'
-                                            clip-rule='evenodd'
+                                            clipRule='evenodd'
                                         />
                                         <path
                                             fill='currentColor'
-                                            fill-rule='evenodd'
+                                            fillRule='evenodd'
                                             d='M33.739 17.29 19.918 3.47 23 .385 39.907 17.29 23 34.195l-3.084-3.084 13.822-13.82Z'
-                                            clip-rule='evenodd'
+                                            clipRule='evenodd'
                                         />
                                     </svg>
                                 </Link>
@@ -181,15 +181,15 @@ const Footer: React.FC<ICheckedProps> = ({
                                     fill='none'>
                                     <path
                                         fill='currentColor'
-                                        fill-rule='evenodd'
+                                        fillRule='evenodd'
                                         d='M.46 19.464h34.014v-4.361H.46v4.36Z'
-                                        clip-rule='evenodd'
+                                        clipRule='evenodd'
                                     />
                                     <path
                                         fill='currentColor'
-                                        fill-rule='evenodd'
+                                        fillRule='evenodd'
                                         d='M33.739 17.29 19.918 3.47 23 .385 39.907 17.29 23 34.195l-3.084-3.084 13.822-13.82Z'
-                                        clip-rule='evenodd'
+                                        clipRule='evenodd'
                                     />
                                 </svg>
                             </Link>
