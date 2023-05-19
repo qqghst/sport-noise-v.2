@@ -31,7 +31,7 @@ const MenuItem: React.FC<ICheckedProps> = ({
                 setJoinTenderChecked={setJoinTenderChecked}></Modal>
             <div className='menuOpen overflow-scroll  fixed top-0 right-[-100%] w-full md:w-[50%] xl:w-[35%] 2xl:w-[30%] h-full bg-white flex flex-col items-center justify-start opacity-0 z-[30007582354723] drop-shadow-[0_4px_25px_rgba(0,0,0,0.13)]'>
                 <div className='flex flex-row items-center justify-between gap-[150px] lg:gap-[180px]  py-5 md:pt-[58px]'>
-                    <div className='text-[26px] tracking-[-1px] leading-[32px] font-medium flex gap-3'>
+                    <div className='text-[26px] tracking-[-1px] leading-[32px] font-medium flex gap-3 opacity-0'>
                         <span className='text-black underline'>Ru</span>
                         <button>
                             <span className='text-grey hover:text-hover transition ease-in-out duration-400'>
@@ -78,14 +78,14 @@ const MenuItem: React.FC<ICheckedProps> = ({
                         <div className='block lg:hidden h-[1px] bg-line w-full' />
                     </ul>
                     <ul className='text-blue font-medium text-left text-[15px] lg:text-[17px] leading-[26px] lg:leading-[30px] tracking-[0.5px] flex flex-col gap-2 py-7'>
-                        <li className='navAnimation'>
+                        {/* <li className='navAnimation'>
                             <Link
                                 href='/'
                                 className='text-blue hover:text-hover transition ease-in-out duration-400 pr-[72px] lg:pr-[100px]'
                                 rel='noopener noreferrer'>
                                 &#x25CF; Скачать презентацию
                             </Link>
-                        </li>
+                        </li> */}
                         <li className='navAnimation'>
                             <Link
                                 className='text-blue hover:text-hover transition ease-in-out duration-400 pr-[72px] lg:pr-[150px]'

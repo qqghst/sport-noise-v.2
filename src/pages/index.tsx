@@ -32,7 +32,7 @@ export default function Home({ projects, moreprojects }: any) {
 
     return (
         <>
-            <Head>
+            {/* <Head>
                 <title>Sport Noise</title>
                 <meta
                     name='description'
@@ -60,7 +60,7 @@ export default function Home({ projects, moreprojects }: any) {
                     property='og:image'
                     content={OgImage.src}
                 />
-            </Head>
+            </Head> */}
             <div
                 className='content-area'
                 ref={(el) => (contentArea.current = el)}>

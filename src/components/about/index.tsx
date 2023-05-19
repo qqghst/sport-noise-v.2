@@ -1,9 +1,9 @@
-import React, { useEffect, useRef } from 'react';
+import { FC, useEffect, useRef } from 'react';
 import gsap from 'gsap';
 import ScrollTrigger from 'gsap/dist/ScrollTrigger';
 import SplitType from 'split-type';
 
-const About: React.FC = () => {
+const About: FC = () => {
     const refAbout = useRef(null);
 
     useEffect(() => {
