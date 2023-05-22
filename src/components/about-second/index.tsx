@@ -47,7 +47,7 @@ const AboutSecond: React.FC = () => {
                 </h4>
                 <p
                     ref={aboutSecondRef}
-                    className='text-[21px] lg:text-[28px] xl:text-[37px] tracking-[-0.5px] xl:tracking-[-0.2px] leading-[30px] lg:leading-[38px] xl:leading-[52px] font-medium text-black w-full sm:w-[90%] xl:w-[80%]'>
+                    className='text-[20px] lg:text-[28px] xl:text-[37px] tracking-[-0.5px] xl:tracking-[-0.2px] leading-[30px] lg:leading-[38px] xl:leading-[52px] font-medium text-black w-full sm:w-[90%] xl:w-[80%]'>
                     Мы, digital-студия «SportNoise», специализируемся на
                     визуальном дизайне и коммуникациях. Решаем маркетинговые
                     задачи с помощью адаптивных digital-сценариев и продуктовых

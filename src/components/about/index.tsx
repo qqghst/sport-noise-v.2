@@ -42,7 +42,7 @@ const About: FC = () => {
             <div className='about-container'>
                 <p
                     ref={refAbout}
-                    className='text-[21px] lg:text-[28px] xl:text-[37px] tracking-[-0.5px] xl:tracking-[-0.2px] leading-[30px] lg:leading-[38px] xl:leading-[52px] font-medium text-black w-full sm:w-[90%] md:w-[85%] lg:w-[92%] xl:w-[98%]'>
+                    className='text-[20px] lg:text-[28px] xl:text-[37px] tracking-[-0.5px] xl:tracking-[-0.2px] leading-[30px] lg:leading-[38px] xl:leading-[52px] font-medium text-black w-full sm:w-[90%] md:w-[85%] lg:w-[92%] xl:w-[98%]'>
                     Создаем и оптимизируем спортивные бренды, помогаем компаниям
                     реализовывать свой digital-потенциал. Меняем спортивную
                     культуру, улучшаем узнаваемость и позиционирование, чтобы
