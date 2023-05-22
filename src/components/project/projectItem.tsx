@@ -48,13 +48,13 @@ const ProjectItem: React.FC<IProjectItemProps> = ({
                         )
                     ) : videoSrc && videoSrc2 ? (
                         <div className={`${styles.zoomHover}`}>
-                            <figure className='overflow-hidden' style={{ height: '[500px]' }}>
+                            <figure className='overflow-hidden' >
                                 <video
                                     autoPlay
                                     loop
                                     muted
                                     playsInline
-                                    className='w-full h-[250px] sm:h-[350px] lg:h-full object-cover block'>
+                                    className='w-full h-[250px] sm:h-[350px] lg:h-[600px] object-cover block'>
                                     <source
                                         src={videoSrc}
                                         type={videoType}
@@ -69,9 +69,9 @@ const ProjectItem: React.FC<IProjectItemProps> = ({
                     ) : (
                         image && (
                             <div className={`${styles.zoomHover}`}>
-                                <figure className='overflow-hidden' style={{ height: '[500px]' }}>
+                                <figure className='overflow-hidden' >
                                     <Image
-                                        className='w-full h-[250px] sm:h-[350px] lg:h-full object-cover block'
+                                        className='w-full h-[250px] sm:h-[350px] lg:h-[600px] object-cover block'
                                         src={image}
                                         alt='SportNoise'
                                         width={2400 / 2}
