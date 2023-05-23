@@ -15,3 +15,15 @@
 }
 
 
+
+@media (min-width: 1800px) {
+    .imgBigScreen {
+        height: 700px;
+    }
+}
+
+@media (min-width: 2000px) {
+    .imgBigScreen {
+        height: 800px;
+    }
+}
