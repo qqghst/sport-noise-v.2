@@ -94,6 +94,18 @@
         // overflow-y: auto;
         padding: 3rem;
         // overflow: scroll;
+        animation: modalOpen 0.3s ease-out;
+    }
+}
+
+@keyframes modalOpen {
+    from {
+        opacity: 0.4;
+        transform: scale(0.9);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
     }
 }
 
@@ -227,5 +239,3 @@
         transform: translateY(-3px);
     }
 }
-
-
