@@ -1,5 +1,6 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import Link from 'next/link';
+import { useRouter } from 'next/router';
 import Modal from '../modal';
 import useModal from '@/hooks/useModal';
 import { useScrollBlock } from '@/hooks/useScrollBlock';
@@ -13,6 +14,27 @@ const Footer: React.FC<ICheckedProps> = ({
 }) => {
     const { isOpen, toggle } = useModal();
     const [blockScroll, allowScroll] = useScrollBlock();
+
+    const router = useRouter();
+
+    const scrollToTop = () => {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth',
+        });
+    };
+
+    useEffect(() => {
+        const handleRouteChange = () => {
+            scrollToTop();
+        };
+
+        router.events.on('routeChangeComplete', handleRouteChange);
+
+        return () => {
+            router.events.off('routeChangeComplete', handleRouteChange);
+        };
+    }, [router.events]);
     return (
         <>
             <Modal
@@ -37,7 +59,7 @@ const Footer: React.FC<ICheckedProps> = ({
                             </span>
                         </button>
                         <div className='hidden lg:block  text-blue'>
-                            <Link href='#navbar'>
+                            <div onClick={scrollToTop}>
                                 <svg
                                     className='text-blue hover:text-hover -rotate-90'
                                     xmlns='http://www.w3.org/2000/svg'
@@ -57,7 +79,7 @@ const Footer: React.FC<ICheckedProps> = ({
                                         clipRule='evenodd'
                                     />
                                 </svg>
-                            </Link>
+                            </div>
                         </div>
                     </div>
                     <div className='flex flex-col'>
@@ -115,7 +137,9 @@ const Footer: React.FC<ICheckedProps> = ({
                                     onClick={() => {
                                         toggle();
                                         blockScroll();
-                                        setJoinTenderChecked(!joinTenderChecked)
+                                        setJoinTenderChecked(
+                                            !joinTenderChecked
+                                        );
                                     }}>
                                     &#x25CF; Пригласить в аудит
                                 </button>
@@ -135,7 +159,7 @@ const Footer: React.FC<ICheckedProps> = ({
                                 Спортнойз.
                             </p>
                             <div className='block md:hidden text-blue'>
-                                <Link href='#navbar'>
+                                <div onClick={scrollToTop}>
                                     <svg
                                         className='text-blue  -rotate-90'
                                         xmlns='http://www.w3.org/2000/svg'
@@ -155,7 +179,7 @@ const Footer: React.FC<ICheckedProps> = ({
                                             clipRule='evenodd'
                                         />
                                     </svg>
-                                </Link>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -172,9 +196,9 @@ const Footer: React.FC<ICheckedProps> = ({
                             </span>
                         </button>
                         <div className='hidden md:block translate-y-[275px] xl:translate-y-[80px]'>
-                            <Link href='#navbar'>
+                            <div onClick={scrollToTop}>
                                 <svg
-                                    className='text-blue hover:text-hover -rotate-90'
+                                    className='text-blue hover:text-hover -rotate-90 hover:cursor-pointer'
                                     xmlns='http://www.w3.org/2000/svg'
                                     width='40'
                                     height='35'
@@ -192,7 +216,7 @@ const Footer: React.FC<ICheckedProps> = ({
                                         clipRule='evenodd'
                                     />
                                 </svg>
-                            </Link>
+                            </div>
                         </div>
                     </div>
                 </div>
