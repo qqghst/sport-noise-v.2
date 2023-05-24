@@ -34,7 +34,6 @@ export default function Home({ projects, moreprojects }: any) {
                 className='content-area'
                 ref={(el) => (contentArea.current = el)}>
                 <Masthead />
-                <p>123</p>
                 <About />
                 <LogofolioAndShowreel
                     name='/logofolio-and-showreel/showreel/showreel.svg'
