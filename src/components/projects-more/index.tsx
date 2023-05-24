@@ -2,7 +2,11 @@ import { FC } from 'react';
 import Link from 'next/link';
 import ProjectMoreItems from './projectsMoreItem';
 
-const ProjectsMore: FC = ({ moreprojects }: any) => {
+interface ProjectsProps {
+    moreprojects: any;
+}
+
+const ProjectsMore: FC<ProjectsProps> = ({ moreprojects }) => {
     return (
         <section
             id='serviceId'

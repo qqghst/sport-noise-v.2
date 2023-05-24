@@ -1,5 +1,4 @@
 import { useEffect, useRef } from 'react';
-import Head from 'next/head';
 import gsap from 'gsap';
 import Masthead from '@/components/masthead';
 import About from '@/components/about';
@@ -9,7 +8,6 @@ import ProjectsMore from '@/components/projects-more';
 import Services from '@/components/services';
 import MarqueeText from '@/components/marquee-text';
 import AboutSecond from '@/components/about-second';
-import OgImage from '../../public/open/SportNoise.jpg';
 import { projects } from '@/data/data';
 import { moreprojects } from '@/data/data';
 
@@ -36,13 +34,14 @@ export default function Home({ projects, moreprojects }: any) {
                 className='content-area'
                 ref={(el) => (contentArea.current = el)}>
                 <Masthead />
+                <p>123</p>
                 <About />
                 <LogofolioAndShowreel
                     name='/logofolio-and-showreel/showreel/showreel.svg'
                     videoSrc='showreel'
                 />
                 <Projects projects={projects} />
-                <ProjectsMore moreprojects={moreprojects}/>
+                <ProjectsMore moreprojects={moreprojects} />
                 <LogofolioAndShowreel
                     name='/logofolio-and-showreel/logofolio/logofolio.svg'
                     videoSrc='logofolio'
