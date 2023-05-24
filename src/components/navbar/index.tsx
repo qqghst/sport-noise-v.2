@@ -127,6 +127,7 @@ const Navbar: FC<ICheckedProps> = ({
                             alt='SportNoise'
                             width={400 / 2}
                             height={90 / 2}
+                            priority={true}
                         />
                     </Link>
                     <div

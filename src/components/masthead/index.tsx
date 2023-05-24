@@ -53,7 +53,7 @@ const Masthead: FC = () => {
                     loop
                     muted
                     playsInline
-                    data-scroll
+                    preload='auto'
                     className={`${styles.videoContainer} absolute w-full h-full object-cover `}>
                     <source
                         src='/masthead/masthead-video.mp4'
