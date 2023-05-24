@@ -1,0 +1,58 @@
+.personalDataStyles input[type='checkbox'] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    outline: none;
+
+    position: relative;
+    width: 30px;
+    height: 25px;
+    border: 2px solid theme('colors.blue');
+    border-radius: 50%;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+@media (min-width: 768px) {
+    .personalDataStyles input[type='checkbox'] {
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        outline: none;
+
+        position: relative;
+        width: 25px;
+        height: 25px;
+        border: 2px solid theme('colors.blue');
+        border-radius: 50%;
+        overflow: hidden;
+        cursor: pointer;
+    }
+}
+
+.personalDataStyles input[type='checkbox']::before {
+    content: '';
+
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0.5px;
+    background-color: transparent;
+    background-size: 70%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    border-radius: 2px;
+    -webkit-transform: scale(0);
+    transform: scale(0);
+    -webkit-transition: -webkit-transform 0.25s ease-in-out;
+    transition: -webkit-transform 0.25s ease-in-out;
+    transition: transform 0.25s ease-in-out;
+    transition: transform 0.25s ease-in-out, -webkit-transform 0.25s ease-in-out;
+    background-image: url(../../../../public/modal/check.svg);
+}
+
+.personalDataStyles input[type='checkbox']:checked::before {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+}

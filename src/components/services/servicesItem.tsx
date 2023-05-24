@@ -1,8 +1,8 @@
-import React from 'react';
+import { FC } from 'react';
 import styles from './styles.module.scss';
 import { IServiceItemProps } from '@/interfaces/serviceItem.interface';
 
-const ServicesItem: React.FC<IServiceItemProps> = ({title, subtitles, color}) => {
+const ServicesItem: FC<IServiceItemProps> = ({ title, subtitles, color }) => {
     const isRed = color === 'red';
 
     const titleClass = ` text-[23px] xl:text-[37px] tracking-[-1%] leading-[52px] font-medium text-${

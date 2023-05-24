@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import Image from 'next/image';
-import plus from '../../../public/modal/plus.svg';
-import check2 from '../../../public/modal/check2.svg';
+import plus from '../../../../public/modal/plus.svg';
+import check2 from '../../../../public/modal/check2.svg';
 
 interface IAttachFIle {
     name: string;

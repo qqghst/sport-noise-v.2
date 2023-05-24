@@ -1,8 +1,8 @@
-import React from 'react';
+import { FC } from 'react';
 import Image from 'next/image';
 import cookie from '../../../public/cookies/cookies.svg';
 
-const Cookies: React.FC = () => {
+const Cookies: FC = () => {
     return (
         <div className='bg-white w-[375px] lg:w-[433px] h-[50px] lg:h-[60px] flex justify-center items-center drop-shadow-[0_4px_24px_rgba(0,0,0,0.13)]'>
             <div className='flex flex-row justify-center items-center gap-10'>

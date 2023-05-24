@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import { FC, useState, useEffect } from 'react';
 import Image from 'next/image';
 import styles from './styles.module.scss';
 import { CursorContext } from '@/ui/custom-cursor/cursor-manager';
@@ -8,8 +8,7 @@ import arrow from '../../../public/logofolio-and-showreel/arrow.svg';
 import Button from '@/ui/buttons/button-video';
 import { ILogofolioProps } from '@/interfaces/logofolio-showreel.interface';
 
-
-const LogofolioAndShowreel: React.FC<ILogofolioProps> = ({
+const LogofolioAndShowreel: FC<ILogofolioProps> = ({
     videoSrc,
     name,
 }) => {

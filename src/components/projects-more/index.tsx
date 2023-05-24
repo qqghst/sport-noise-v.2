@@ -1,8 +1,8 @@
-import React from 'react';
+import { FC } from 'react';
 import Link from 'next/link';
 import ProjectMoreItems from './projectsMoreItem';
 
-const ProjectsMore = ({ moreprojects }: any) => {
+const ProjectsMore: FC = ({ moreprojects }: any) => {
     return (
         <section
             id='serviceId'

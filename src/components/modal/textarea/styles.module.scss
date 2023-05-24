@@ -1,0 +1,44 @@
+
+.textarea::-webkit-input-placeholder {
+    font-size: 13px;
+    letter-spacing: 4%;
+    line-height: 17px;
+    font-weight: 500;
+    color: theme('colors.blue');
+}
+
+.textarea::-moz-placeholder {
+    font-size: 13px;
+    letter-spacing: 4%;
+    line-height: 17px;
+    font-weight: 500;
+    color: theme('colors.blue');
+}
+
+.textarea:-ms-input-placeholder {
+    font-size: 13px;
+    letter-spacing: 4%;
+    line-height: 17px;
+    font-weight: 500;
+    color: theme('colors.blue');
+}
+
+.textarea:-moz-placeholder {
+    font-size: 13px;
+    letter-spacing: 4%;
+    line-height: 17px;
+    font-weight: 500;
+    color: theme('colors.blue');
+}
+
+.textarea::placeholder {
+    font-size: 13px;
+    letter-spacing: 4%;
+    line-height: 17px;
+    font-weight: 500;
+    color: theme('colors.blue');
+}
+
+.textarea {
+    resize: none;
+}

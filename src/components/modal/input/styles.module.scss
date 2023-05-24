@@ -1,0 +1,90 @@
+.inputPlaceholder::placeholder {
+    color: theme('colors.blue');
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 26px;
+    letter-spacing: 2%;
+}
+
+.inputPlaceholder::-webkit-input-placeholder {
+    color: theme('colors.blue');
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 26px;
+    letter-spacing: 2%;
+}
+
+.inputPlaceholder::-moz-placeholder {
+    color: theme('colors.blue');
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 26px;
+    letter-spacing: 2%;
+}
+
+.inputPlaceholder:-ms-input-placeholder {
+    color: theme('colors.blue');
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 26px;
+    letter-spacing: 2%;
+}
+
+.inputPlaceholder:-moz-placeholder {
+    color: theme('colors.blue');
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 26px;
+    letter-spacing: 2%;
+}
+
+@media (min-width: 1024px) {
+    .inputPlaceholder::placeholder {
+        color: theme('colors.blue');
+        font-size: 170px;
+        font-weight: 500;
+        line-height: 30px;
+        letter-spacing: 2%;
+        transform: translateY(-3px);
+    }
+
+    .inputPlaceholder::-webkit-input-placeholder {
+        color: theme('colors.blue');
+        font-size: 17px;
+        font-weight: 500;
+        line-height: 30px;
+        letter-spacing: 2%;
+        transform: translateY(-3px);
+    }
+
+    .inputPlaceholder::-moz-placeholder {
+        color: theme('colors.blue');
+        font-size: 17px;
+        font-weight: 500;
+        line-height: 30px;
+        letter-spacing: 2%;
+        transform: translateY(-3px);
+    }
+
+    .inputPlaceholder:-ms-input-placeholder {
+        color: theme('colors.blue');
+        font-size: 17px;
+        font-weight: 500;
+        line-height: 30px;
+        letter-spacing: 2%;
+        transform: translateY(-3px);
+    }
+
+    .inputPlaceholder:-moz-placeholder {
+        color: theme('colors.blue');
+        font-size: 17px;
+        font-weight: 500;
+        line-height: 30px;
+        letter-spacing: 2%;
+        transform: translateY(-3px);
+    }
+}
+
+.borderBlue {
+    border: 1px solid theme('colors.blue');
+}

@@ -10,8 +10,8 @@ import Services from '@/components/services';
 import MarqueeText from '@/components/marquee-text';
 import AboutSecond from '@/components/about-second';
 import OgImage from '../../public/open/SportNoise.jpg';
-import { projects } from '@/data';
-import { moreprojects } from '@/data';
+import { projects } from '@/data/data';
+import { moreprojects } from '@/data/data';
 
 export const getStaticProps = async () => {
     return {

@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from 'react';
+import { FC, useEffect, useRef } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import gsap from 'gsap';
@@ -7,8 +7,7 @@ import { useScrollBlock } from '@/hooks/useScrollBlock';
 import MenuItem from './menuItem';
 import { ICheckedProps } from '@/interfaces/checked.interface';
 
-
-const Navbar: React.FC<ICheckedProps> = ({
+const Navbar: FC<ICheckedProps> = ({
     designAudit,
     setDesignAudit,
     joinTenderChecked,

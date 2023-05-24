@@ -1,11 +1,11 @@
-import React, { useEffect, useRef, useState } from 'react';
+import { FC, useEffect, useRef, useState } from 'react';
 import styles from './styles.module.scss';
 
 import gsap from 'gsap';
 import ScrollTrigger from 'gsap/dist/ScrollTrigger';
 import SplitType from 'split-type';
 
-const Masthead: React.FC = () => {
+const Masthead: FC = () => {
     const [isReady, setIsReady] = useState(false);
     const h1Ref = useRef<HTMLHeadingElement | null>(null);
 

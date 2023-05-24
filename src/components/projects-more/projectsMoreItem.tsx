@@ -1,11 +1,11 @@
-import React, { useEffect } from 'react';
+import { FC, useEffect } from 'react';
 import Image from 'next/image';
 import styles from './styles.module.scss';
 import gsap from 'gsap';
 import arrow from '../../../public/arrow.svg';
 import { IProjectsMoreItemsProps } from '@/interfaces/projectMore.interface';
 
-const ProjectMoreItems: React.FC<IProjectsMoreItemsProps> = ({title, imageSrc}) => {
+const ProjectMoreItems: FC<IProjectsMoreItemsProps> = ({ title, imageSrc }) => {
     useEffect(() => {
         const items = document.querySelectorAll('#item');
 

@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import { FC, useEffect } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import close from '../../../public/close.svg';
@@ -8,10 +8,7 @@ import { useScrollBlock } from '@/hooks/useScrollBlock';
 import Button from '../../ui/buttons/button-border';
 import { ICheckedProps } from '@/interfaces/checked.interface';
 
-// const MenuItem: React.FC<{ exitRef: React.RefObject<HTMLDivElement> }> = ({
-//     exitRef,
-// }) => {
-const MenuItem: React.FC<ICheckedProps> = ({
+const MenuItem: FC<ICheckedProps> = ({
     exitRef,
     designAudit,
     setDesignAudit,

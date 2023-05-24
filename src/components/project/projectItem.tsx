@@ -1,10 +1,10 @@
-import React, { useRef, useState, useEffect, useContext } from 'react';
+import { FC, useRef, useState, useEffect, useContext } from 'react';
 import styles from './styles.module.scss';
 import { CursorContext } from '@/ui/custom-cursor/cursor-manager';
 import { IProjectItemProps } from '@/interfaces/projectItem.interface';
 import Image from 'next/image';
 
-const ProjectItem: React.FC<IProjectItemProps> = ({
+const ProjectItem: FC<IProjectItemProps> = ({
     title,
     description,
     smallDescription,
@@ -48,7 +48,7 @@ const ProjectItem: React.FC<IProjectItemProps> = ({
                         )
                     ) : videoSrc && videoSrc2 ? (
                         <div className={`${styles.zoomHover}`}>
-                            <figure className='overflow-hidden' >
+                            <figure className='overflow-hidden'>
                                 <video
                                     autoPlay
                                     loop
@@ -69,7 +69,7 @@ const ProjectItem: React.FC<IProjectItemProps> = ({
                     ) : (
                         image && (
                             <div className={`${styles.zoomHover}`}>
-                                <figure className='overflow-hidden' >
+                                <figure className='overflow-hidden'>
                                     <Image
                                         className={`${styles.imgBigScreen} w-full h-[250px] sm:h-[350px] lg:h-[600px] object-cover block`}
                                         src={image}

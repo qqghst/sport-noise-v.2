@@ -1,6 +1,7 @@
-import React, { useEffect, useState } from 'react';
+import { FC, useEffect, useState } from 'react';
+import Link from 'next/link';
 import ProjectItem from './projectItem';
-import { projects } from '@/data';
+import { projects } from '@/data/data';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import SwiperCore, { Mousewheel } from 'swiper';
@@ -20,9 +21,7 @@ type ProjectSliderProps = {
     currentProjectIndex: number;
 };
 
-const ProjectSlider: React.FC<ProjectSliderProps> = ({
-    currentProjectIndex,
-}) => {
+const ProjectSlider: FC<ProjectSliderProps> = ({ currentProjectIndex }) => {
     const [shuffledProjects, setShuffledProjects] = useState<Project[]>([]);
 
     useEffect(() => {
@@ -69,7 +68,9 @@ const ProjectSlider: React.FC<ProjectSliderProps> = ({
                         }}>
                         {filteredProjects.map((project) => (
                             <SwiperSlide key={project.id}>
-                                <a href={`/projects/${project.id}`}>
+                                <Link
+                                    href={`/projects/${project.id}`}
+                                    rel='noopener noreferrer'>
                                     <ProjectItem
                                         key={project.id}
                                         image={project.image}
@@ -80,7 +81,7 @@ const ProjectSlider: React.FC<ProjectSliderProps> = ({
                                             project.smallDescription
                                         }
                                     />
-                                </a>
+                                </Link>
                             </SwiperSlide>
                         ))}
                     </Swiper>

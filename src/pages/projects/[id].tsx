@@ -30,7 +30,7 @@
 import React from 'react';
 
 import { ProjectsRouting } from '@/data/projects-routing';
-import ProjectRoutePage from '@/components/project/projectRoutePage';
+import ProjectRoutePage from '@/components/projects-routing/projectRoutePage';
 
 interface ProjectsProps {
     routingprojects: any;

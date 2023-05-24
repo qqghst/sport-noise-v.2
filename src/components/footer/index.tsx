@@ -1,12 +1,12 @@
-import React, {useEffect} from 'react';
+import { FC, useEffect } from 'react';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
-import Modal from '../modal';
-import useModal from '@/hooks/useModal';
 import { useScrollBlock } from '@/hooks/useScrollBlock';
 import { ICheckedProps } from '@/interfaces/checked.interface';
+import Modal from '../modal';
+import useModal from '@/hooks/useModal';
 
-const Footer: React.FC<ICheckedProps> = ({
+const Footer: FC<ICheckedProps> = ({
     designAudit,
     setDesignAudit,
     joinTenderChecked,

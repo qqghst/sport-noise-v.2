@@ -27,8 +27,8 @@ const Input: React.FC<IInputProps> = ({
                 name={name}
                 placeholder={placeholder}
                 type={type}
-                onFocus={(e) => e.target.classList.add('border-blue')}
-                onChange={(e) => e.target.classList.add('border-blue')}
+                onFocus={(e) => e.target.classList.add(`${styles.borderBlue}`)}
+                onChange={(e) => e.target.classList.add(`${styles.borderBlue}`)}
             />
 
         </>

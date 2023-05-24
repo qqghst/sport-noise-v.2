@@ -6,10 +6,7 @@ import '@/styles/selection.scss';
 import '@/styles/services.scss';
 import '@/styles/footer.scss';
 import '@/styles/swiper.scss';
-import '@/styles/custom-checkbox.scss';
 import '@/styles/split-type.scss';
-import '@/styles/input.scss';
-import '@/styles/routes.scss';
 
 import Head from 'next/head';
 import OgImage from '../../public/open/SportNoise.jpg';

@@ -1,6 +1,6 @@
-import React, { useEffect, useRef, useContext } from 'react';
+import { FC, useEffect, useRef, useContext } from 'react';
 import ProjectItem from './projectItem';
-import { projects } from '@/data';
+import { projects } from '@/data/data';
 import gsap from 'gsap';
 import ScrollTrigger from 'gsap/dist/ScrollTrigger';
 import Link from 'next/link';
@@ -10,7 +10,7 @@ interface ProjectsProps {
     projects: any;
 }
 
-const Projects: React.FC<ProjectsProps> = ({ projects }) => {
+const Projects: FC<ProjectsProps> = ({ projects }) => {
     const projectsRef = useRef<HTMLDivElement>(null);
     const { setSize } = useContext(CursorContext);
 

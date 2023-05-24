@@ -1,3 +1,6 @@
+import { FC } from 'react';
+import styles from './styles.module.scss'
+
 interface ICheckboxProps {
     text: string;
     register: any;
@@ -5,9 +8,14 @@ interface ICheckboxProps {
     defaultChecked?: any;
 }
 
-const Checkbox: React.FC<ICheckboxProps> = ({ text, register, name, defaultChecked }) => {
+const Checkbox: FC<ICheckboxProps> = ({
+    text,
+    register,
+    name,
+    defaultChecked,
+}) => {
     return (
-        <div className='customCheckbox'>
+        <div className={`${styles.customCheckbox}`}>
             <label>
                 <input
                     defaultChecked={defaultChecked}

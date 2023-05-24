@@ -38,7 +38,7 @@ const About: FC = () => {
         setupSplits();
     }, []);
     return (
-        <section className='bg-white mb-[48px] md:mb-[106px] px-5 md:px-[64px] lg:px-[128px]'>
+        <section className='mb-[48px] md:mb-[106px] px-5 md:px-[64px] lg:px-[128px]'>
             <div className='about-container'>
                 <p
                     ref={refAbout}

@@ -1,9 +1,9 @@
-import React, { useRef, useEffect } from 'react';
+import { FC, useRef, useEffect } from 'react';
 import gsap from 'gsap';
 import ScrollTrigger from 'gsap/dist/ScrollTrigger';
 import SplitType from 'split-type';
 
-const AboutSecond: React.FC = () => {
+const AboutSecond: FC = () => {
     const aboutSecondRef = useRef(null);
 
     useEffect(() => {
@@ -39,7 +39,7 @@ const AboutSecond: React.FC = () => {
     }, []);
     return (
         <section
-            className='bg-white mt-[77px] md:mt-[136px] mb-[77px] md:mb-[268px] px-5 md:px-[64px] lg:px-[128px]'
+            className='mt-[77px] md:mt-[136px] mb-[77px] md:mb-[268px] px-5 md:px-[64px] lg:px-[128px]'
             id='aboutSecond'>
             <div className=''>
                 <h4 className='text-[21px] xl:text-[37px] tracking-[-0.5px] leading-[52px] font-medium text-blue pb-[32px]'>

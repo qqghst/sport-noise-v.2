@@ -3,11 +3,11 @@ import styles from './styles.module.scss';
 import { SubmitHandler, useForm } from 'react-hook-form';
 import { useScrollBlock } from '@/hooks/useScrollBlock';
 
-import Input from './input';
-import Checkbox from './checkbox';
-import Textarea from './textarea';
-import PersonalData from './personal-data';
-import AttachFile from './attach-file';
+import Input from './input/input';
+import Checkbox from './checkbox/checkbox';
+import Textarea from './textarea/textarea';
+import PersonalData from './personal-data/personal-data';
+import AttachFile from './attach-file/attach-file';
 
 import Button from '../../ui/buttons/button-border';
 
